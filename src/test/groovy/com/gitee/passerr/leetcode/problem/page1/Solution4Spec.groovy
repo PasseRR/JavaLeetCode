@@ -19,8 +19,8 @@ class Solution4Spec extends Specification {
 
         where:
         nums1           | nums2           || result
-        [1, 3] as int[] | [2] as int[]    || 2.0
-        [1, 2] as int[] | [3, 4] as int[] || 2.5
-        [1] as int[]    | [] as int[]     || 1.0
+        [1, 3] as int[] | [2] as int[]    || 2.0 as double
+        [1, 2] as int[] | [3, 4] as int[] || 2.5 as double
+        [1] as int[]    | [] as int[]     || 1.0 as double
     }
 }
