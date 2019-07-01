@@ -19,6 +19,6 @@ class Solution1Spec extends Specification {
 
         where:
         array                   | target || result
-        [2, 7, 11, 15] as int[] | 9      || [0, 1]
+        [2, 7, 11, 15] as int[] | 9      || [0, 1] as int[]
     }
 }
