@@ -25,16 +25,18 @@ package com.gitee.passerr.leetcode.problem.page1;
  */
 public class Solution9 {
     public boolean isPalindrome(int x) {
+        // 负数都不是回文数
         if (x < 0) {
             return false;
         }
-
+        // 单位整数都是回文数
         if (x < 10) {
             return true;
         }
 
         int hold = x;
         int reverse = 0;
+        // 多位整数倒转与源数字比较 相同则为回文数
         while (x > 0) {
             reverse = reverse * 10 + x % 10;
             x /= 10;
