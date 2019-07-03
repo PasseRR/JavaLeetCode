@@ -16,7 +16,7 @@ class Solution2Spec extends Specification {
     @Unroll
     def "addTwoNumbers(#node1, #node2) = #result"() {
         expect:
-        result.toString() == this.solution2.addTwoNumbers(node1, node2).toString()
+        result == this.solution2.addTwoNumbers(node1, node2)
 
         where:
         node1                   | node2                || result

@@ -45,4 +45,20 @@ public class ListNode {
 
         return sb.substring(2);
     }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj instanceof ListNode) {
+            ListNode node = (ListNode) obj;
+            if (node.val != this.val) {
+                return false;
+            }
+            if (this.next == null) {
+                return node.next == null;
+            } else {
+                return this.next.equals(node.next);
+            }
+        }
+        return false;
+    }
 }

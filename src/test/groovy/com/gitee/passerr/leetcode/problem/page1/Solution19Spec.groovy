@@ -16,7 +16,7 @@ class Solution19Spec extends Specification {
     @Unroll
     def "removeNthFromEnd(#node, #n) = #result"() {
         expect:
-        result.toString() == this.solution19.removeNthFromEnd(node, n).toString()
+        result == this.solution19.removeNthFromEnd(node, n)
 
         where:
         node                       | n || result
