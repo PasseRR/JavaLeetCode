@@ -1,11 +1,8 @@
 package com.gitee.passerr.leetcode.problem.page1;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
-import java.util.function.IntConsumer;
-import java.util.stream.Collectors;
-import java.util.stream.IntStream;
+import java.util.function.BiConsumer;
 
 /**
  * 给定一个仅包含数字 2-9 的字符串，返回所有它能表示的字母组合。
@@ -40,26 +37,30 @@ public class Solution17 {
 
     public List<String> letterCombinations(String digits) {
         List<String> result = new ArrayList<>();
-        // 组合迭代
-        IntConsumer combination = index -> {
-            if (result.isEmpty()) {
-                result.addAll(Arrays.asList(DIGITS[index]));
-            } else {
-                List<String> snapshot = new ArrayList<>(result);
-                result.clear();
-                snapshot.stream()
-                    .map(item ->
-                        Arrays.stream(DIGITS[index])
-                            .map(letter -> item + letter)
-                            .collect(Collectors.toList())
-                    ).forEach(result::addAll);
+        int length = digits.length();
+
+        BiConsumer<Integer, String> recursion = new BiConsumer<Integer, String>() {
+            @Override
+            public void accept(Integer integer, String s) {
+                // 已经到了最后一个字符
+                if (integer == length) {
+                    result.add(s);
+                    return;
+                }
+
+                // 对照表索引
+                int index = Integer.valueOf(String.valueOf(digits.charAt(integer)));
+                for (String letter : DIGITS[index]) {
+                    // 递归拼接字符串
+                    this.accept(integer + 1, s + letter);
+                }
             }
         };
 
-        // 字符遍历
-        IntStream.range(0, digits.length())
-            .map(index -> Integer.valueOf(String.valueOf(digits.charAt(index))))
-            .forEach(combination);
+        // 排除空字符串
+        if (digits.length() > 0) {
+            recursion.accept(0, "");
+        }
 
         return result;
     }
