@@ -2,8 +2,12 @@ package com.gitee.passerr.leetcode.problem.page1;
 
 import com.gitee.passerr.leetcode.problem.ListNode;
 
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
+import java.util.function.BiFunction;
 import java.util.stream.Collectors;
 
 /**
@@ -22,15 +26,55 @@ import java.util.stream.Collectors;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Solution23 {
-    public ListNode mergeKListsTle(ListNode[] lists) {
-        ListNode head = new ListNode(0);
-        ListNode cursor = head;
+    public ListNode mergeKLists(ListNode[] lists) {
+        List<ListNode> list = Arrays.asList(lists);
+        // 合并两个有序链表
+        BiFunction<ListNode, ListNode, ListNode> merge = (l1, l2) -> {
+            ListNode node = new ListNode(0);
+            ListNode cursor = node;
+            while (null != l1 && null != l2) {
+                if (l1.val > l2.val) {
+                    cursor.next = new ListNode(l2.val);
+                    l2 = l2.next;
+                } else {
+                    cursor.next = new ListNode(l1.val);
+                    l1 = l1.next;
+                }
+                cursor = cursor.next;
+            }
 
-        // 通过合并链表来处理
-        return null;
+            // l1多余l2的部分
+            while (null != l1) {
+                cursor.next = new ListNode(l1.val);
+                l1 = l1.next;
+                cursor = cursor.next;
+            }
+            // l2多余l1的部分
+            while (null != l2) {
+                cursor.next = new ListNode(l2.val);
+                l2 = l2.next;
+                cursor = cursor.next;
+            }
+
+            return node.next;
+        };
+
+        // 合并链表集合 直到只剩一个链表
+        while (list.size() > 1) {
+            List<ListNode> switcher = new ArrayList<>();
+            for (int i = 0, length = list.size(); i < length; i++) {
+                ListNode l1 = list.get(i);
+                ListNode l2 = (i + 1) >= length ? null : list.get(i + 1);
+                switcher.add(merge.apply(l1, l2));
+            }
+            list = switcher;
+        }
+
+
+        return list.isEmpty() ? null : list.get(0);
     }
 
-    public ListNode mergeKLists(ListNode[] lists) {
+    public ListNode mergeKLists2(ListNode[] lists) {
         ListNode head = new ListNode(0);
         ListNode cursor = head;
         // 使用缓存 数字及出现次数
@@ -44,7 +88,7 @@ public class Solution23 {
             }
         }
 
-        // 遍历缓存有小到大构造链表
+        // 遍历缓存由小到大构造链表
         for (Integer key : cache.keySet().stream().sorted().collect(Collectors.toList())) {
             for (int i = 0; i < cache.get(key); i++) {
                 cursor.next = new ListNode(key);

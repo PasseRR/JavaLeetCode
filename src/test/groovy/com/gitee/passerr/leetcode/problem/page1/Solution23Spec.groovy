@@ -20,9 +20,10 @@ class Solution23Spec extends Specification {
 
         where:
         input                                                                         || result
-//        [] as ListNode[]                                                              || null
-//        [null, null] as ListNode[]                                                    || null
+        [] as ListNode[]                                                              || null
+        [null, null] as ListNode[]                                                    || null
         [ListNode.of(1, 2, 2), ListNode.of(1, 1, 2)] as ListNode[]                    || ListNode.of(1, 1, 1, 2, 2, 2)
-//        [ListNode.of(1, 4, 5), ListNode.of(1, 3, 4), ListNode.of(2, 6)] as ListNode[] || ListNode.of(1, 1, 2, 3, 4, 4, 5, 6)
+        [ListNode.of(1, 4, 5), ListNode.of(1, 3, 4), ListNode.of(2, 6)] as ListNode[] || ListNode.of(1, 1, 2, 3, 4,
+                                                                                                     4, 5, 6)
     }
 }
