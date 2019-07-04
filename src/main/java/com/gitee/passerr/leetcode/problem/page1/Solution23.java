@@ -27,7 +27,7 @@ import java.util.stream.Collectors;
  */
 public class Solution23 {
     public ListNode mergeKLists(ListNode[] lists) {
-        List<ListNode> list = Arrays.asList(lists);
+        List<ListNode> list = new ArrayList<>(Arrays.asList(lists));
         // 合并两个有序链表
         BiFunction<ListNode, ListNode, ListNode> merge = (l1, l2) -> {
             ListNode node = new ListNode(0);
@@ -59,15 +59,13 @@ public class Solution23 {
             return node.next;
         };
 
+
         // 合并链表集合 直到只剩一个链表
         while (list.size() > 1) {
-            List<ListNode> switcher = new ArrayList<>();
-            for (int i = 0, length = list.size(); i < length; i++) {
-                ListNode l1 = list.get(i);
-                ListNode l2 = (i + 1) >= length ? null : list.get(i + 1);
-                switcher.add(merge.apply(l1, l2));
-            }
-            list = switcher;
+            // 取出列表前两个链表合并
+            ListNode l1 = list.remove(0);
+            ListNode l2 = list.remove(0);
+            list.add(merge.apply(l1, l2));
         }
 
 
