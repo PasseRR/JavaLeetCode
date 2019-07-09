@@ -19,7 +19,7 @@ class Solution42Spec extends Specification {
 
         where:
         nums                                          || result
-//        [0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1] as int[] || 6
+        [0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1] as int[] || 6
         [5, 5, 1, 7, 1, 1, 5, 2, 7, 6] as int[]       || 23
     }
 }
