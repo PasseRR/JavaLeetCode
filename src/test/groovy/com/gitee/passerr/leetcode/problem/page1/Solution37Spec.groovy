@@ -17,7 +17,7 @@ class Solution37Spec extends Specification {
         when:
         this.solution37.solveSudoku(input)
         then:
-        0..8.each { it -> Arrays.toString(input[it]) == Arrays.toString(result[it]) }
+        0..8.each { it -> assert Arrays.toString(input[it]) == Arrays.toString(result[it]) }
 
         where:
         input         || result
