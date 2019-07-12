@@ -2,6 +2,7 @@ package com.gitee.passerr.leetcode.problem.page2;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.List;
 
 /**
@@ -24,10 +25,7 @@ public class Solution56 {
     public int[][] merge(int[][] intervals) {
         int length = intervals.length;
         // 排序數組 先按照开区间升序排序 再按照闭区间升序排序
-        Arrays.sort(intervals, (o1, o2) -> {
-            int compare = o1[0] - o2[0];
-            return compare == 0 ? o1[1] - o2[1] : compare;
-        });
+        Arrays.sort(intervals, Comparator.comparingInt(o -> o[0]));
 
         List<int[]> result = new ArrayList<>();
         int i = 0;
