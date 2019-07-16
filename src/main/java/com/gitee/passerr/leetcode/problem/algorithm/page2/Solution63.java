@@ -30,7 +30,7 @@ package com.gitee.passerr.leetcode.problem.algorithm.page2;
  * @author xiehai
  * @date 2019/07/16 11:06
  * @Copyright(c) tellyes tech. inc. co.,ltd
- * @see Solution63
+ * @see Solution62
  */
 public class Solution63 {
     public int uniquePathsWithObstacles(int[][] obstacleGrid) {
