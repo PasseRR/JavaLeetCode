@@ -20,8 +20,8 @@ public class Solution67 {
         int al = a.length(), bl = b.length(), ai = al - 1, bi = bl - 1, carry = 0;
         StringBuilder sb = new StringBuilder();
         while (ai >= 0 || bi >= 0) {
-            int sum = (ai < 0 ? 0 : Integer.valueOf(a.substring(ai, ai + 1)))
-                + (bi < 0 ? 0 : Integer.valueOf(b.substring(bi, bi + 1))) + carry;
+            int sum = (ai < 0 ? 0 : a.charAt(ai) - '0')
+                + (bi < 0 ? 0 : b.charAt(bi) - '0') + carry;
             sb.append(sum % 2);
             carry = sum / 2;
             ai--;
