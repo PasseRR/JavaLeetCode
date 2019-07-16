@@ -49,7 +49,7 @@ public class Solution71 {
             path = path.replace("//", "/");
         }
 
-        // 记录入栈盘符
+        // 记录入栈盘符不包含分隔符/
         Stack<String> stack = new Stack<>();
         // 盘符分隔
         String[] paths = path.split("/");
