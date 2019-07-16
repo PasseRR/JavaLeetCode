@@ -1,4 +1,4 @@
-package com.gitee.passerr.leetcode.problem.algorithm.page1
+package com.gitee.passerr.leetcode.problem.algorithm.page2
 
 import com.gitee.passerr.leetcode.problem.algorithm.page2.Solution67
 import spock.lang.Specification
