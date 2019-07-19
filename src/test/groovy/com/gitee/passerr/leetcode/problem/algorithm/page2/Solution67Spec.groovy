@@ -1,6 +1,5 @@
 package com.gitee.passerr.leetcode.problem.algorithm.page2
 
-import com.gitee.passerr.leetcode.problem.algorithm.page2.Solution67
 import spock.lang.Specification
 import spock.lang.Unroll
 
