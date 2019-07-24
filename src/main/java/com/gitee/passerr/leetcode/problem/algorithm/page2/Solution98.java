@@ -47,7 +47,7 @@ public class Solution98 {
     public boolean isValidBST(TreeNode root) {
         List<Integer> list = new ArrayList<>();
         // 中序遍历树
-        Consumer<TreeNode> inorder = new Consumer<TreeNode>() {
+        Consumer<TreeNode> inorderTraversal = new Consumer<TreeNode>() {
             @Override
             public void accept(TreeNode node) {
                 if (node == null) {
@@ -58,7 +58,7 @@ public class Solution98 {
                 this.accept(node.right);
             }
         };
-        inorder.accept(root);
+        inorderTraversal.accept(root);
 
         // 若中序遍历结果是升序的 则是二叉搜索树 否则不是
         for (int i = 1, length = list.size(); i < length; i++) {
