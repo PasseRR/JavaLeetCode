@@ -3,7 +3,6 @@ package com.gitee.passerr.leetcode.problem.algorithm.page4;
 import com.gitee.passerr.leetcode.problem.algorithm.TreeNode;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
 import java.util.function.Consumer;
 
@@ -31,11 +30,11 @@ public class Solution173 {
 }
 
 class BSTIterator {
-    private Iterator<Integer> iterator;
+    private List<Integer> list = new ArrayList<>();
+    private int cursor;
+    private int size;
 
     public BSTIterator(TreeNode root) {
-        // 中序遍历树
-        List<Integer> list = new ArrayList<>();
         // 中序遍历树
         Consumer<TreeNode> inorderTraversal = new Consumer<TreeNode>() {
             @Override
@@ -50,20 +49,21 @@ class BSTIterator {
         };
         inorderTraversal.accept(root);
         // 初始化迭代器
-        this.iterator = list.iterator();
+        this.cursor = 0;
+        this.size = list.size();
     }
 
     /**
      * @return the next smallest number
      */
     public int next() {
-        return this.iterator.next();
+        return this.list.get(cursor++);
     }
 
     /**
      * @return whether we have a next smallest number
      */
     public boolean hasNext() {
-        return this.iterator.hasNext();
+        return this.cursor < this.size;
     }
 }
