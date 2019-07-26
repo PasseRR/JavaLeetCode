@@ -2,6 +2,10 @@ package com.gitee.passerr.leetcode.problem.algorithm.page2;
 
 import com.gitee.passerr.leetcode.problem.algorithm.TreeNode;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.function.Consumer;
+
 /**
  * 二叉搜索树中的两个节点被错误地交换。
  * 请在不改变其结构的情况下，恢复这棵树。
@@ -47,6 +51,39 @@ import com.gitee.passerr.leetcode.problem.algorithm.TreeNode;
  */
 public class Solution99 {
     public void recoverTree(TreeNode root) {
-        // TODO
+        List<TreeNode> list = new ArrayList<>();
+        // 中序遍历树
+        Consumer<TreeNode> inorderTraversal = new Consumer<TreeNode>() {
+            @Override
+            public void accept(TreeNode node) {
+                if (node == null) {
+                    return;
+                }
+                this.accept(node.left);
+                list.add(node);
+                this.accept(node.right);
+            }
+        };
+        inorderTraversal.accept(root);
+
+        TreeNode first = null, second = null;
+        // 找到中序遍历节点中降序节点
+        for (int i = 1; i < list.size(); i++) {
+            if (list.get(i).val < list.get(i - 1).val) {
+                if (first == null) {
+                    // 第一个降序
+                    first = list.get(i - 1);
+                    second = list.get(i);
+                } else {
+                    // 第二个降序
+                    second = list.get(i);
+                }
+            }
+        }
+
+        // 交换节点值
+        first.val ^= second.val;
+        second.val ^= first.val;
+        first.val ^= second.val;
     }
 }
