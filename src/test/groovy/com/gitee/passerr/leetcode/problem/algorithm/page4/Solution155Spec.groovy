@@ -1,9 +1,9 @@
-package com.gitee.passerr.leetcode.problem.algorithm.page3
+package com.gitee.passerr.leetcode.problem.algorithm.page4
 
 import spock.lang.Specification
 
 /**
- * {@link Solution155}测试用例
+ * {@link com.gitee.passerr.leetcode.problem.algorithm.page4.Solution155}测试用例
  * @Copyright (c)tellyes tech. inc. co.,ltd
  * @date 2019/07/26 15:19
  * @author xiehai
