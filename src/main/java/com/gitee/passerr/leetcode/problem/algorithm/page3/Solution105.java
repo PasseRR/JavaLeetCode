@@ -38,6 +38,11 @@ public class Solution105 {
             new TrFunction<Integer, Integer, Integer, TreeNode>() {
                 /**
                  * 递归根据前序、中序生成树
+                 * 前序第一个节点为根节点 中序中根节点左右两边分别为左树和右树
+                 * 前序中中序左树长度为左树 中序右树长度为右树
+                 * 如：[3,9,20,15,7]前 [9,3,15,20,7]中
+                 * 3在中序中索引为1 1左边的为3的左树 1右边的为3的右树
+                 * 前序中3之后分为了左树段9截止 右树段9之后的数字
                  * @param index 根节点在前序中的索引
                  * @param inOrderBegin 左树/右树在中序中开始索引
                  * @param inOrderEnd 左树/右树在中序中结束索引
