@@ -1,5 +1,7 @@
 package com.gitee.passerr.leetcode.problem.algorithm.page3;
 
+import java.util.Arrays;
+
 /**
  * 给定一个非空整数数组，除了某个元素只出现一次以外，其余每个元素均出现了三次。找出那个只出现了一次的元素。
  * 说明：
@@ -19,6 +21,17 @@ package com.gitee.passerr.leetcode.problem.algorithm.page3;
  */
 public class Solution137 {
     public int singleNumber(int[] nums) {
+        Arrays.sort(nums);
+        for (int i = 2; i < nums.length; i += 3) {
+            if (nums[i] != nums[i - 2]) {
+                return nums[i - 2];
+            }
+        }
+
+        return nums[nums.length - 1];
+    }
+
+    public int singleNumber1(int[] nums) {
         // x ^ 0 = x
         // x ^ x = 0
         // ab ^ 00 = ab
