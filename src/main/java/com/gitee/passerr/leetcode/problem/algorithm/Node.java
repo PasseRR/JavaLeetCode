@@ -61,7 +61,7 @@ public class Node {
             if (node != null) {
                 sb.append(node.val)
                     .append("(")
-                    .append(next == null ? "null" : next.val)
+                    .append(node.next == null ? "null" : node.next.val)
                     .append(")")
                     .append(",");
                 if (node.left != null || node.right != null) {
