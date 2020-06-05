@@ -1,6 +1,6 @@
 package com.gitee.passerr.leetcode.problem.algorithm.page3;
 
-import com.gitee.passerr.leetcode.problem.algorithm.ListNode;
+import com.gitee.passerr.leetcode.ListNode;
 
 /**
  * 对链表进行插入排序。

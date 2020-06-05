@@ -1,6 +1,6 @@
 package com.gitee.passerr.leetcode.problem.algorithm.page3;
 
-import com.gitee.passerr.leetcode.problem.algorithm.ListNode;
+import com.gitee.passerr.leetcode.ListNode;
 
 import java.util.HashSet;
 import java.util.Set;

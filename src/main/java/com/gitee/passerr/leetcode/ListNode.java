@@ -1,4 +1,4 @@
-package com.gitee.passerr.leetcode.problem.algorithm;
+package com.gitee.passerr.leetcode;
 
 import java.util.Objects;
 

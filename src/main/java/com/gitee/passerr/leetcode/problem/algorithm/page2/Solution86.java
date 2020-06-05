@@ -1,6 +1,6 @@
 package com.gitee.passerr.leetcode.problem.algorithm.page2;
 
-import com.gitee.passerr.leetcode.problem.algorithm.ListNode;
+import com.gitee.passerr.leetcode.ListNode;
 
 /**
  * 给定一个链表和一个特定值 x，对链表进行分隔，使得所有小于 x 的节点都在大于或等于 x 的节点之前。

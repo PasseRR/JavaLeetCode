@@ -1,6 +1,6 @@
 package com.gitee.passerr.leetcode.problem.algorithm.page3;
 
-import com.gitee.passerr.leetcode.problem.algorithm.ListNode;
+import com.gitee.passerr.leetcode.ListNode;
 
 /**
  * 给定一个单链表 L：L0→L1→…→Ln-1→Ln ，

@@ -1,6 +1,6 @@
 package com.gitee.passerr.leetcode.problem.algorithm.page3;
 
-import com.gitee.passerr.leetcode.problem.algorithm.ListNode;
+import com.gitee.passerr.leetcode.ListNode;
 
 /**
  * 给定一个链表，判断链表中是否有环。

@@ -1,6 +1,6 @@
 package com.gitee.passerr.leetcode.problem.algorithm.page1;
 
-import com.gitee.passerr.leetcode.problem.algorithm.ListNode;
+import com.gitee.passerr.leetcode.ListNode;
 
 /**
  * 给你一个链表，每 k 个节点一组进行翻转，请你返回翻转后的链表。

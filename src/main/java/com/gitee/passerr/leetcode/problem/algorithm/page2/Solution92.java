@@ -1,6 +1,6 @@
 package com.gitee.passerr.leetcode.problem.algorithm.page2;
 
-import com.gitee.passerr.leetcode.problem.algorithm.ListNode;
+import com.gitee.passerr.leetcode.ListNode;
 
 /**
  * 反转从位置 m 到 n 的链表。请使用一趟扫描完成反转。

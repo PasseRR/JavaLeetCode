@@ -1,6 +1,6 @@
 package com.gitee.passerr.leetcode.problem.algorithm.page4;
 
-import com.gitee.passerr.leetcode.problem.algorithm.TreeNode;
+import com.gitee.passerr.leetcode.TreeNode;
 
 import java.util.ArrayList;
 import java.util.List;

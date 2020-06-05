@@ -1,6 +1,6 @@
 package com.gitee.passerr.leetcode.problem.algorithm.page2
 
-import com.gitee.passerr.leetcode.problem.algorithm.TreeNode
+import com.gitee.passerr.leetcode.TreeNode
 import spock.lang.Specification
 import spock.lang.Unroll
 

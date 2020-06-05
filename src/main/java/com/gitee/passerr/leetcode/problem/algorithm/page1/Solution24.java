@@ -1,6 +1,6 @@
 package com.gitee.passerr.leetcode.problem.algorithm.page1;
 
-import com.gitee.passerr.leetcode.problem.algorithm.ListNode;
+import com.gitee.passerr.leetcode.ListNode;
 
 /**
  * 给定一个链表，两两交换其中相邻的节点，并返回交换后的链表。

@@ -1,6 +1,6 @@
 package com.gitee.passerr.leetcode.problem.algorithm.page1;
 
-import com.gitee.passerr.leetcode.problem.algorithm.ListNode;
+import com.gitee.passerr.leetcode.ListNode;
 
 import java.util.HashMap;
 import java.util.Map;

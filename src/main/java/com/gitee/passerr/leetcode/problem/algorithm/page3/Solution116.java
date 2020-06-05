@@ -1,6 +1,6 @@
 package com.gitee.passerr.leetcode.problem.algorithm.page3;
 
-import com.gitee.passerr.leetcode.problem.algorithm.Node;
+import com.gitee.passerr.leetcode.Node;
 
 /**
  * 给定一个完美二叉树，其所有叶子节点都在同一层，每个父节点都有两个子节点。二叉树定义如下：

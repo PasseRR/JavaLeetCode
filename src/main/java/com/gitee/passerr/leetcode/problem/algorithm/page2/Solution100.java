@@ -1,6 +1,6 @@
 package com.gitee.passerr.leetcode.problem.algorithm.page2;
 
-import com.gitee.passerr.leetcode.problem.algorithm.TreeNode;
+import com.gitee.passerr.leetcode.TreeNode;
 
 /**
  * 给定两个二叉树，编写一个函数来检验它们是否相同。

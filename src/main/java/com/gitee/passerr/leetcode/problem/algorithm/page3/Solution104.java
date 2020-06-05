@@ -1,6 +1,6 @@
 package com.gitee.passerr.leetcode.problem.algorithm.page3;
 
-import com.gitee.passerr.leetcode.problem.algorithm.TreeNode;
+import com.gitee.passerr.leetcode.TreeNode;
 
 /**
  * 给定一个二叉树，找出其最大深度。
