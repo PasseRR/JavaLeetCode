@@ -4,7 +4,7 @@ import spock.lang.Specification
 import spock.lang.Unroll
 
 /**
- * {@link Lcci0101Spec}单元测试
+ * {@link Lcci0101}单元测试
  * @date 2020/06/05 14:55
  * @Copyright (c) wisewe co.,ltd
  * @author xiehai
