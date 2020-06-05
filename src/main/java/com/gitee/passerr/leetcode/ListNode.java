@@ -30,6 +30,21 @@ public class ListNode {
         return node.next;
     }
 
+    public static ListNode of(ListNode tail, int... values) {
+        Objects.requireNonNull(values);
+
+        ListNode node = new ListNode(0);
+        ListNode cursor = node;
+        for (int val : values) {
+            cursor.next = new ListNode(val);
+            cursor = cursor.next;
+        }
+
+        cursor.next = tail;
+
+        return node.next;
+    }
+
     public ListNode(int val) {
         this.val = val;
     }
