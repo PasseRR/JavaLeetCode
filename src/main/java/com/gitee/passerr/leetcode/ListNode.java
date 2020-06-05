@@ -12,10 +12,6 @@ public class ListNode {
     public int val;
     public ListNode next;
 
-    public ListNode(int val) {
-        this.val = val;
-    }
-
     /**
      * 快速构造链表
      * @param values 链表值
@@ -32,6 +28,10 @@ public class ListNode {
         }
 
         return node.next;
+    }
+
+    public ListNode(int val) {
+        this.val = val;
     }
 
     @Override
