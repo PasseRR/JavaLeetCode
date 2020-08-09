@@ -21,7 +21,7 @@ import java.util.*;
  *
  * @author xiehai1
  * @date 2020/08/09 16:41
- * @Copyright(c) gome inc Gome Co.,LTD
+ * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcci1002 {
     public List<List<String>> groupAnagrams(String[] strs) {
