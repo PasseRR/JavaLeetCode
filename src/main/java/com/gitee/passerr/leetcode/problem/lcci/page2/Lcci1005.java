@@ -20,7 +20,7 @@ import java.util.function.BiFunction;
  * @date 2020/08/10 09:28
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
-public class Lcci1004 {
+public class Lcci1005 {
     public int findString(String[] words, String s) {
         BiFunction<Integer, Integer, Integer> binarySearch = new BiFunction<Integer, Integer, Integer>() {
             @Override

@@ -4,18 +4,18 @@ import spock.lang.Specification
 import spock.lang.Unroll
 
 /**
- * {@link Lcci1004}单元测试
+ * {@link Lcci1005}单元测试
  * @date 2020/08/10 10:54
  * @Copyright (c) wisewe co.,ltd
  * @author xiehai
  */
-class Lcci1004Spec extends Specification {
-    Lcci1004 lcci1004 = new Lcci1004()
+class Lcci1005Spec extends Specification {
+    Lcci1005 lcci1005 = new Lcci1005()
 
     @Unroll
     def "findString(#words, #s) = #result"() {
         expect:
-        result == this.lcci1004.findString(words, s)
+        result == this.lcci1005.findString(words, s)
 
         where:
         words                                                                        | s      || result
