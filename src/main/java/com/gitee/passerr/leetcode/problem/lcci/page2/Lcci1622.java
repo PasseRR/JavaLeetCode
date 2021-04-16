@@ -206,7 +206,7 @@ public class Lcci1622 {
             // 行字符个数
             int width = this.maxColumn - this.minColumn + 1;
 
-            List<StringBuilder> collect =
+            List<String> collect =
                 IntStream.rangeClosed(this.minRow, this.maxRow)
                     .mapToObj(row ->
                         Optional.ofNullable(this.paths.get(row))
@@ -220,17 +220,17 @@ public class Lcci1622 {
                                     )
                                     .collect(Collectors.joining(""))
                             )
-                            .map(StringBuilder::new)
-                            .orElseGet(() ->
-                                new StringBuilder(String.join("", Collections.nCopies(width, BlockColor.WHITE.color)))
-                            )
+                            .orElseGet(() -> String.join("", Collections.nCopies(width, BlockColor.WHITE.color)))
                     )
                     .collect(Collectors.toList());
 
             // 将当前行列位置替换为方向
-            collect.get(this.row - this.minRow).setCharAt(this.column - this.minColumn, this.antDirection.direction);
+            int replaceRow = this.row - this.minRow;
+            StringBuilder sb = new StringBuilder(collect.get(replaceRow));
+            sb.setCharAt(this.column - this.minColumn, this.antDirection.direction);
+            collect.set(replaceRow, sb.toString());
 
-            return collect.stream().map(StringBuilder::toString).collect(Collectors.toList());
+            return collect;
         }
     }
 
