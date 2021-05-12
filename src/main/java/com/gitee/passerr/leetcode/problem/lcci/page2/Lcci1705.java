@@ -22,7 +22,33 @@ import java.util.Arrays;
  */
 public class Lcci1705 {
     public String[] findLongestSubarray(String[] array) {
-        int from = 0, to = 0;
-        return Arrays.copyOfRange(array, from, to);
+        int len = array.length, dv = 0, max = 0, from = 0;
+        // 字母数字相差个数 负数为前半 正数为后半
+        int[] cache = new int[2 * len];
+        Arrays.fill(cache, -2);
+        // 特殊处理开始位置 任何数字字母差值为0的是从数组开始位置
+        cache[len] = -1;
+        for (int i = 0; i < len; i++) {
+            if (Character.isDigit(array[i].charAt(0))) {
+                dv++;
+            } else {
+                dv--;
+            }
+            // 数字字母个数不同 则找到差值相同索引最小位置
+            int index = cache[dv + len];
+            if (index != -2) {
+                // 长度
+                int t = i - index;
+                if (t > max) {
+                    max = t;
+                    from = index + 1;
+                }
+            } else {
+                // 记录差值最小索引位置
+                cache[dv + len] = i;
+            }
+        }
+
+        return Arrays.copyOfRange(array, from, from + max);
     }
 }
