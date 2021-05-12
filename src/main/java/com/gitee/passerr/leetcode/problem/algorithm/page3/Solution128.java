@@ -1,6 +1,8 @@
 package com.gitee.passerr.leetcode.problem.algorithm.page3;
 
-import java.util.Arrays;
+import java.util.Comparator;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * 给定一个未排序的整数数组，找出最长连续序列的长度。
@@ -15,29 +17,71 @@ import java.util.Arrays;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Solution128 {
-    public int longestConsecutive(int[] nums) {
-        int len = nums.length;
-        if (len <= 1) {
-            return len;
+    static class UnionFindSet {
+        /**
+         * 父节点
+         */
+        Map<Integer, Integer> node = new HashMap<>();
+        /**
+         * 连续数量
+         */
+        Map<Integer, Integer> cnt = new HashMap<>();
+
+        void init(int num) {
+            this.node.put(num, num);
+            this.cnt.put(num, 1);
         }
 
-        Arrays.sort(nums);
-        int count = 1, max = 1;
-        int last = nums[0];
-        for (int i = 1; i < len; i++) {
-            if (nums[i] == last) {
-                continue;
-            }
-
-            if (nums[i] == last + 1) {
-                count++;
+        int find(int num) {
+            int value = this.node.get(num);
+            if (value == num) {
+                return num;
             } else {
-                max = Math.max(max, count);
-                count = 1;
+                int ancestor = this.find(value);
+                this.node.put(num, ancestor);
+
+                return ancestor;
             }
-            last = nums[i];
         }
 
-        return Math.max(max, count);
+        void union(int num) {
+            if (!this.node.containsKey(num)) {
+                this.init(num);
+            }
+
+            if (this.node.containsKey(num + 1)) {
+                this.doUnion(num, num + 1);
+            }
+
+            if (this.node.containsKey(num - 1)) {
+                this.doUnion(num, num - 1);
+            }
+        }
+
+        void doUnion(int num1, int num2) {
+            int parent1 = this.find(num1), parent2 = this.find(num2);
+            if (parent1 > parent2) {
+                this.node.put(parent2, parent1);
+                this.cnt.merge(parent1, this.cnt.get(parent2), Integer::sum);
+            } else if (parent1 < parent2) {
+                this.node.put(parent1, parent2);
+                this.cnt.merge(parent2, this.cnt.get(parent1), Integer::sum);
+            }
+
+            // 重复数据父节点一致 不用做合并
+        }
+
+        int result() {
+            return this.cnt.values().stream().max(Comparator.comparingInt(it -> it)).orElse(0);
+        }
+    }
+
+    public int longestConsecutive(int[] nums) {
+        UnionFindSet set = new UnionFindSet();
+        for (int num : nums) {
+            set.union(num);
+        }
+
+        return set.result();
     }
 }
