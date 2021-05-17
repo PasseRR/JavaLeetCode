@@ -30,17 +30,18 @@ public class Lcci1708 {
 
         int[] dp = new int[len];
         int result = 0;
+        // 查询区间单调递增元素个数方法
         // 体重降序 插入缓存中的数字都是低位索引
         for (int[] pair : merge) {
             // 在缓存数组中查找体重位置
             int i = Arrays.binarySearch(dp, 0, result, pair[1]);
-            // 不在缓存中的数字
+            // 不在缓存中的数字 -1则为最小数字 -N表示可插入点-(len + 1)
             if (i < 0) {
                 i = -(i + 1);
             }
             // 插入既定位置 若是体重相同覆盖
             dp[i] = pair[1];
-            // dp长度增加
+            // 已有区间递增元素个数
             if (i == result) {
                 ++result;
             }
