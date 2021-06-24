@@ -39,29 +39,29 @@ public class Lcci1724 {
             }
         }
 
-        for (int tr = 0; tr < rows; tr++) {
-            for (int br = tr; br < rows; br++) {
+        for (int r1 = 0; r1 < rows; r1++) {
+            for (int r2 = r1; r2 < rows; r2++) {
                 // 构造一维dp 表示为 tr到br之间行的和
                 int[] dp = new int[columns];
                 for (int i = 0; i < columns; i++) {
-                    dp[i] = preSum[br + 1][i] - preSum[tr][i];
+                    dp[i] = preSum[r2 + 1][i] - preSum[r1][i];
                 }
 
-                int tc = 0, sum = Integer.MIN_VALUE;
+                int c1 = 0, sum = Integer.MIN_VALUE;
                 // 每列和累加
-                for (int bc = 0; bc < columns; bc++) {
+                for (int c2 = 0; c2 < columns; c2++) {
                     if (sum > 0) {
-                        sum += dp[bc];
+                        sum += dp[c2];
                     } else {
-                        sum = dp[bc];
-                        tc = bc;
+                        sum = dp[c2];
+                        c1 = c2;
                     }
 
                     if (sum >= max) {
-                        result[0] = tr;
-                        result[1] = tc;
-                        result[2] = br;
-                        result[3] = bc;
+                        result[0] = r1;
+                        result[1] = c1;
+                        result[2] = r2;
+                        result[3] = c2;
                         max = sum;
                     }
                 }
