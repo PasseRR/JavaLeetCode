@@ -59,42 +59,39 @@ class Trie {
      * Returns if the word is in the trie.
      */
     public boolean search(String word) {
-        Trie node = this;
-        for (char c : word.toCharArray()) {
-            Trie child = node.child(index(c));
-            if (child == null) {
-                return false;
-            }
+        Trie trie = this.doStartWith(word);
 
-            node = child;
-        }
-
-        return node.isLeaf;
+        return trie != null && trie.isLeaf;
     }
 
     /**
      * Returns if there is any word in the trie that starts with the given prefix.
      */
     public boolean startsWith(String prefix) {
+        return this.doStartWith(prefix) != null;
+    }
+
+    protected Trie doStartWith(String prefix) {
         Trie node = this;
         for (char c : prefix.toCharArray()) {
-            Trie child = node.child(index(c));
-            if (child == null) {
-                return false;
+            node = node.child(index(c));
+            if (node == null) {
+                return null;
             }
-
-            node = child;
         }
 
-        return true;
+        return node;
     }
 
     protected Trie doInsert(int index) {
-        if (this.child(index) == null) {
-            this.children[index] = new Trie();
+        Trie child = this.child(index);
+        if (child != null) {
+            return child;
         }
 
-        return this.child(index);
+        Trie trie = new Trie();
+        this.children[index] = trie;
+        return trie;
     }
 
     protected Trie child(int index) {
