@@ -1,9 +1,7 @@
 package com.gitee.passerr.leetcode.problem.algorithm.page5;
 
 import java.util.ArrayList;
-import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
 
 /**
  * 给定一个m x n 二维字符网格board和一个单词（字符串）列表 words，找出所有同时在二维网格和字典中出现的单词。
@@ -58,6 +56,11 @@ public class Solution212 {
             return this.children[index(c)];
         }
 
+        void setLeaf(String value) {
+            this.isLeaf = true;
+            this.value = value;
+        }
+
         static int index(char c) {
             return c - 'a';
         }
@@ -81,11 +84,10 @@ public class Solution212 {
             for (char c : word.toCharArray()) {
                 node = node.add(c);
             }
-            node.isLeaf = true;
-            node.value = word;
+            node.setLeaf(word);
         }
 
-        Set<String> result = new HashSet<>();
+        List<String> result = new ArrayList<>();
         int rows = board.length, columns = board[0].length;
         boolean[][] visited = new boolean[rows][columns];
         // 回溯
@@ -102,6 +104,7 @@ public class Solution212 {
                 }
                 char letter = board[row][column];
                 Trie child = trie.get(letter);
+                // 不存在前缀
                 if (child == null) {
                     return;
                 }
@@ -127,6 +130,6 @@ public class Solution212 {
             }
         }
 
-        return new ArrayList<>(result);
+        return result;
     }
 }
