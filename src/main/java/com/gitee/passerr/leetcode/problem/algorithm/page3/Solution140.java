@@ -1,12 +1,8 @@
 package com.gitee.passerr.leetcode.problem.algorithm.page3;
 
 import java.util.ArrayList;
-import java.util.Collections;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
-import java.util.function.BiConsumer;
-import java.util.function.Function;
+import java.util.function.BiFunction;
 
 /**
  * 给定一个非空字符串 s 和一个包含非空单词列表的字典 wordDict，在字符串中增加空格来构建一个句子，使得句子中所有的单词都在词典中。返回所有这些可能的句子。
@@ -21,8 +17,8 @@ import java.util.function.Function;
  * wordDict = ["cat", "cats", "and", "sand", "dog"]
  * 输出:
  * [
- *   "cats and dog",
- *   "cat sand dog"
+ * "cats and dog",
+ * "cat sand dog"
  * ]
  * <p>
  * 示例 2：
@@ -31,13 +27,13 @@ import java.util.function.Function;
  * wordDict = ["apple", "pen", "applepen", "pine", "pineapple"]
  * 输出:
  * [
- *   "pine apple pen apple",
- *   "pineapple pen apple",
- *   "pine applepen apple"
+ * "pine apple pen apple",
+ * "pineapple pen apple",
+ * "pine applepen apple"
  * ]
  * 解释: 注意你可以重复使用字典中的单词。
  * <p>
- * 示例 3：
+ * 示例3：
  * 输入:
  * s = "catsandog"
  * wordDict = ["cats", "dog", "sand", "and", "cat"]
@@ -48,71 +44,96 @@ import java.util.function.Function;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Solution140 {
-    public List<String> wordBreak(String s, List<String> wordDict) {
-        int length = s.length();
-        // 缓存索引位置开始能匹配的单词句子
-        Map<Integer, List<String>> cache = new HashMap<>(8);
-        // 单词完全匹配成句子 终止位置
-        cache.put(length, Collections.singletonList(""));
+    static class Trie {
+        Trie[] children = new Trie[26];
+        boolean isLeaf;
 
-        // 递归处理
-        Function<Integer, List<String>> recursion = new Function<Integer, List<String>>() {
-            @Override
-            public List<String> apply(Integer from) {
-                // from索引处开始可以匹配的单词句子
-                List<String> solutions = new ArrayList<>();
-                for (String word : wordDict) {
-                    // from开始的子字符串是否以单词开头
-                    if (s.substring(from).startsWith(word)) {
-                        // 下一索引
-                        Integer next = from + word.length();
-                        // 缓存中存在 直接使用缓存 否则递归计算可组成的句子
-                        List<String> apply = cache.containsKey(next) ? cache.get(next) : this.apply(next);
-                        // 若结果为空 表示from处子字符串不能用词典中的单词组成句子
-                        if (!apply.isEmpty()) {
-                            // 句子若是空字符串 表示已经匹配到s末尾 若是非空 找到一个子句
-                            apply.stream().map(it -> it.isEmpty() ? word : word + " " + it).forEach(solutions::add);
-                        }
-                    }
-                }
-
-                // 缓存
-                cache.put(from, solutions);
-
-                return solutions;
+        Trie insert(char c) {
+            Trie trie = this.get(c);
+            if (trie != null) {
+                return trie;
             }
-        };
 
-        return recursion.apply(0);
+            trie = new Trie();
+            this.children[c - 'a'] = trie;
+
+            return trie;
+        }
+
+        Trie get(char c) {
+            return this.children[c - 'a'];
+        }
+
+        void setLeaf() {
+            this.isLeaf = true;
+        }
     }
 
-    public List<String> wordBreakTle(String s, List<String> wordDict) {
-        List<String> result = new ArrayList<>();
-        int length = s.length();
+    public List<String> wordBreak(String s, List<String> wordDict) {
+        Trie root = new Trie();
+        // 构建字典树
+        for (String word : wordDict) {
+            Trie node = root;
+            for (char c : word.toCharArray()) {
+                node = node.insert(c);
+            }
+            node.setLeaf();
+        }
 
-        // 直接使用回溯TLE了
-        BiConsumer<Integer, StringBuilder> backtrack = new BiConsumer<Integer, StringBuilder>() {
+        List<String> result = new ArrayList<>();
+        int len = s.length();
+        // null待匹配 false无法匹配单词 true能匹配单词
+        // 记忆快速过滤无法匹配单词的节点 索引为字符串位置
+        Boolean[] memory = new Boolean[len + 1];
+
+        BiFunction<Integer, StringBuilder, Boolean> backtrack = new BiFunction<Integer, StringBuilder, Boolean>() {
             @Override
-            public void accept(Integer from, StringBuilder line) {
-                if (from == length) {
-                    result.add(line.toString());
-                    return;
+            public Boolean apply(Integer index, StringBuilder sb) {
+                // 无法匹配的位置
+                if (memory[index] != null && !memory[index]) {
+                    return false;
                 }
-                for (String word : wordDict) {
-                    if (s.substring(from).startsWith(word)) {
-                        if (line.length() > 0) {
-                            line.append(" ");
+
+                // 匹配完成添加解
+                if (index == len) {
+                    result.add(sb.toString());
+                    return true;
+                }
+
+                Trie node = root;
+                for (int i = index; i < len; i++) {
+                    char c = s.charAt(i);
+                    node = node.get(c);
+                    // 单词无法匹配
+                    if (node == null) {
+                        // 记录无法匹配单词的开始位置
+                        break;
+                    }
+                    sb.append(c);
+                    // 若是叶子节点 截断单词匹配
+                    if (node.isLeaf) {
+                        StringBuilder nb = new StringBuilder(sb);
+                        // 非单词结尾添加空格
+                        if (i + 1 < len) {
+                            nb.append(' ');
                         }
-                        line.append(word);
-                        this.accept(from + word.length(), line);
-                        if (line.length() > 0) {
-                            line.delete(line.length() - 1, line.length());
+                        if (this.apply(i + 1, nb)) {
+                            memory[index] = true;
                         }
                     }
+
+                    // 不截断单词匹配
                 }
+
+                if (memory[index] == null) {
+                    memory[index] = false;
+                }
+
+                return memory[index];
             }
         };
-        backtrack.accept(0, new StringBuilder());
+
+        backtrack.apply(0, new StringBuilder());
 
         return result;
     }
