@@ -1,6 +1,9 @@
 package com.gitee.passerr.leetcode.problem.algorithm.page3;
 
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
+import java.util.function.Function;
 
 /**
  * 给定一个非空字符串 s 和一个包含非空单词列表的字典 wordDict，判定 s 是否可以被空格拆分为一个或多个在字典中出现的单词。
@@ -27,26 +30,72 @@ import java.util.List;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Solution139 {
-    public boolean wordBreak(String s, List<String> wordDict) {
-        if (wordDict.contains(s)) {
-            return true;
-        }
-        int length = s.length();
-        // 动态规划
-        boolean[] dp = new boolean[length + 1];
-        dp[0] = true;
-        for (int i = 1; i <= length; i++) {
-            for (int j = 0; j < i; j++) {
-                // dp[j]表示单词能到达j位置
-                // 若单词中包含s.substring(j, i) 表示单词能到达i位置
-                if (dp[j] && wordDict.contains(s.substring(j, i))) {
-                    // 找到一个单词满足到达j处即可
-                    dp[i] = true;
-                    break;
-                }
+    static class Trie {
+        Trie[] children = new Trie[26];
+        boolean isLeaf;
+
+        Trie insert(char c) {
+            Trie trie = this.get(c);
+            if (trie != null) {
+                return trie;
             }
+
+            trie = new Trie();
+            this.children[c - 'a'] = trie;
+
+            return trie;
         }
 
-        return dp[length];
+        Trie get(char c) {
+            return this.children[c - 'a'];
+        }
+
+        void setLeaf() {
+            this.isLeaf = true;
+        }
+    }
+
+    public boolean wordBreak(String s, List<String> wordDict) {
+        Trie root = new Trie();
+        // 构建字典树
+        for (String word : wordDict) {
+            Trie node = root;
+            for (char c : word.toCharArray()) {
+                node = node.insert(c);
+            }
+            node.setLeaf();
+        }
+
+        int len = s.length();
+        // 记录访问过的位置
+        Set<Integer> visited = new HashSet<>();
+        Function<Integer, Boolean> backtrack = new Function<Integer, Boolean>() {
+            @Override
+            public Boolean apply(Integer index) {
+                if (index == len) {
+                    return true;
+                }
+
+                Trie node = root;
+                for (int i = index; i < len; i++) {
+                    node = node.get(s.charAt(i));
+                    if (node == null) {
+                        break;
+                    }
+
+                    // 截断单词
+                    if (node.isLeaf && !visited.contains(i + 1) && this.apply(i + 1)) {
+                        return true;
+                    }
+
+                    // 不截断继续匹配
+                }
+
+                visited.add(index);
+                return false;
+            }
+        };
+
+        return backtrack.apply(0);
     }
 }
