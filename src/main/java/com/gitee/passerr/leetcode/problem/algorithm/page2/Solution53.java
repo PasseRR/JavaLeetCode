@@ -16,15 +16,17 @@ package com.gitee.passerr.leetcode.problem.algorithm.page2;
  */
 public class Solution53 {
     public int maxSubArray(int[] nums) {
-        int result = nums[0], length = nums.length, sum = nums[0];
-        for (int i = 1; i < length; i++) {
-            // 如果左边和小于0 从当前数字开始 否则和之前相加
-            sum = sum > 0 ? sum + nums[i] : nums[i];
-            if (sum > result) {
-                result = sum;
+        int sum = 0, max = Integer.MIN_VALUE;
+        for (int num : nums) {
+            sum += num;
+            // 若当前数字大于前面累加和 则从当前数字开始
+            if (num > sum) {
+                sum = num;
             }
+            // 每次更新最大值
+            max = Integer.max(max, sum);
         }
 
-        return result;
+        return max;
     }
 }
