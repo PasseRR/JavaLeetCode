@@ -1,5 +1,8 @@
 package com.gitee.passerr.leetcode.problem.algorithm.page1;
 
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * 给定一个整数数组nums和一个目标值target，请你在该数组中找出和为目标值的那两个整数，并返回他们的数组下标。
  * 你可以假设每种输入只会对应一个答案。但是，你不能重复利用这个数组中同样的元素。
@@ -9,18 +12,16 @@ package com.gitee.passerr.leetcode.problem.algorithm.page1;
  */
 public class Solution1 {
     public int[] twoSum(int[] nums, int target) {
-        // 从数组头开始
-        for(int i = 0; i < nums.length; i ++) {
-            // 从数组尾开始
-            for(int j = nums.length - 1; j > i; j --) {
-                // 找到结果直接返回
-                if(nums[i] + nums[j] == target) {
-                    return new int[]{i, j};
-                }
+        Map<Integer, Integer> cache = new HashMap<>();
+        for (int i = 0; i < nums.length; i++) {
+            if (cache.containsKey(nums[i])) {
+                return new int[]{cache.get(nums[i]), i};
             }
+            // 表示nums[i]要够成target所需要的目标值
+            cache.put(target - nums[i], i);
         }
 
-        // 根据题意 不会出现找不到解的情况
+        // 不会出现无解
         return null;
     }
 }
