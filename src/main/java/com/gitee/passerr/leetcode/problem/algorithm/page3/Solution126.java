@@ -4,11 +4,10 @@ import java.util.ArrayDeque;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
-import java.util.HashSet;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 import java.util.Queue;
-import java.util.Set;
 import java.util.stream.Collectors;
 
 /**
@@ -47,7 +46,9 @@ import java.util.stream.Collectors;
 public class Solution126 {
     static class Trie {
         Map<String, Trie> children = new HashMap<>();
+        // 双向字典树
         Trie parent;
+        // 当前节点字符串
         String value;
 
         Trie(String value) {
@@ -83,15 +84,17 @@ public class Solution126 {
         }
 
         List<String> result() {
-            ArrayDeque<String> deque = new ArrayDeque<>();
+            List<String> list = new ArrayList<>();
 
             Trie node = this;
             while (node != null) {
-                deque.offerFirst(node.value);
+                list.add(node.value);
                 node = node.parent;
             }
+            // 倒置list
+            Collections.reverse(list);
 
-            return new ArrayList<>(deque);
+            return list;
         }
     }
 
@@ -100,40 +103,40 @@ public class Solution126 {
         Trie root = new Trie(beginWord);
         // bfs根节点
         Queue<Trie> queue = new ArrayDeque<>(Collections.singleton(root));
-        Set<String> copy = new HashSet<>(wordList);
         List<Trie> result = new ArrayList<>();
 
         while (!queue.isEmpty()) {
-            int size = queue.size();
-            Set<String> toBeRemoved = new HashSet<>();
-            while (size > 0) {
-                Trie trie = queue.poll();
-                assert trie != null;
-                for (String s : copy) {
-                    // 满足转换条件则放入字典树中
+            // 使用迭代器删除已经使用过的单词
+            Iterator<String> iterator = wordList.iterator();
+            List<Trie> layer = new ArrayList<>(queue);
+            queue.clear();
+            while (iterator.hasNext()) {
+                String s = iterator.next();
+                // 是否删除当前单词
+                boolean toBeRemoved = false;
+
+                for (Trie trie : layer) {
                     Trie t = trie.addIfLadder(s);
                     if (t != null) {
                         queue.add(t);
-                        toBeRemoved.add(s);
+                        toBeRemoved = true;
 
-                        // 满足结果的最优路径
                         if (s.equals(endWord)) {
                             result.add(t);
                         }
                     }
                 }
 
-                size--;
+                // 相同转换次数的单词可以被重复使用
+                if (toBeRemoved) {
+                    iterator.remove();
+                }
             }
 
             // bfs找到最短路径
             if (!result.isEmpty()) {
                 break;
             }
-
-            // 移除已使用的单词
-            // 在同样长度的转换过程 一个单词可以被使用多次
-            copy.removeAll(toBeRemoved);
         }
 
         return result.stream().map(Trie::result).collect(Collectors.toList());
