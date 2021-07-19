@@ -2,6 +2,7 @@ package com.gitee.passerr.leetcode.problem.algorithm.page3;
 
 import java.util.ArrayDeque;
 import java.util.Collections;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Queue;
 import java.util.function.BiPredicate;
@@ -39,10 +40,9 @@ import java.util.function.BiPredicate;
  */
 public class Solution127 {
     public int ladderLength(String beginWord, String endWord, List<String> wordList) {
-        // dfs
         Queue<String> queue = new ArrayDeque<>(Collections.singleton(beginWord));
         // 从开始单词开始 已经有一个序列了
-        int result = 1, len = beginWord.length(), size = wordList.size();
+        int result = 1, len = beginWord.length();
         // 两个单词是否能转换
         BiPredicate<String, String> canTransform = (s1, s2) -> {
             int diff = 0;
@@ -59,24 +59,27 @@ public class Solution127 {
             return diff == 1;
         };
 
-        boolean[] memory = new boolean[size];
+        // bfs
         while (!queue.isEmpty()) {
             result++;
-            int breath = queue.size();
+            int size = queue.size();
             // 遍历当前变换次数的所有单词
-            while (breath > 0) {
+            while (size > 0) {
                 String poll = queue.poll();
-                for (int i = 0; i < size; i++) {
-                    String s = wordList.get(i);
-                    if (!memory[i] && canTransform.test(poll, s)) {
+                Iterator<String> iterator = wordList.iterator();
+                while (iterator.hasNext()) {
+                    String s = iterator.next();
+                    if (canTransform.test(poll, s)) {
                         if (s.equals(endWord)) {
                             return result;
                         }
-                        memory[i] = true;
+                        // 下一次bfs遍历
                         queue.offer(s);
+                        // 移除已使用的元素
+                        iterator.remove();
                     }
                 }
-                breath--;
+                size--;
             }
         }
 
