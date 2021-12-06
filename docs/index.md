@@ -13,4 +13,4 @@ title: Java版LeetCode
 
 ## 其他
 - [示例源码](https://github.com/PasseRR/JavaLeetCode)
-- [电子书源码](https://github.com/PasseRR/JavaLeetCode/tree/main/docs)
+- [电子书源码](https://github.com/PasseRR/JavaLeetCode/tree/master/docs)
