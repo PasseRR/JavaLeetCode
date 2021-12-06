@@ -2,6 +2,7 @@ name: 'GitHub Actions Mirror'
 
 on: [push, delete]
 
+# 自动同步代码到gitee
 jobs:
   mirror_to_gitee:
     runs-on: ubuntu-latest
