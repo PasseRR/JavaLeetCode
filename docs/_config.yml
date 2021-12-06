@@ -1,0 +1,59 @@
+title: Java版LeetCode
+author: PasseRR
+description: Build Jekyll site with the GitBook style.
+
+version: 1.0
+gitbook_version: 3.2.3
+
+baseurl: '/JavaLeetCode'
+# 主题cdn地址
+cdn-url: 'https://cdn.jsdelivr.net/gh/PasseRR/jekyll-gitbook-theme'
+# ico地址
+ico-url: 'https://cdn.jsdelivr.net/gh/PasseRR/jekyll-gitbook-theme/gitbook/images/favicon.ico'
+rss: RSS
+# 文章目录
+collections:
+  chapters:
+    permalink: /:categories/:name:output_ext
+    output: true
+
+toc:
+  enabled: false
+  h_min: 1
+  h_max: 3
+
+# Search settings
+tipue_search:
+  include:
+    pages: true
+  exclude:
+    files: [ search.html ]
+
+# markdown render engine.
+markdown: kramdown
+kramdown:
+  auto_ids: true
+  input: GFM
+  math_engine: mathjax
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  toc_levels: 1..6
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    guess_lang: true
+
+markdown_ext: markdown,mkdown,mkdn,mkd,md
+
+# Permalinks
+permalink: /:categories/:name:output_ext
+
+exclude:
+  - _drafts
+
+destination: ./_site
+incremental: false
+regenerate: true
+
+remote_theme: PasseRR/jekyll-gitbook-theme
+
+plugins:
+  - jekyll-remote-theme
