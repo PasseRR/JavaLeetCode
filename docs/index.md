@@ -11,6 +11,9 @@ title: Java版LeetCode
 5. [多线程](https://leetcode-cn.com/problemset/concurrency/)
 6. [算法](https://leetcode-cn.com/problemset/algorithms/)
 
+## 关于分页
+默认使用LeetCode的默认页数量50，每一类题目都会按照页分为一个包。
+
 ## 其他
 - [示例源码](https://github.com/PasseRR/JavaLeetCode)
 - [电子书源码](https://github.com/PasseRR/JavaLeetCode/tree/master/docs)
