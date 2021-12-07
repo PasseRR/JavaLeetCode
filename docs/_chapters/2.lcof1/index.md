@@ -1,7 +1,7 @@
 ---
 title: 2.剑指offer I
 layout: post
-category: database
+category: lcof1
 k: 2
 order: 2
 ---
