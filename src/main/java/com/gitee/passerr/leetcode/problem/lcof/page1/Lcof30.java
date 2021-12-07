@@ -26,7 +26,7 @@ public class Lcof30 {
 
 class MinStack {
 
-    private Stack<Integer> stack;
+    private final Stack<Integer> stack;
 
     public MinStack() {
         this.stack = new Stack<>();
