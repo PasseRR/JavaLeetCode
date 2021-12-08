@@ -56,7 +56,7 @@ regenerate: true
 # google分析gtag
 ga: G-1L1DPX3PFD
 # 百度统计hm
-hm: 712de58e89ed55d7c9e9bbd30ad340cd
+hm: f6a0d2cc07d505a22b5a318eee45a715
 
 remote_theme: PasseRR/jekyll-gitbook-theme
 
