@@ -10,7 +10,7 @@ package com.gitee.passerr.leetcode.problem.lcci.page2;
  * @author xiehai
  * @date 2021/05/17 16:30
  * @Copyright(c) tellyes tech. inc. co.,ltd
- * @see com.gitee.passerr.leetcode.problem.lcof.page1.Lcof49
+ * @see com.gitee.passerr.leetcode.problem.lcof1.page1.Lcof49
  */
 public class Lcci1709 {
     public int getKthMagicNumber(int k) {
