@@ -7,4 +7,4 @@ pk: 2
 order: 1
 ---
 
-1-50题，共50题，其中vip题目0题，已完成非vip题目50题。
+[1-50题](https://leetcode-cn.com/problemset/all/?page=1&listId=xb9nqhhg){:target="_blank"}，共50题
