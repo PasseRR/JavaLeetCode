@@ -20,7 +20,24 @@ package com.gitee.passerr.leetcode.problem.lcci.page1;
  */
 public class Lcci0103 {
     public String replaceSpaces(String S, int length) {
-        String sub = S.substring(0, length);
-        return sub.contains(" ") ? sub.replace(" ", "%20") : sub;
+        int len = Integer.min(S.length(), length);
+        // 最长为所有字符串均为空格即字符串长度的3倍
+        char[] result = new char[len * 3];
+        // 记录字符数
+        int cnt = 0;
+        char[] chars = S.toCharArray();
+        for (int i = 0; i < len; i++) {
+            // 空格替换
+            if (chars[i] == ' ') {
+                result[cnt++] = '%';
+                result[cnt++] = '2';
+                result[cnt++] = '0';
+            } else {
+                // 非空格直接字符设置字符
+                result[cnt++] = chars[i];
+            }
+        }
+
+        return new String(result, 0, cnt);
     }
 }
