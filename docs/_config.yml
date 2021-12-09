@@ -27,7 +27,7 @@ tipue_search:
   include:
     pages: true
   exclude:
-    files: [ search.html ]
+    files: [ 404.md, search.md ]
 
 # markdown render engine.
 markdown: kramdown
