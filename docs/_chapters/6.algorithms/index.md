@@ -6,4 +6,4 @@ k: 6
 order: 6
 ---
 
-对应LeetCode题目类型为[`算法`](https://leetcode-cn.com/problemset/algorithms/){:target="_blank"}
+对应LeetCode题目类型为[算法](https://leetcode-cn.com/problemset/algorithms/){:target="_blank"}
