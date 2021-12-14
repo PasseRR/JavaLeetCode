@@ -63,7 +63,8 @@ remote_theme: PasseRR/jekyll-gitbook-theme
 url: "https://www.xiehai.win"
 gems:
   - jekyll-sitemap
-  - wdm
+  - jekyll-remote-theme
+  
 plugins:
   - jekyll-remote-theme
   - jekyll-sitemap
