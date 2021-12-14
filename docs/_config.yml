@@ -61,8 +61,7 @@ hm: f6a0d2cc07d505a22b5a318eee45a715
 remote_theme: PasseRR/jekyll-gitbook-theme
 
 url: "https://www.xiehai.win"
-gems:
-  - jekyll-sitemap
+
 plugins:
   - jekyll-remote-theme
   - jekyll-sitemap
