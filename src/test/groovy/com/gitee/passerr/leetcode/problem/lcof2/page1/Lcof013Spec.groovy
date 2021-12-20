@@ -23,7 +23,7 @@ class Lcof013Spec extends Specification {
         
         expect:
         matrix.sumRegion(2, 1, 4, 3) == 8
-//        matrix.sumRegion(1, 1, 2, 2) == 11
-//        matrix.sumRegion(1, 2, 2, 4) == 12
+        matrix.sumRegion(1, 1, 2, 2) == 11
+        matrix.sumRegion(1, 2, 2, 4) == 12
     }
 }
