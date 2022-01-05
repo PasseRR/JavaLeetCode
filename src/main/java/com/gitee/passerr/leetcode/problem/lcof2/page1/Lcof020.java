@@ -47,7 +47,7 @@ public class Lcof020 {
             return true;
         };
         
-        // TODO 待完成
+        // TODO
 
         for (int i = 0; i < len; i++) {
 
