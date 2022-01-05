@@ -1,5 +1,7 @@
 package com.gitee.passerr.leetcode.problem.lcof2.page1;
 
+import java.util.function.BiFunction;
+
 /**
  * 给定一个字符串 s ，请计算这个字符串中有多少个回文子字符串。
  * <p>
@@ -26,7 +28,30 @@ package com.gitee.passerr.leetcode.problem.lcof2.page1;
 public class Lcof020 {
     public int countSubstrings(String s) {
         int len = s.length();
-        boolean[][] dp = new boolean[len + 1][len + 1];
+        // 0表示未初始化 1表示是回文 2表示非回文
+        int[][] dp = new int[len + 1][len + 1];
+        for (int i = 0; i < len; i++) {
+            dp[i][i] = 1;
+        }
+
+        BiFunction<Integer, Integer, Boolean> isPalindrome = (left, right) -> {
+            int i = 0;
+            int mid = (left + right) >> 1 - left;
+            while (i < mid) {
+                if (s.charAt(left + i) != s.charAt(right - i)) {
+                    return false;
+                }
+                i++;
+            }
+
+            return true;
+        };
+        
+        // TODO
+
+        for (int i = 0; i < len; i++) {
+
+        }
 
         return 0;
     }
