@@ -34,6 +34,8 @@ public class Lcof020 {
             // 头部字符
             for (int j = 0; j <= i; j++) {
                 // 若首尾字母相同 判断去掉首尾区间是否是回文字符串
+                // 若中间有0个或者1个字符，则肯定是回文字符串
+                // 否则 需要判断中间区间子字符串是否是回文
                 if (s.charAt(i) == s.charAt(j) && (i - j <= 1 || dp[j + 1][i - 1])) {
                     dp[j][i] = true;
                     result++;
