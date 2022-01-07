@@ -49,6 +49,11 @@ public class ListNode {
         this.val = val;
     }
 
+    public ListNode(int val, ListNode next) {
+        this(val);
+        this.next = next;
+    }
+
     @Override
     public String toString() {
         ListNode cursor = this;
