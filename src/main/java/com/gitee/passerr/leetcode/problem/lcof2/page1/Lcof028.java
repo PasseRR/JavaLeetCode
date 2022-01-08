@@ -74,7 +74,7 @@ public class Lcof028 {
                 // 将当前节点添加到尾部节点
                 Node node = new Node();
                 node.val = t.val;
-                // 双向制作
+                // 双向指针
                 h.next = node;
                 node.prev = h;
                 // 将尾部指向当前节点
