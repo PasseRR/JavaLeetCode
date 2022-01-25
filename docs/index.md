@@ -13,7 +13,7 @@ last_modified_at: 2022-01-06
 6. [算法](https://leetcode-cn.com/problemset/algorithms/){:target="_blank"}
 
 ## 关于分页
-默认使用LeetCode的默认页数量50，每一类题目都会按照页分为一个包。
+默认使用LeetCode的默认页数量50，每一类题目都会按照页分目录。
 
 ## 其他
 - [题解源码](https://github.com/PasseRR/JavaLeetCode/tree/master/src){:target="_blank"}
