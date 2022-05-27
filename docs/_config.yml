@@ -7,11 +7,11 @@ gitbook_version: 3.2.3
 
 baseurl: '/JavaLeetCode'
 # 主题cdn地址
-#theme-cdn: 'https://fastly.jsdelivr.net/gh/PasseRR/jekyll-gitbook-theme'
-theme-cdn: '/JavaLeetCode'
+theme-cdn: 'https://fastly.jsdelivr.net/gh/PasseRR/jekyll-gitbook-theme'
+#theme-cdn: '/JavaLeetCode'
 # 本地cdn地址
-#cdn: "https://fastly.jsdelivr.net/gh/PasseRR/JavaLeetCode/docs"
-cdn: '/JavaLeetCode'
+cdn: "https://fastly.jsdelivr.net/gh/PasseRR/JavaLeetCode/docs"
+#cdn: '/JavaLeetCode'
 rss: RSS
 # 文章目录
 collections:
