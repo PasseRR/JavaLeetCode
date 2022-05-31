@@ -8,10 +8,10 @@ gitbook_version: 3.2.3
 baseurl: '/JavaLeetCode'
 # 主题cdn地址
 #theme-cdn: 'https://cdn.staticaly.com/gh/PasseRR/jekyll-gitbook-theme'
-#theme-cdn: '/JavaLeetCode'
+theme-cdn: '/JavaLeetCode'
 # 本地cdn地址
 #cdn: "https://cdn.staticaly.com/gh/PasseRR/JavaLeetCode/docs"
-#cdn: '/JavaLeetCode'
+cdn: '/JavaLeetCode'
 rss: RSS
 # 文章目录
 collections:
