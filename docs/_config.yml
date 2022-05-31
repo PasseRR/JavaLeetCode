@@ -50,6 +50,7 @@ permalink: /:categories/:name:output_ext
 
 exclude:
   - _drafts
+  - vendor
 
 destination: ./_site
 incremental: false
@@ -70,3 +71,4 @@ url: "https://www.xiehai.win"
 plugins:
   - jekyll-remote-theme
   - jekyll-sitemap
+
