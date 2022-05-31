@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/JavaLeetCode/:match*",
+      "destination": "/:match*"
+    }
+  ]
+}
