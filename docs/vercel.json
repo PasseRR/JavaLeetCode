@@ -4,5 +4,8 @@
       "source": "/JavaLeetCode/:match*",
       "destination": "/:match*"
     }
-  ]
+  ],
+  "github": {
+    "silent": true
+  }
 }
