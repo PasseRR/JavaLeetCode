@@ -53,7 +53,7 @@ exclude:
   - vendor
 
 destination: ./_site
-incremental: false
+incremental: true
 regenerate: true
 
 # google分析gtag
@@ -71,4 +71,5 @@ url: "https://www.xiehai.zone"
 plugins:
   - jekyll-remote-theme
   - jekyll-sitemap
+  - jekyll-relative-links
 

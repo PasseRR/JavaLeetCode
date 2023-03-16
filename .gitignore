@@ -2,6 +2,10 @@ target/
 .idea
 *.iml
 
+
 _site/
-.jekyll-cache/
+.sass-cache
+.jekyll-metadata
+*backup/
+.jekyll-cache
 Gemfile.lock
