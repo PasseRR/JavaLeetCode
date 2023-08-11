@@ -52,10 +52,6 @@ exclude:
   - _drafts
   - vendor
 
-destination: ./_site
-incremental: true
-regenerate: true
-
 # google分析gtag
 ga: G-1L1DPX3PFD
 # 百度统计hm
