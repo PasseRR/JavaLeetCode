@@ -24,7 +24,7 @@ package com.gitee.passerr.leetcode.problem.lcof2.page1;
  * 1 <= words[i].length <= 1000
  * words[i]仅包含小写字母
  * <p>
- * 注意：本题与主站 318题相同：https://leetcode-cn.com/problems/maximum-product-of-word-lengths/
+ * 注意：本题与主站 318题相同：https://leetcode.cn/problems/maximum-product-of-word-lengths/
  * @author xiehai
  * @date 2021/12/13 09:49
  */

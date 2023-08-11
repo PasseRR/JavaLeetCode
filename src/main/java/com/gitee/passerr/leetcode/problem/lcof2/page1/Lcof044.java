@@ -49,7 +49,7 @@ import java.util.Queue;
  * 二叉树的节点个数的范围是 [0,10<sup>4</sup>]
  * -2<sup>31</sup><= Node.val <= 2<sup>31</sup> - 1
  * <p>
- * 注意：本题与主站515题相同：https://leetcode-cn.com/problems/find-largest-value-in-each-tree-row/
+ * 注意：本题与主站515题相同：https://leetcode.cn/problems/find-largest-value-in-each-tree-row/
  * @author xiehai
  * @date 2022/01/17 10:49
  */

@@ -40,7 +40,7 @@ import java.util.Map;
  * <p>
  * 进阶：是否可以在O(1) 时间复杂度内完成这两种操作？
  * <p>
- * 注意：本题与主站 146题相同：https://leetcode-cn.com/problems/lru-cache/
+ * 注意：本题与主站 146题相同：https://leetcode.cn/problems/lru-cache/
  * @author xiehai
  * @date 2022/01/10 09:40
  */

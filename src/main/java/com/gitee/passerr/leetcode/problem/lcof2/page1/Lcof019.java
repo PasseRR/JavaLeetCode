@@ -22,7 +22,7 @@ import java.util.function.BiFunction;
  * 1 <= s.length <= 105
  * s 由小写英文字母组成
  * <p>
- * 注意：本题与主站 680题相同：https://leetcode-cn.com/problems/valid-palindrome-ii/
+ * 注意：本题与主站 680题相同：https://leetcode.cn/problems/valid-palindrome-ii/
  * @author xiehai
  * @date 2021/12/20 16:01
  */

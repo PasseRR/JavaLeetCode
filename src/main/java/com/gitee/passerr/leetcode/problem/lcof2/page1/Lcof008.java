@@ -27,7 +27,7 @@ package com.gitee.passerr.leetcode.problem.lcof2.page1;
  * 进阶：
  * 如果你已经实现 O(n<Sup>2</Sup>) 时间复杂度的解法, 请尝试设计一个 O(n log(n)) 时间复杂度的解法。
  * <p>
- * 注意：本题与主站 209题相同：https://leetcode-cn.com/problems/minimum-size-subarray-sum/
+ * 注意：本题与主站 209题相同：https://leetcode.cn/problems/minimum-size-subarray-sum/
  * @author xiehai
  * @date 2021/12/13 14:09
  */

@@ -14,7 +14,7 @@ package com.gitee.passerr.leetcode.problem.lcof1.page1;
  *  
  * 限制：
  * 1 <= n < 2^31
- * 注意：本题与主站 233 题相同：https://leetcode-cn.com/problems/number-of-digit-one/
+ * 注意：本题与主站 233 题相同：https://leetcode.cn/problems/number-of-digit-one/
  * @author xiehai
  * @date 2020/07/14 13:03
  * @Copyright(c) tellyes tech. inc. co.,ltd

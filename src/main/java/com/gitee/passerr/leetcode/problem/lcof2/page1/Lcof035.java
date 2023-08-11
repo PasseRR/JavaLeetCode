@@ -18,7 +18,7 @@ import java.util.List;
  * 2 <= timePoints <= 2 * 104
  * timePoints[i] 格式为 "HH:MM"
  * <p>
- * 注意：本题与主站 539题相同：https://leetcode-cn.com/problems/minimum-time-difference/
+ * 注意：本题与主站 539题相同：https://leetcode.cn/problems/minimum-time-difference/
  * @author xiehai
  * @date 2022/01/10 18:22
  */

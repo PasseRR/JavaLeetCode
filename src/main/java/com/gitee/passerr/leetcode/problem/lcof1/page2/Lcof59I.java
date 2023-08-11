@@ -22,7 +22,7 @@ package com.gitee.passerr.leetcode.problem.lcof1.page2;
  * <p>
  * 你可以假设 k 总是有效的，在输入数组不为空的情况下，1 ≤ k ≤ 输入数组的大小。
  * <p>
- * 注意：本题与主站 239 题相同：https://leetcode-cn.com/problems/sliding-window-maximum/
+ * 注意：本题与主站 239 题相同：https://leetcode.cn/problems/sliding-window-maximum/
  * @author xiehai
  * @date 2020/07/22 08:49
  * @Copyright(c) tellyes tech. inc. co.,ltd

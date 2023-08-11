@@ -20,7 +20,7 @@ import java.util.stream.Collectors;
  * |     / \
  * |    4   5
  * 序列化为 "[1,2,3,null,null,4,5]"
- * 注意：本题与主站 297 题相同：https://leetcode-cn.com/problems/serialize-and-deserialize-binary-tree/
+ * 注意：本题与主站 297 题相同：https://leetcode.cn/problems/serialize-and-deserialize-binary-tree/
  * @author xiehai
  * @date 2020/07/14 12:47
  * @Copyright(c) tellyes tech. inc. co.,ltd

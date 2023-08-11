@@ -14,7 +14,7 @@ package com.gitee.passerr.leetcode.problem.lcof1.page1;
  * <p>
  * 限制：
  * 0 <= n < 2^31
- * 注意：本题与主站 400 题相同：https://leetcode-cn.com/problems/nth-digit/
+ * 注意：本题与主站 400 题相同：https://leetcode.cn/problems/nth-digit/
  * @author xiehai
  * @date 2020/07/14 13:04
  * @Copyright(c) tellyes tech. inc. co.,ltd

@@ -23,7 +23,7 @@ package com.gitee.passerr.leetcode.problem.lcof2.page1;
  * <p>
  * 进阶:如果输入字符串包含 unicode 字符怎么办？你能否调整你的解法来应对这种情况？
  * <p>
- * 注意：本题与主站 242题相似（字母异位词定义不同）：https://leetcode-cn.com/problems/valid-anagram/
+ * 注意：本题与主站 242题相似（字母异位词定义不同）：https://leetcode.cn/problems/valid-anagram/
  * @author xiehai
  * @date 2022/01/10 10:06
  */

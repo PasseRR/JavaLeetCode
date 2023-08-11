@@ -1,4 +1,4 @@
-### [题目](https://leetcode-cn.com/problems/print-zero-even-odd/){:target="_blank"}
+### [题目](https://leetcode.cn/problems/print-zero-even-odd/){:target="_blank"}
 
 假设有这么一个类：
 

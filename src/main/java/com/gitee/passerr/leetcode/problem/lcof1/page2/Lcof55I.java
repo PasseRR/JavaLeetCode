@@ -16,7 +16,7 @@ import com.gitee.passerr.leetcode.TreeNode;
  * <p>
  * 提示：
  * 节点总数 <= 10000
- * 注意：本题与主站 104 题相同：https://leetcode-cn.com/problems/maximum-depth-of-binary-tree/
+ * 注意：本题与主站 104 题相同：https://leetcode.cn/problems/maximum-depth-of-binary-tree/
  * @author xiehai
  * @date 2020/07/14 16:25
  * @Copyright(c) tellyes tech. inc. co.,ltd

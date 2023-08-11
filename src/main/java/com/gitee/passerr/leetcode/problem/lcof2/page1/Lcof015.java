@@ -27,7 +27,7 @@ import java.util.List;
  * 1 <= s.length, p.length <= 3 * 10<sup>4</sup>
  * s和 p 仅包含小写字母
  * <p>
- * 注意：本题与主站 438题相同：https://leetcode-cn.com/problems/find-all-anagrams-in-a-string/
+ * 注意：本题与主站 438题相同：https://leetcode.cn/problems/find-all-anagrams-in-a-string/
  * @author xiehai
  * @date 2021/12/17 10:14
  */

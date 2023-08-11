@@ -27,7 +27,7 @@ import java.util.stream.Collectors;
  * 0 <= strs[i].length <= 100
  * strs[i]仅包含小写字母
  * <p>
- * 注意：本题与主站 49题相同：https://leetcode-cn.com/problems/group-anagrams/
+ * 注意：本题与主站 49题相同：https://leetcode.cn/problems/group-anagrams/
  * @author xiehai
  * @date 2022/01/10 10:49
  */

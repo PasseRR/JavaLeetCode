@@ -25,7 +25,7 @@ import java.util.function.BiFunction;
  * -10<sup>9</sup> <= Node.val <= 10<sup>9</sup>
  * -1000<= targetSum<= 1000
  * <p>
- * 注意：本题与主站 437题相同：https://leetcode-cn.com/problems/path-sum-iii/
+ * 注意：本题与主站 437题相同：https://leetcode.cn/problems/path-sum-iii/
  * @author xiehai
  * @date 2022/01/17 16:14
  */

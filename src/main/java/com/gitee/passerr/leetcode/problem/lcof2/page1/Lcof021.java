@@ -24,7 +24,7 @@ import com.gitee.passerr.leetcode.ListNode;
  * 1 <= n <= sz
  * <p>
  * 进阶：能尝试使用一趟扫描实现吗？
- * 注意：本题与主站 19题相同：https://leetcode-cn.com/problems/remove-nth-node-from-end-of-list/
+ * 注意：本题与主站 19题相同：https://leetcode.cn/problems/remove-nth-node-from-end-of-list/
  * @author xiehai
  * @date 2022/01/06 10:07
  */

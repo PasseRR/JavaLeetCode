@@ -28,7 +28,7 @@ package com.gitee.passerr.leetcode.problem.lcof2.page1;
  * -10<sup>5</sup> <= val <= 10<sup>5</sup>
  * 最多调用 next 方法 10<sup>4</sup> 次
  *
- * 注意：本题与主站 346题相同：https://leetcode-cn.com/problems/moving-average-from-data-stream/
+ * 注意：本题与主站 346题相同：https://leetcode.cn/problems/moving-average-from-data-stream/
  * @author xiehai
  * @date 2022/01/13 17:25
  */

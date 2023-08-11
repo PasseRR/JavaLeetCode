@@ -51,7 +51,7 @@ import java.util.function.BiFunction;
  * 节点数目不超过 1000
  * 1 <= Node.val <= 10^5
  * <p>
- * 注意：本题与主站 430题相同：https://leetcode-cn.com/problems/flatten-a-multilevel-doubly-linked-list/
+ * 注意：本题与主站 430题相同：https://leetcode.cn/problems/flatten-a-multilevel-doubly-linked-list/
  * @author xiehai
  * @date 2022/01/07 13:54
  */

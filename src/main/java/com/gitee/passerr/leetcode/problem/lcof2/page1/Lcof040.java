@@ -33,7 +33,7 @@ import java.util.Stack;
  * 0 <= row, cols <= 200
  * matrix[i][j] 为 '0' 或 '1'
  * <p>
- * 注意：本题与主站 85 题相同（输入参数格式不同）：https://leetcode-cn.com/problems/maximal-rectangle/
+ * 注意：本题与主站 85 题相同（输入参数格式不同）：https://leetcode.cn/problems/maximal-rectangle/
  * @author xiehai
  * @date 2022/01/14 15:20
  */

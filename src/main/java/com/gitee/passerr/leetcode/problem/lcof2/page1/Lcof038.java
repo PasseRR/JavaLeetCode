@@ -22,7 +22,7 @@ import java.util.Stack;
  * 1 <=temperatures.length <= 10<sup>5</sup>
  * 30 <=temperatures[i]<= 100
  * <p>
- * 注意：本题与主站 739题相同：https://leetcode-cn.com/problems/daily-temperatures/
+ * 注意：本题与主站 739题相同：https://leetcode.cn/problems/daily-temperatures/
  * @author xiehai
  * @date 2022/01/11 16:39
  */

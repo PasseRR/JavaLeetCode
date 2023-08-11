@@ -32,7 +32,7 @@ package com.gitee.passerr.leetcode.problem.lcof2.page1;
  * 1 <= nums.length <= 10<sup>4</sup>
  * -1000 <= nums[i] <= 1000
  * <p>
- * 注意：本题与主站 724题相同：https://leetcode-cn.com/problems/find-pivot-index/
+ * 注意：本题与主站 724题相同：https://leetcode.cn/problems/find-pivot-index/
  * @author xiehai
  * @date 2021/12/16 11:49
  */

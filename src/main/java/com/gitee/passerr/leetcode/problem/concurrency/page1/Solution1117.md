@@ -1,4 +1,4 @@
-### [题目](https://leetcode-cn.com/problems/building-h2o/){:target="_blank"}
+### [题目](https://leetcode.cn/problems/building-h2o/){:target="_blank"}
 
 现在有两种线程，氧 oxygen 和氢 hydrogen，你的目标是组织这两种线程来产生水分子。
 

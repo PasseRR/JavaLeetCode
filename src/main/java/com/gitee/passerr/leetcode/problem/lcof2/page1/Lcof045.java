@@ -22,7 +22,7 @@ import java.util.Queue;
  * 二叉树的节点个数的范围是 [1,10<sup>4</sup>]
  * -2<sup>31</sup> <= Node.val <= 2<sup>31</sup> - 1
  * <p>
- * 注意：本题与主站 513题相同：https://leetcode-cn.com/problems/find-bottom-left-tree-value/
+ * 注意：本题与主站 513题相同：https://leetcode.cn/problems/find-bottom-left-tree-value/
  * @author xiehai
  * @date 2022/01/17 11:21
  */

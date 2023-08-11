@@ -29,7 +29,7 @@ import java.util.function.Function;
  * <p>
  * 限制：
  * 1 <= 树的结点个数 <= 10000
- * 注意：本题与主站 110 题相同：https://leetcode-cn.com/problems/balanced-binary-tree/
+ * 注意：本题与主站 110 题相同：https://leetcode.cn/problems/balanced-binary-tree/
  * @author xiehai
  * @date 2020/07/14 16:27
  * @Copyright(c) tellyes tech. inc. co.,ltd

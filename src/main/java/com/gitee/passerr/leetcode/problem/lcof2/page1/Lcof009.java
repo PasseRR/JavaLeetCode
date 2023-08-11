@@ -18,7 +18,7 @@ package com.gitee.passerr.leetcode.problem.lcof2.page1;
  * 1 <= nums[i] <= 1000
  * 0 <= k <= 10<sup>6</sup>
  * <p>
- * 注意：本题与主站 713题相同：https://leetcode-cn.com/problems/subarray-product-less-than-k/
+ * 注意：本题与主站 713题相同：https://leetcode.cn/problems/subarray-product-less-than-k/
  * @author xiehai
  * @date 2021/12/13 16:07
  */

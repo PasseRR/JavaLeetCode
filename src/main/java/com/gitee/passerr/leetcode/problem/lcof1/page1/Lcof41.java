@@ -28,7 +28,7 @@ import java.util.Arrays;
  * <p>
  * 限制：
  * 最多会对 addNum、findMedia进行 50000 次调用。
- * 注意：本题与主站 295 题相同：https://leetcode-cn.com/problems/find-median-from-data-stream/
+ * 注意：本题与主站 295 题相同：https://leetcode.cn/problems/find-median-from-data-stream/
  * @author xiehai
  * @date 2020/07/14 12:58
  * @Copyright(c) tellyes tech. inc. co.,ltd

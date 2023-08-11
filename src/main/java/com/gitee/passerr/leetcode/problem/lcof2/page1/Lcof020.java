@@ -19,7 +19,7 @@ package com.gitee.passerr.leetcode.problem.lcof2.page1;
  * 1 <= s.length <= 1000
  * s 由小写英文字母组成
  * <p>
- * 注意：本题与主站 647 题相同：https://leetcode-cn.com/problems/palindromic-substrings/
+ * 注意：本题与主站 647 题相同：https://leetcode.cn/problems/palindromic-substrings/
  * @author xiehai
  * @date 2021/12/20 17:59
  */

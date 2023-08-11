@@ -41,7 +41,7 @@ import com.gitee.passerr.leetcode.ListNode;
  * <p>
  * 进阶：能否设计一个时间复杂度 O(n) 、仅用 O(1) 内存的解决方案？
  * <p>
- * 注意：本题与主站 160题相同：https://leetcode-cn.com/problems/intersection-of-two-linked-lists/
+ * 注意：本题与主站 160题相同：https://leetcode.cn/problems/intersection-of-two-linked-lists/
  * @author xiehai
  * @date 2022/01/06 13:46
  */

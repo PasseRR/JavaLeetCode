@@ -39,7 +39,7 @@ import java.util.stream.Collectors;
  * 树中结点数在范围 [0, 10<sup>4</sup>] 内
  * -1000 <= Node.val <= 1000
  * <p>
- * 注意：本题与主站 297题相同：https://leetcode-cn.com/problems/serialize-and-deserialize-binary-tree/
+ * 注意：本题与主站 297题相同：https://leetcode.cn/problems/serialize-and-deserialize-binary-tree/
  * @author xiehai
  * @date 2022/01/17 13:56
  */

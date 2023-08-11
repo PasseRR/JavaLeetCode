@@ -30,7 +30,7 @@ import com.gitee.passerr.leetcode.Node;
  * -10^6 <= Node.val <= 10^6
  * -10^6 <= insertVal <= 10^6
  * <p>
- * 注意：本题与主站 708题相同：https://leetcode-cn.com/problems/insert-into-a-sorted-circular-linked-list/
+ * 注意：本题与主站 708题相同：https://leetcode.cn/problems/insert-into-a-sorted-circular-linked-list/
  * @author xiehai
  * @date 2022/01/07 15:31
  */

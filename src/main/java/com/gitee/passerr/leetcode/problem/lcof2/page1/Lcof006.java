@@ -28,7 +28,7 @@ package com.gitee.passerr.leetcode.problem.lcof2.page1;
  * -1000 <= target <= 1000
  * 仅存在一个有效答案
  * <p>
- * 注意：本题与主站 167 题相似（下标起点不同）：https://leetcode-cn.com/problems/two-sum-ii-input-array-is-sorted/
+ * 注意：本题与主站 167 题相似（下标起点不同）：https://leetcode.cn/problems/two-sum-ii-input-array-is-sorted/
  * @author xiehai
  * @date 2021/12/13 10:29
  */

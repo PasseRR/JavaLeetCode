@@ -20,7 +20,7 @@ import com.gitee.passerr.leetcode.ListNode;
  * <p>
  * 进阶：能否用O(n) 时间复杂度和 O(1) 空间复杂度解决此题？
  * <p>
- * 注意：本题与主站 234题相同：https://leetcode-cn.com/problems/palindrome-linked-list/
+ * 注意：本题与主站 234题相同：https://leetcode.cn/problems/palindrome-linked-list/
  * @author xiehai
  * @date 2022/01/07 13:35
  */

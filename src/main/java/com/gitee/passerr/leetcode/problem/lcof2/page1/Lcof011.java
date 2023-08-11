@@ -20,7 +20,7 @@ import java.util.Map;
  * 1 <= nums.length <= 105
  * nums[i] 不是 0 就是 1
  * <p>
- * 注意：本题与主站 525题相同：https://leetcode-cn.com/problems/contiguous-array/
+ * 注意：本题与主站 525题相同：https://leetcode.cn/problems/contiguous-array/
  * @author xiehai
  * @date 2021/12/16 10:13
  */

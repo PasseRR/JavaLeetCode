@@ -20,7 +20,7 @@ import java.util.Map;
  * -1000 <= nums[i] <= 1000
  * -10<sup>7</sup> <= k <= 10<sup>7</sup>
  * <p>
- * 注意：本题与主站 560题相同：https://leetcode-cn.com/problems/subarray-sum-equals-k/
+ * 注意：本题与主站 560题相同：https://leetcode.cn/problems/subarray-sum-equals-k/
  * @author xiehai
  * @date 2021/12/15 18:01
  */

@@ -29,7 +29,7 @@ import java.util.Objects;
  * 二叉树的节点个数的范围是 [1,200]
  * 二叉树节点的值只会是 0 或 1
  * <p>
- * 注意：本题与主站 814题相同：https://leetcode-cn.com/problems/binary-tree-pruning/
+ * 注意：本题与主站 814题相同：https://leetcode.cn/problems/binary-tree-pruning/
  * @author xiehai
  * @date 2022/01/17 11:47
  */

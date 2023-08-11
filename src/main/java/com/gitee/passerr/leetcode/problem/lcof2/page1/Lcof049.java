@@ -34,7 +34,7 @@ import java.util.function.BiConsumer;
  * 0 <= Node.val <= 9
  * 树的深度不超过 10
  * <p>
- * 注意：本题与主站 129题相同：https://leetcode-cn.com/problems/sum-root-to-leaf-numbers/
+ * 注意：本题与主站 129题相同：https://leetcode.cn/problems/sum-root-to-leaf-numbers/
  * @author xiehai
  * @date 2022/01/17 15:36
  */

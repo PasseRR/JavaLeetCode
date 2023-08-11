@@ -16,7 +16,7 @@ package com.gitee.passerr.leetcode.problem.lcof1.page2;
  * <p>
  * 限制：
  * 0 <= 数组长度 <= 10^5
- * 注意：本题与主站 121 题相同：https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock/
+ * 注意：本题与主站 121 题相同：https://leetcode.cn/problems/best-time-to-buy-and-sell-stock/
  * @author xiehai
  * @date 2020/07/22 09:24
  * @Copyright(c) tellyes tech. inc. co.,ltd

@@ -12,7 +12,7 @@ package com.gitee.passerr.leetcode.problem.lcof1.page1;
  * 提示：
  * 1 <= arr.length <= 10^5
  * -100 <= arr[i] <= 100
- * 注意：本题与主站 53 题相同：https://leetcode-cn.com/problems/maximum-subarray/
+ * 注意：本题与主站 53 题相同：https://leetcode.cn/problems/maximum-subarray/
  * @author xiehai
  * @date 2020/07/14 13:01
  * @Copyright(c) tellyes tech. inc. co.,ltd

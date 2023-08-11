@@ -30,7 +30,7 @@ import java.util.Objects;
  * <p>
  * 进阶：你能设计一个在 o(n) 时间内解决此问题的算法吗？
  * <p>
- * 注意：本题与主站 76题相似（本题答案不唯一）：https://leetcode-cn.com/problems/minimum-window-substring/
+ * 注意：本题与主站 76题相似（本题答案不唯一）：https://leetcode.cn/problems/minimum-window-substring/
  * @author xiehai
  * @date 2021/12/17 16:34
  */

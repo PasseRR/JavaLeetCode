@@ -22,7 +22,7 @@ import com.gitee.passerr.leetcode.TreeNode;
  * 说明:
  * 所有节点的值都是唯一的。
  * p、q 为不同节点且均存在于给定的二叉树中。
- * 注意：本题与主站 236 题相同：https://leetcode-cn.com/problems/lowest-common-ancestor-of-a-binary-tree/
+ * 注意：本题与主站 236 题相同：https://leetcode.cn/problems/lowest-common-ancestor-of-a-binary-tree/
  * @author xiehai
  * @date 2020/07/22 09:43
  * @Copyright(c) tellyes tech. inc. co.,ltd

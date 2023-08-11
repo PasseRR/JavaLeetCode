@@ -29,7 +29,7 @@ import java.util.Queue;
  * 每个测试用例最多调用CBTInserter.insert 操作10000次。
  * 给定节点或插入节点的每个值都在0到5000之间。
  * <p>
- * 注意：本题与主站 919题相同：https://leetcode-cn.com/problems/complete-binary-tree-inserter/
+ * 注意：本题与主站 919题相同：https://leetcode.cn/problems/complete-binary-tree-inserter/
  * @author xiehai
  * @date 2022/01/14 16:45
  */

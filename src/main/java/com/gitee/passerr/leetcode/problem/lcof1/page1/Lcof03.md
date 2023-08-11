@@ -1,5 +1,5 @@
 
-### [题目](https://leetcode-cn.com/problems/shu-zu-zhong-zhong-fu-de-shu-zi-lcof/){:target="_blank"}
+### [题目](https://leetcode.cn/problems/shu-zu-zhong-zhong-fu-de-shu-zi-lcof/){:target="_blank"}
 
 找出数组中重复的数字。
 

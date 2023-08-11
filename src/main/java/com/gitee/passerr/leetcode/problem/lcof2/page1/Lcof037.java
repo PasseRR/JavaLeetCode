@@ -37,7 +37,7 @@ import java.util.function.Consumer;
  * -1000 <= asteroids[i] <= 1000
  * asteroids[i] != 0
  * <p>
- * 注意：本题与主站 735题相同：https://leetcode-cn.com/problems/asteroid-collision/
+ * 注意：本题与主站 735题相同：https://leetcode.cn/problems/asteroid-collision/
  * @author xiehai
  * @date 2022/01/11 09:47
  */

@@ -1,4 +1,4 @@
-### [题目](https://leetcode-cn.com/problems/print-in-order/){:target="_blank"}
+### [题目](https://leetcode.cn/problems/print-in-order/){:target="_blank"}
 
 我们提供了一个类：
 

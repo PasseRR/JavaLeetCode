@@ -20,7 +20,7 @@ import java.util.Stack;
  * 1 <= heights.length <=10<sup>5</sup>
  * 0 <= heights[i] <= 10<sup>4</sup>
  * <p>
- * 注意：本题与主站 84题相同：https://leetcode-cn.com/problems/largest-rectangle-in-histogram/
+ * 注意：本题与主站 84题相同：https://leetcode.cn/problems/largest-rectangle-in-histogram/
  * @author xiehai
  * @date 2022/01/11 18:22
  */

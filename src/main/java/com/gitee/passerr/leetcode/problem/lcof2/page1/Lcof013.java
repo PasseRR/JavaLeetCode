@@ -30,7 +30,7 @@ package com.gitee.passerr.leetcode.problem.lcof2.page1;
  * 0 <= col1 <= col2 < n
  * 最多调用 10<sup>4</sup> 次sumRegion 方法
  * <p>
- * 注意：本题与主站 304题相同：https://leetcode-cn.com/problems/range-sum-query-2d-immutable/
+ * 注意：本题与主站 304题相同：https://leetcode.cn/problems/range-sum-query-2d-immutable/
  * @author xiehai
  * @date 2021/12/16 14:01
  */

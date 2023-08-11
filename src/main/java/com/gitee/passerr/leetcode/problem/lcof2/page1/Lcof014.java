@@ -20,7 +20,7 @@ import java.util.Arrays;
  * 1 <= s1.length, s2.length <= 10<sup>4</sup>
  * s1 和 s2 仅包含小写字母
  * <p>
- * 注意：本题与主站 567题相同：https://leetcode-cn.com/problems/permutation-in-string/
+ * 注意：本题与主站 567题相同：https://leetcode.cn/problems/permutation-in-string/
  * @author xiehai
  * @date 2021/12/16 15:58
  */

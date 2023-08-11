@@ -23,7 +23,7 @@ import java.util.List;
  * 0 <= nums.length <= 3000
  * -10<sup>5</sup> <= nums[i] <= 10<sup>5</sup>
  * <p>
- * 注意：本题与主站 15题相同：https://leetcode-cn.com/problems/3sum/
+ * 注意：本题与主站 15题相同：https://leetcode.cn/problems/3sum/
  * @author xiehai
  * @date 2021/12/13 10:48
  */

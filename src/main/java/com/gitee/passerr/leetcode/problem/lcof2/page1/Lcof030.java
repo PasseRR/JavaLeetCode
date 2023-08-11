@@ -32,7 +32,7 @@ import java.util.Random;
  * 最多进行 2 * 10<sup>5</sup> 次insert ， remove 和 getRandom 方法调用
  * 当调用getRandom 方法时，集合中至少有一个元素
  * <p>
- * 注意：本题与主站 380题相同：https://leetcode-cn.com/problems/insert-delete-getrandom-o1/
+ * 注意：本题与主站 380题相同：https://leetcode.cn/problems/insert-delete-getrandom-o1/
  * @author xiehai
  * @date 2022/01/07 16:31
  */

@@ -28,7 +28,7 @@ import java.util.function.Consumer;
  * 输入数据保证链表代表的数字无前导 0
  * <p>
  * 进阶：如果输入链表不能修改该如何处理？换句话说，不能对列表中的节点进行翻转。
- * 注意：本题与主站 445题相同：https://leetcode-cn.com/problems/add-two-numbers-ii/
+ * 注意：本题与主站 445题相同：https://leetcode.cn/problems/add-two-numbers-ii/
  * @author xiehai
  * @date 2022/01/06 17:25
  */

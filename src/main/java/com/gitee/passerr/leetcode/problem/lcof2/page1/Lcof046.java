@@ -27,7 +27,7 @@ import java.util.Queue;
  * 二叉树的节点个数的范围是 [0,100]
  * -100<= Node.val <= 100
  * <p>
- * 注意：本题与主站 199题相同：https://leetcode-cn.com/problems/binary-tree-right-side-view/
+ * 注意：本题与主站 199题相同：https://leetcode.cn/problems/binary-tree-right-side-view/
  * @author xiehai
  * @date 2022/01/17 11:32
  */

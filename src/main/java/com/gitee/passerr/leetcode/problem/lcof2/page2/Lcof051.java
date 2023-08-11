@@ -22,7 +22,7 @@ import com.gitee.passerr.leetcode.TreeNode;
  * 树中节点数目范围是 [1, 3 * 104]
  * -1000 <= Node.val <= 1000
  * <p>
- * 注意：本题与主站 124题相同：https://leetcode-cn.com/problems/binary-tree-maximum-path-sum/
+ * 注意：本题与主站 124题相同：https://leetcode.cn/problems/binary-tree-maximum-path-sum/
  * @author xiehai
  * @date 2022/01/18 14:30
  */

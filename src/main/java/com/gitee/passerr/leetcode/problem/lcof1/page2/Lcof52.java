@@ -31,7 +31,7 @@ import com.gitee.passerr.leetcode.ListNode;
  * 在返回结果后，两个链表仍须保持原有的结构。
  * 可假定整个链表结构中没有循环。
  * 程序尽量满足 O(n) 时间复杂度，且仅用 O(1) 内存。
- * 本题与主站 160 题相同：https://leetcode-cn.com/problems/intersection-of-two-linked-lists/
+ * 本题与主站 160 题相同：https://leetcode.cn/problems/intersection-of-two-linked-lists/
  * @author xiehai
  * @date 2020/07/14 16:14
  * @Copyright(c) tellyes tech. inc. co.,ltd

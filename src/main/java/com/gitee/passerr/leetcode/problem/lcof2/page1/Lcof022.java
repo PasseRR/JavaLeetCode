@@ -33,7 +33,7 @@ import com.gitee.passerr.leetcode.ListNode;
  * <p>
  * 进阶：是否可以使用 O(1) 空间解决此题？
  * <p>
- * 注意：本题与主站 142题相同：https://leetcode-cn.com/problems/linked-list-cycle-ii/
+ * 注意：本题与主站 142题相同：https://leetcode.cn/problems/linked-list-cycle-ii/
  * @author xiehai
  * @date 2022/01/06 11:11
  */

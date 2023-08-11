@@ -21,7 +21,7 @@ import com.gitee.passerr.leetcode.ListNode;
  * 链表的长度范围为 [1, 5 * 10<sup>4</sup>]
  * 1 <= node.val <= 1000
  * <p>
- * 注意：本题与主站 143题相同：https://leetcode-cn.com/problems/reorder-list/
+ * 注意：本题与主站 143题相同：https://leetcode.cn/problems/reorder-list/
  * @author xiehai
  * @date 2022/01/07 10:15
  */

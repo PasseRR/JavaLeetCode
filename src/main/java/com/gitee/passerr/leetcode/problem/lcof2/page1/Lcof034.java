@@ -29,7 +29,7 @@ import java.util.function.BiFunction;
  * order.length == 26
  * 在words[i]和order中的所有字符都是英文小写字母。
  * <p>
- * 注意：本题与主站 953题相同：https://leetcode-cn.com/problems/verifying-an-alien-dictionary/
+ * 注意：本题与主站 953题相同：https://leetcode.cn/problems/verifying-an-alien-dictionary/
  * @author xiehai
  * @date 2022/01/10 14:29
  */

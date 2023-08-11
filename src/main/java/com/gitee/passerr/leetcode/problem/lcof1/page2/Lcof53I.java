@@ -15,7 +15,7 @@ import java.util.function.BiFunction;
  * <p>
  * 限制：
  * 0 <= 数组长度 <= 50000
- * 注意：本题与主站 34 题相同（仅返回值不同）：https://leetcode-cn.com/problems/find-first-and-last-position-of-element-in-sorted-array/
+ * 注意：本题与主站 34 题相同（仅返回值不同）：https://leetcode.cn/problems/find-first-and-last-position-of-element-in-sorted-array/
  * @author xiehai
  * @date 2020/07/14 16:18
  * @Copyright(c) tellyes tech. inc. co.,ltd

@@ -1,4 +1,4 @@
-### [题目](https://leetcode-cn.com/problems/print-foobar-alternately/){:target="_blank"}
+### [题目](https://leetcode.cn/problems/print-foobar-alternately/){:target="_blank"}
 
 我们提供一个类：
 

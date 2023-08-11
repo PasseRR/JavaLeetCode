@@ -11,7 +11,7 @@ package com.gitee.passerr.leetcode.problem.lcof1.page1;
  * 说明:  
  * 1 是丑数。
  * n 不超过1690。
- * 注意：本题与主站 264 题相同：https://leetcode-cn.com/problems/ugly-number-ii/
+ * 注意：本题与主站 264 题相同：https://leetcode.cn/problems/ugly-number-ii/
  * @author xiehai
  * @date 2020/07/14 13:16
  * @Copyright(c) tellyes tech. inc. co.,ltd

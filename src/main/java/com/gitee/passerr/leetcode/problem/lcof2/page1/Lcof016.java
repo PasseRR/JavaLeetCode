@@ -27,7 +27,7 @@ package com.gitee.passerr.leetcode.problem.lcof2.page1;
  * 0 <= s.length <= 5 * 104
  * s由英文字母、数字、符号和空格组成
  * <p>
- * 注意：本题与主站 3题相同：https://leetcode-cn.com/problems/longest-substring-without-repeating-characters/
+ * 注意：本题与主站 3题相同：https://leetcode.cn/problems/longest-substring-without-repeating-characters/
  * @author xiehai
  * @date 2021/12/17 10:29
  */

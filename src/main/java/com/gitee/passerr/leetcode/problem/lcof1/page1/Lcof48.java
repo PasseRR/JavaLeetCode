@@ -24,7 +24,7 @@ import java.util.Map;
  * <p>
  * 提示：
  * s.length <= 40000
- * 注意：本题与主站 3 题相同：https://leetcode-cn.com/problems/longest-substring-without-repeating-characters/
+ * 注意：本题与主站 3 题相同：https://leetcode.cn/problems/longest-substring-without-repeating-characters/
  * @author xiehai
  * @date 2020/07/14 13:13
  * @Copyright(c) tellyes tech. inc. co.,ltd

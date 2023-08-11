@@ -18,7 +18,7 @@ package com.gitee.passerr.leetcode.problem.lcof2.page1;
  * 1 <= s.length <= 2 * 105
  * 字符串 s 由 ASCII 字符组成
  * <p>
- * 注意：本题与主站 125题相同：https://leetcode-cn.com/problems/valid-palindrome/
+ * 注意：本题与主站 125题相同：https://leetcode.cn/problems/valid-palindrome/
  * @author xiehai
  * @date 2021/12/20 15:19
  */

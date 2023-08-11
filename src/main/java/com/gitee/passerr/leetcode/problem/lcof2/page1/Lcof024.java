@@ -25,7 +25,7 @@ import java.util.function.BiFunction;
  * <p>
  * 进阶：链表可以选用迭代或递归方式完成反转。你能否用两种方法解决这道题？
  * <p>
- * 注意：本题与主站 206题相同：https://leetcode-cn.com/problems/reverse-linked-list/
+ * 注意：本题与主站 206题相同：https://leetcode.cn/problems/reverse-linked-list/
  * @author xiehai
  * @date 2022/01/06 14:03
  */
