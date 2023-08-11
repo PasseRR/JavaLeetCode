@@ -65,9 +65,11 @@ remote_theme: PasseRR/jekyll-gitbook-theme
 
 url: "https://www.xiehai.zone"
 
-#gems:
-#  - jekyll-sitemap
+safe: false
   
+  #gems:
+#  - jekyll-sitemap
+plugins_dir: _plugins
 plugins:
   - jekyll-remote-theme
   - jekyll-sitemap

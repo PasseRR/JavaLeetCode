@@ -9,4 +9,5 @@ gem 'wdm', '>= 0.1.0'
 gem "jekyll-remote-theme"
 gem "jekyll-sitemap"
 gem "jekyll-relative-links"
-gem "github-pages", group: :jekyll_plugins
+# gem "github-pages", group: :jekyll_plugins
+gem 'kramdown-parser-gfm'
