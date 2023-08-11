@@ -1,7 +1,7 @@
 SELECT `s`.*
 FROM `Stadium` `s`
          INNER JOIN (
-    # 大于100人连续出现的次数
+    -- 大于100人连续出现的次数
     SELECT CAST(
              (
                  CASE
@@ -16,7 +16,7 @@ FROM `Stadium` `s`
                )    AS `startId`,
            COUNT(1) AS `cnt`
     FROM `Stadium`,
-         # 记录前一个id和开始id
+         -- 记录前一个id和开始id
          (SELECT @`preId` := NULL, @`startId` := NULL) `t`
     WHERE `people` >= 100
     GROUP BY 1

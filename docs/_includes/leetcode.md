@@ -6,5 +6,5 @@
 ### [题解]({{site.github | append: site.data.package[page.category][directory] | append: page.file}}){:target="_blank"}
 
 ```sql
-{{ '../' | append: site.data.package[page.category][directory]  | append: page.file | file_content }}
+{{ '../' | append: site.data.package[page.category][directory]  | append: page.file | file_content -}}
 ```

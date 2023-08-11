@@ -1,4 +1,4 @@
-# 解1
+-- 解1
 SELECT `t`.`id`,
        CASE
            WHEN `t`.`p_id` IS NULL
@@ -9,7 +9,7 @@ SELECT `t`.`id`,
        END AS `Type`
 FROM `tree` `t`;
 
-# 解2
+-- 解2
 SELECT `t`.`id`,
        CASE
            WHEN `t`.`p_id` IS NULL
