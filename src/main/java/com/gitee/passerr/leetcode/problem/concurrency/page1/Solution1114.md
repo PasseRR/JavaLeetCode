@@ -1,12 +1,3 @@
----
-title: 1114. 按序打印
-layout: post
-category: concurrency
-pk: 5
-order: 1114
-last_modified_at: 2022-01-06
----
-
 ### [题目](https://leetcode-cn.com/problems/print-in-order/){:target="_blank"}
 
 我们提供了一个类：
@@ -46,35 +37,3 @@ public void third() { print("third"); }
 **提示：**
 - 尽管输入中的数字似乎暗示了顺序，但是我们并不保证线程在操作系统中的调度顺序。
 - 你看到的输入格式主要是为了确保测试的全面性。
-
-### 题解
-```java
-class Foo {
-    private volatile int flag = 1;
-
-    public Foo() {
-
-    }
-
-    public void first(Runnable printFirst) throws InterruptedException {
-        while (flag != 1) { ; }
-        // printFirst.run() outputs "first". Do not change or remove this line.
-        printFirst.run();
-        flag = 2;
-    }
-
-    public void second(Runnable printSecond) throws InterruptedException {
-        while (flag != 2) { ; }
-        // printSecond.run() outputs "second". Do not change or remove this line.
-        printSecond.run();
-        flag = 3;
-    }
-
-    public void third(Runnable printThird) throws InterruptedException {
-        while (flag != 3) { ; }
-        // printThird.run() outputs "third". Do not change or remove this line.
-        printThird.run();
-        flag = 1;
-    }
-}
-```
