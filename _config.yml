@@ -51,6 +51,10 @@ permalink: /:categories/:name:output_ext
 exclude:
   - _drafts
   - vendor
+  - src
+  - target
+  - pom.xml
+  - README.md
 
 # google分析gtag
 ga: G-1L1DPX3PFD
