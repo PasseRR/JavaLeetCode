@@ -26,8 +26,6 @@ public class Solution24 {
             // 节点数量为奇数
             if (null == next) {
                 head = null;
-                cursor.next = previous;
-                cursor = cursor.next;
             } else {
                 // 头节点移动2位
                 head = next.next;
@@ -40,9 +38,9 @@ public class Solution24 {
                 // 将第一个节点移动到第二个
                 // 置空后置节点
                 previous.next = null;
-                cursor.next = previous;
-                cursor = cursor.next;
             }
+            cursor.next = previous;
+            cursor = cursor.next;
         }
 
         return result.next;
