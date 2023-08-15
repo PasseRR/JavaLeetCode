@@ -1,4 +1,4 @@
-### [69. x 的平方根 ](https://leetcode.cn/problems/sqrtx/){:target="_blank"}
+### [题目](https://leetcode.cn/problems/sqrtx/){:target="_blank"}
 
 <p>给你一个非负整数 <code>x</code> ，计算并返回&nbsp;<code>x</code>&nbsp;的 <strong>算术平方根</strong> 。</p>
 

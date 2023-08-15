@@ -1,4 +1,4 @@
-### [52. N 皇后 II](https://leetcode.cn/problems/n-queens-ii/){:target="_blank"}
+### [题目](https://leetcode.cn/problems/n-queens-ii/){:target="_blank"}
 
 <p><strong>n&nbsp;皇后问题</strong> 研究的是如何将 <code>n</code>&nbsp;个皇后放置在 <code>n × n</code> 的棋盘上，并且使皇后彼此之间不能相互攻击。</p>
 

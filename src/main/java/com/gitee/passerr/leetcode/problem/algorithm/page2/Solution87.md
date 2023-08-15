@@ -1,4 +1,4 @@
-### [87. 扰乱字符串](https://leetcode.cn/problems/scramble-string/){:target="_blank"}
+### [题目](https://leetcode.cn/problems/scramble-string/){:target="_blank"}
 
 使用下面描述的算法可以扰乱字符串 <code>s</code> 得到字符串 <code>t</code> ：
 <ol>

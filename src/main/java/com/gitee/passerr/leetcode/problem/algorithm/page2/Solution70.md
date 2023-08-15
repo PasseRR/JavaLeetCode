@@ -1,4 +1,4 @@
-### [70. 爬楼梯](https://leetcode.cn/problems/climbing-stairs/){:target="_blank"}
+### [题目](https://leetcode.cn/problems/climbing-stairs/){:target="_blank"}
 
 <p>假设你正在爬楼梯。需要 <code>n</code>&nbsp;阶你才能到达楼顶。</p>
 

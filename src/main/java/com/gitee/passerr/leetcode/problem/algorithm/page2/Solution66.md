@@ -1,4 +1,4 @@
-### [66. 加一](https://leetcode.cn/problems/plus-one/){:target="_blank"}
+### [题目](https://leetcode.cn/problems/plus-one/){:target="_blank"}
 
 <p>给定一个由 <strong>整数 </strong>组成的<strong> 非空</strong> 数组所表示的非负整数，在该数的基础上加一。</p>
 

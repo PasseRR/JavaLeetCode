@@ -1,4 +1,4 @@
-### [63. 不同路径 II](https://leetcode.cn/problems/unique-paths-ii/){:target="_blank"}
+### [题目](https://leetcode.cn/problems/unique-paths-ii/){:target="_blank"}
 
 <p>一个机器人位于一个<meta charset="UTF-8" />&nbsp;<code>m x n</code>&nbsp;网格的左上角 （起始点在下图中标记为 “Start” ）。</p>
 

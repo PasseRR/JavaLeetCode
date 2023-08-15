@@ -1,4 +1,4 @@
-### [55. 跳跃游戏](https://leetcode.cn/problems/jump-game/){:target="_blank"}
+### [题目](https://leetcode.cn/problems/jump-game/){:target="_blank"}
 
 <p>给你一个非负整数数组&nbsp;<code>nums</code> ，你最初位于数组的 <strong>第一个下标</strong> 。数组中的每个元素代表你在该位置可以跳跃的最大长度。</p>
 

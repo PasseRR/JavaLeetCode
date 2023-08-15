@@ -1,4 +1,4 @@
-### [71. 简化路径](https://leetcode.cn/problems/simplify-path/){:target="_blank"}
+### [题目](https://leetcode.cn/problems/simplify-path/){:target="_blank"}
 
 <p>给你一个字符串 <code>path</code> ，表示指向某一文件或目录的 Unix 风格 <strong>绝对路径 </strong>（以 <code>'/'</code> 开头），请你将其转化为更加简洁的规范路径。</p>
 

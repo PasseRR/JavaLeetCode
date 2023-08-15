@@ -1,4 +1,4 @@
-### [58. 最后一个单词的长度](https://leetcode.cn/problems/length-of-last-word/){:target="_blank"}
+### [题目](https://leetcode.cn/problems/length-of-last-word/){:target="_blank"}
 
 <p>给你一个字符串 <code>s</code>，由若干单词组成，单词前后用一些空格字符隔开。返回字符串中 <strong>最后一个</strong> 单词的长度。</p>
 

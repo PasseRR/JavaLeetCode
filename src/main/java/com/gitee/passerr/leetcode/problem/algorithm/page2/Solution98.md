@@ -1,4 +1,4 @@
-### [98. 验证二叉搜索树](https://leetcode.cn/problems/validate-binary-search-tree/){:target="_blank"}
+### [题目](https://leetcode.cn/problems/validate-binary-search-tree/){:target="_blank"}
 
 <p>给你一个二叉树的根节点 <code>root</code> ，判断其是否是一个有效的二叉搜索树。</p>
 

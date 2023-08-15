@@ -1,4 +1,4 @@
-### [79. 单词搜索](https://leetcode.cn/problems/word-search/){:target="_blank"}
+### [题目](https://leetcode.cn/problems/word-search/){:target="_blank"}
 
 <p>给定一个 <code>m x n</code> 二维字符网格 <code>board</code> 和一个字符串单词 <code>word</code> 。如果 <code>word</code> 存在于网格中，返回 <code>true</code> ；否则，返回 <code>false</code> 。</p>
 

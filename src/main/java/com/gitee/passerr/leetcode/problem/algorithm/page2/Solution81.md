@@ -1,4 +1,4 @@
-### [81. 搜索旋转排序数组 II](https://leetcode.cn/problems/search-in-rotated-sorted-array-ii/){:target="_blank"}
+### [题目](https://leetcode.cn/problems/search-in-rotated-sorted-array-ii/){:target="_blank"}
 
 <p>已知存在一个按非降序排列的整数数组 <code>nums</code> ，数组中的值不必互不相同。</p>
 
