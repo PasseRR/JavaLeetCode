@@ -27,14 +27,14 @@ class GeneratorSpec extends Specification {
 
     def "整页生成"() {
         given:
-        def page = 1
+        def page = 3
         // 起始问题
         def start = ""
         when:
-        LeetCodeProblemUtil.page(page).each {it -> 
+        LeetCodeProblemUtil.page(page).each { it ->
             this.writeDocument(it.titleSlug, page)
         }
-        
+
         then:
         notThrown(Exception)
     }
@@ -54,16 +54,21 @@ class GeneratorSpec extends Specification {
             writer.write("\n")
             writer.write("${detail.translatedContent}")
         }
-        
+
         def java = source.resolve("${sourceName}.java")
+        // 如果不存在题解 不写blog
+        if (!Files.exists(java)) {
+            return
+        }
+
         int row = 2
         String line
         java.toFile().withReader { reader ->
             while (!(line = reader.readLine()).contains("{") || line.trim().startsWith("*")) {
-                row ++
+                row++
             }
         }
-        
+
         // 问题文章
         def chapter = base.resolve("_chapters/6.algorithm/page${page}").resolve("${detail.questionId}.md")
         if (!Files.exists(chapter)) {
