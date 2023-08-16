@@ -18,9 +18,9 @@ class GeneratorSpec extends Specification {
 
     def "单个问题文档生成"() {
         given:
-        def code = "two-sum"
+        def code = "two-sum", page = 1
         when:
-        this.writeDocument(code)
+        this.writeDocument(code, page)
         then:
         notThrown(Exception)
     }
