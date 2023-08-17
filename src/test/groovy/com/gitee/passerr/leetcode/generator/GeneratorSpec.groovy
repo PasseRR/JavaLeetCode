@@ -18,7 +18,8 @@ class GeneratorSpec extends Specification {
 
     def "单个问题文档生成"() {
         given:
-        def code = "two-sum", page = 1
+        def code = "fizz-buzz-multithreaded"
+        def page = 1
         when:
         this.writeDocument(code, page)
         then:
