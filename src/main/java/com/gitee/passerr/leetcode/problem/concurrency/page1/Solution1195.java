@@ -6,7 +6,7 @@ import java.util.concurrent.Semaphore;
 import java.util.function.IntConsumer;
 
 /**
- * Solution1316
+ * Solution1195
  * @author xiehai
  * @date 2023/08/17 15:57
  */
@@ -21,29 +21,25 @@ public class Solution1195 {
         executorService.execute(() -> {
             try {
                 fizzBuzz.fizz(() -> System.out.println("fizz"));
-            } catch (InterruptedException e) {
-                throw new RuntimeException(e);
+            } catch (InterruptedException ignore) {
             }
         });
         executorService.execute(() -> {
             try {
                 fizzBuzz.buzz(() -> System.out.println("buzz"));
-            } catch (InterruptedException e) {
-                throw new RuntimeException(e);
+            } catch (InterruptedException ignore) {
             }
         });
         executorService.execute(() -> {
             try {
                 fizzBuzz.fizzbuzz(() -> System.out.println("fizzbuzz"));
-            } catch (InterruptedException e) {
-                throw new RuntimeException(e);
+            } catch (InterruptedException ignore) {
             }
         });
         executorService.execute(() -> {
             try {
                 fizzBuzz.number(System.out::println);
-            } catch (InterruptedException e) {
-                throw new RuntimeException(e);
+            } catch (InterruptedException ignore) {
             }
         });
     }
