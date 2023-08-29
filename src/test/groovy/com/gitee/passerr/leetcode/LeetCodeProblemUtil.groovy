@@ -38,6 +38,7 @@ class LeetCodeProblemUtil {
         query questionTranslations(\$titleSlug: String!) {
             question(titleSlug: \$titleSlug) {
                 translatedTitle
+                questionFrontendId
                 translatedContent
                 questionId
             }

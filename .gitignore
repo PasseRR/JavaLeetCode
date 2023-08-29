@@ -2,10 +2,8 @@ target/
 .idea
 *.iml
 
+.vitepress/cache
+.vitepress/dist
 
-_site/
-.sass-cache
-.jekyll-metadata
-*backup/
-.jekyll-cache
-Gemfile.lock
+node_modules/
+package-lock.json
