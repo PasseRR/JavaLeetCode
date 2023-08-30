@@ -71,7 +71,7 @@ class CategorySpec extends Specification {
                 writer.write("\n")
                 writer.write("## [题解](https://github.com/PasseRR/JavaLeetCode/blob/master/src/main/java/com/gitee/passerr/leetcode/problem/${category}/page${page}/${type.prefix}${filename}.java)\n")
                 writer.write("\n")
-                writer.write("<<< @/src/main/java/com/gitee/passerr/leetcode/problem/${category}/page${page}/${type.prefix}${filename}.java#snippet\n")
+                writer.write("<<< @/../src/main/java/com/gitee/passerr/leetcode/problem/${category}/page${page}/${type.prefix}${filename}.java#snippet\n")
                 writer.write("")
             }
 

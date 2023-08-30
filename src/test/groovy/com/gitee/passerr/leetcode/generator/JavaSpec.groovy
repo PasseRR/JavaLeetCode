@@ -87,7 +87,7 @@ class JavaSpec extends Specification {
                     writer.write("\n")
                     writer.write("## [题解](https://github.com/PasseRR/JavaLeetCode/blob/master/src/main/java/com/gitee/passerr/leetcode/problem/${category}/page${page}/${prefix}${detail.questionFrontendId}.java)\n")
                     writer.write("\n")
-                    writer.write("<<< @/src/main/java/com/gitee/passerr/leetcode/problem/${category}/page${page}/${prefix}${detail.questionFrontendId}.java#snippet\n")
+                    writer.write("<<< @/../src/main/java/com/gitee/passerr/leetcode/problem/${category}/page${page}/${prefix}${detail.questionFrontendId}.java#snippet\n")
                     writer.write("")
                 }
 
