@@ -2,7 +2,7 @@ function bars() {
     return [{
         text: '第一页',
         base: '/algorithm/page1',
-        collapsed: true,
+        collapsed: false,
         items: [
             {text: '1. 两数之和', link: '/1'},
             {text: '2. 两数相加', link: '/2'},
