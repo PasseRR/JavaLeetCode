@@ -15,6 +15,7 @@ package com.gitee.passerr.leetcode.problem.lcci.page2;
  * @see com.gitee.passerr.leetcode.problem.lcof1.page1.Lcof43
  */
 public class Lcci1706 {
+    // #region snippet
     public int numberOf2sInRange(int n) {
         int count = 0, carry = 1;
 
@@ -43,4 +44,5 @@ public class Lcci1706 {
 
         return count;
     }
+    // #endregion snippet
 }

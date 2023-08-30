@@ -27,6 +27,7 @@ import java.util.function.Function;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcci1608 {
+    // #region snippet
     public String numberToWords(int num) {
         String[] exact = new String[]{
             // 1~19
@@ -91,4 +92,5 @@ public class Lcci1608 {
 
         return String.join(" ", result);
     }
+    // #endregion snippet
 }

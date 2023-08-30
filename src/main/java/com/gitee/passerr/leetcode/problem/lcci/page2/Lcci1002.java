@@ -24,6 +24,7 @@ import java.util.*;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcci1002 {
+    // #region snippet
     public List<List<String>> groupAnagrams(String[] strs) {
         // 哈希缓存
         Map<String, List<String>> cache = new HashMap<>();
@@ -38,4 +39,5 @@ public class Lcci1002 {
 
         return new ArrayList<>(cache.values());
     }
+    // #endregion snippet
 }

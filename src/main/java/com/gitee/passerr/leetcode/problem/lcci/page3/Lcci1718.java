@@ -30,6 +30,7 @@ import java.util.stream.Collectors;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcci1718 {
+    // #region snippet
     public int[] shortestSeq(int[] big, int[] small) {
         // 长度不足
         if (small.length > big.length) {
@@ -85,4 +86,5 @@ public class Lcci1718 {
 
         return result;
     }
+    // #endregion snippet
 }

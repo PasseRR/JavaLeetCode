@@ -28,6 +28,7 @@ import java.util.Stack;
 public class Lcci0305 {
 }
 
+// #region snippet
 class SortedStack {
     /**
      * 数据降序栈
@@ -76,3 +77,4 @@ class SortedStack {
     }
 }
 
+// #endregion snippet

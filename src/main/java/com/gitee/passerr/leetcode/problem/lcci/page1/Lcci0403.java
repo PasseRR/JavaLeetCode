@@ -27,6 +27,7 @@ import java.util.function.BiConsumer;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcci0403 {
+    // #region snippet
     public ListNode[] listOfDepth(TreeNode tree) {
         // 保存链表头结点
         List<ListNode> nodes = new ArrayList<>();
@@ -68,4 +69,5 @@ public class Lcci0403 {
 
         return nodes.toArray(new ListNode[0]);
     }
+    // #endregion snippet
 }

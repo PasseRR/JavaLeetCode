@@ -15,6 +15,7 @@ package com.gitee.passerr.leetcode.problem.lcci.page1;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcci0501 {
+    // #region snippet
     public int insertBits(int N, int M, int i, int j) {
         // 将N从i位到j位置0
         for (int b = i; b <= j; b++) {
@@ -26,4 +27,5 @@ public class Lcci0501 {
         // 置0后加上M向左移动i位
         return N | (M << i);
     }
+    // #endregion snippet
 }

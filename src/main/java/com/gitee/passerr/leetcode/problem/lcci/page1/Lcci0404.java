@@ -32,6 +32,7 @@ import java.util.function.Function;
  * @see com.gitee.passerr.leetcode.problem.algorithm.page3.Solution110
  */
 public class Lcci0404 {
+    // #region snippet
     public boolean isBalanced(TreeNode root) {
         Function<TreeNode, Integer> recursion = new Function<TreeNode, Integer>() {
             @Override
@@ -47,4 +48,5 @@ public class Lcci0404 {
                 && this.isBalanced(root.left) && this.isBalanced(root.right)
         );
     }
+    // #endregion snippet
 }

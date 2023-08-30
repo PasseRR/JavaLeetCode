@@ -18,6 +18,7 @@ package com.gitee.passerr.leetcode.problem.lcci.page1;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcci0507 {
+    // #region snippet
     public int exchangeBits(int num) {
         int result = 0;
         // 交换非符号位部分
@@ -40,4 +41,5 @@ public class Lcci0507 {
 
         return result;
     }
+    // #endregion snippet
 }

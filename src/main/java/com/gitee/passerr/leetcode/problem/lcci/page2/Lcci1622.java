@@ -45,6 +45,7 @@ import java.util.stream.IntStream;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcci1622 {
+    // #region snippet
     enum BlockColor {
         /**
          * 黑色块
@@ -243,4 +244,5 @@ public class Lcci1622 {
 
         return meta.result();
     }
+    // #endregion snippet
 }

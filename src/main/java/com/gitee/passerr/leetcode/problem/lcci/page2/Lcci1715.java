@@ -25,6 +25,7 @@ import java.util.function.BiFunction;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcci1715 {
+    // #region snippet
     public String longestWord(String[] words) {
         // 按照单词第一个字符缓存
         Map<Character, Set<String>> cache = new HashMap<>(8);
@@ -78,4 +79,5 @@ public class Lcci1715 {
 
         return "";
     }
+    // #endregion snippet
 }

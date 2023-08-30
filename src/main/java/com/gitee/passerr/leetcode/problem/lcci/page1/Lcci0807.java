@@ -23,6 +23,7 @@ import java.util.function.Consumer;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcci0807 {
+    // #region snippet
     public String[] permutation(String S) {
         char[] chars = S.toCharArray();
         List<String> result = new ArrayList<>();
@@ -54,4 +55,5 @@ public class Lcci0807 {
 
         return result.toArray(new String[0]);
     }
+    // #endregion snippet
 }

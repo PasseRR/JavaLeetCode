@@ -29,6 +29,7 @@ import java.util.function.BiFunction;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcci0401 {
+    // #region snippet
     public boolean findWhetherExistsPath(int n, int[][] graph, int start, int target) {
         // 路径可达
         boolean[] dp = new boolean[n];
@@ -92,4 +93,5 @@ public class Lcci0401 {
 
         return recursion.apply(start, destination.get(target));
     }
+    // #endregion snippet
 }

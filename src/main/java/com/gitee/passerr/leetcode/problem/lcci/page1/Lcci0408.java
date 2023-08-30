@@ -32,6 +32,7 @@ import com.gitee.passerr.leetcode.TreeNode;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcci0408 {
+    // #region snippet
     public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
         if (root == null) {
             return null;
@@ -58,4 +59,5 @@ public class Lcci0408 {
         // 否则 p、q节点都在左右树存在 则表示当前根节点为最近祖先
         return root;
     }
+    // #endregion snippet
 }

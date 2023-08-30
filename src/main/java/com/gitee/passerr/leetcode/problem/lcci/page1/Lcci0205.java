@@ -21,6 +21,7 @@ import com.gitee.passerr.leetcode.ListNode;
  * @see com.gitee.passerr.leetcode.problem.algorithm.page1.Solution2
  */
 public class Lcci0205 {
+    // #region snippet
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         ListNode head = new ListNode(0);
         ListNode cursor = head;
@@ -69,4 +70,5 @@ public class Lcci0205 {
 
         return head.next;
     }
+    // #endregion snippet
 }

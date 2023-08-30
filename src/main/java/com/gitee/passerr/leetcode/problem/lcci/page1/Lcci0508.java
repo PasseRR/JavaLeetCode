@@ -20,6 +20,7 @@ package com.gitee.passerr.leetcode.problem.lcci.page1;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcci0508 {
+    // #region snippet
     public int[] drawLine(int length, int w, int x1, int x2, int y) {
         int[] result = new int[length];
         // 数字像素长度 屏幕宽度几个数字
@@ -62,4 +63,5 @@ public class Lcci0508 {
 
         return result;
     }
+    // #endregion snippet
 }

@@ -2,7 +2,7 @@ function bars() {
     return [{
         text: '第一页',
         base: '/database/page1',
-        collapsed: true,
+        collapsed: false,
         items: [
             {text: '175. 组合两个表', link: '/175'},
             {text: '176. 第二高的薪水', link: '/176'},

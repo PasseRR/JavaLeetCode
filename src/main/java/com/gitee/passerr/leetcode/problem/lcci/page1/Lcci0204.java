@@ -13,6 +13,7 @@ import com.gitee.passerr.leetcode.ListNode;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcci0204 {
+    // #region snippet
     public ListNode partition(ListNode head, int x) {
         // 小于x部分
         ListNode left = new ListNode(0);
@@ -37,4 +38,5 @@ public class Lcci0204 {
 
         return left.next;
     }
+    // #endregion snippet
 }

@@ -15,6 +15,7 @@ package com.gitee.passerr.leetcode.problem.lcci.page2;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcci1701 {
+    // #region snippet
     public int add(int a, int b) {
         int sum = a;
         while (b != 0) {
@@ -28,4 +29,5 @@ public class Lcci1701 {
 
         return sum;
     }
+    // #endregion snippet
 }

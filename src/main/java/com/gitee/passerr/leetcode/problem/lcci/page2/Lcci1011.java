@@ -14,6 +14,7 @@ package com.gitee.passerr.leetcode.problem.lcci.page2;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcci1011 {
+    // #region snippet
     public void wiggleSort(int[] nums) {
         for (int i = 1; i < nums.length; i++) {
             // 奇数为谷 偶数为峰
@@ -24,4 +25,5 @@ public class Lcci1011 {
             }
         }
     }
+    // #endregion snippet
 }

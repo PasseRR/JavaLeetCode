@@ -19,6 +19,7 @@ package com.gitee.passerr.leetcode.problem.lcci.page2;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcci1009 {
+    // #region snippet
     public boolean searchMatrix(int[][] matrix, int target) {
         // 倒叙行 升序列查找
         int row = matrix.length - 1, column = 0;
@@ -38,4 +39,5 @@ public class Lcci1009 {
         return false;
     }
 }
+    // #endregion snippet
 

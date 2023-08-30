@@ -28,6 +28,7 @@ import java.util.function.Function;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcci1717 {
+    // #region snippet
     public int[][] multiSearch(String big, String[] smalls) {
         int lenBig = big.length(), lenSmall = smalls.length;
         // 字符前缀缓存
@@ -63,4 +64,5 @@ public class Lcci1717 {
         }
         return result;
     }
+    // #endregion snippet
 }

@@ -15,6 +15,7 @@ package com.gitee.passerr.leetcode.problem.lcci.page2;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcci1616 {
+    // #region snippet
     public int[] subSort(int[] array) {
         // 从左向右 找到最后一个小于最大值的索引
         int max = Integer.MIN_VALUE, right = -1;
@@ -42,4 +43,5 @@ public class Lcci1616 {
 
         return new int[]{left, right};
     }
+    // #endregion snippet
 }

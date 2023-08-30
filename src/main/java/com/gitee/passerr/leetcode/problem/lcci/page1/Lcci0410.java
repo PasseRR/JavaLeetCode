@@ -21,6 +21,7 @@ import com.gitee.passerr.leetcode.TreeNode;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcci0410 {
+    // #region snippet
     public boolean checkSubTree(TreeNode t1, TreeNode t2) {
         // 子树为空
         if(t2 == null) {
@@ -40,4 +41,5 @@ public class Lcci0410 {
                 // 继续用左右树判断
                 : (this.checkSubTree(t1.left, t2) || this.checkSubTree(t1.right, t2));
     }
+    // #endregion snippet
 }

@@ -20,6 +20,7 @@ package com.gitee.passerr.leetcode.problem.lcci.page1;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcci0801 {
+    // #region snippet
     public int waysToStep(int n) {
         // 使用dp记录方式
         int[] dp = new int[4];
@@ -41,4 +42,5 @@ public class Lcci0801 {
 
         return dp[Math.min(n, 3)];
     }
+    // #endregion snippet
 }

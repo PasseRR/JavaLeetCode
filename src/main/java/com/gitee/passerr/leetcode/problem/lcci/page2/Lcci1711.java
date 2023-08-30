@@ -19,6 +19,7 @@ import java.util.List;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcci1711 {
+    // #region snippet
     public int findClosest(String[] words, String word1, String word2) {
         List<Integer> q1 = new ArrayList<>(), q2 = new ArrayList<>();
         for (int i = 0; i < words.length; i++) {
@@ -55,4 +56,5 @@ public class Lcci1711 {
 
         return result;
     }
+    // #endregion snippet
 }

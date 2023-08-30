@@ -22,6 +22,7 @@ import java.util.function.Consumer;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcci1712 {
+    // #region snippet
     public TreeNode convertBiNode(TreeNode root) {
         // previous.right为前置节点及结果
         final TreeNode previous = new TreeNode(0), result = new TreeNode(0);
@@ -55,4 +56,5 @@ public class Lcci1712 {
 
         return result.right;
     }
+    // #endregion snippet
 }

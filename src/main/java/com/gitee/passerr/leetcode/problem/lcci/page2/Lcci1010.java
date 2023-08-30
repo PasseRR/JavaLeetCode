@@ -25,6 +25,7 @@ import java.util.Arrays;
 public class Lcci1010 {
 }
 
+// #region snippet
 class StreamRank {
     int[] data;
     int max;
@@ -58,3 +59,4 @@ class StreamRank {
         return this.data[Integer.min(x, this.max)];
     }
 }
+// #endregion snippet

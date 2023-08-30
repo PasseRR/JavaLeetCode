@@ -21,6 +21,7 @@ import java.util.function.BiConsumer;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcci0809 {
+    // #region snippet
     public List<String> generateParenthesis(int n) {
         List<String> result = new ArrayList<>();
         // 若左右括号数一致必须先出现左括号 再出现右括号
@@ -51,4 +52,5 @@ public class Lcci0809 {
 
         return result;
     }
+    // #endregion snippet
 }

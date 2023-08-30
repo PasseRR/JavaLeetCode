@@ -25,6 +25,7 @@ package com.gitee.passerr.leetcode.problem.lcci.page2;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcci1716 {
+    // #region snippet
     public int massage(int[] nums) {
         int len = nums.length;
         int[] dp = new int[len + 1];
@@ -37,4 +38,5 @@ public class Lcci1716 {
         // 最大值为最后两个值中的较大值
         return len > 1 ? Integer.max(dp[len], dp[len - 1]) : dp[len];
     }
+    // #endregion snippet
 }

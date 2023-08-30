@@ -31,6 +31,7 @@ package com.gitee.passerr.leetcode.problem.lcci.page3;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcci1723 {
+    // #region snippet
     public int[] findSquare(int[][] matrix) {
         int len = matrix.length;
         // 0 从下到上连续黑色像素个数 1从右至左连续黑色元素个数
@@ -66,4 +67,5 @@ public class Lcci1723 {
         // 兼容无解的情况
         return result[2] > 0 ? result : new int[0];
     }
+    // #endregion snippet
 }

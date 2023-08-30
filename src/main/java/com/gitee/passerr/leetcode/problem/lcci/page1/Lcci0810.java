@@ -27,6 +27,7 @@ import java.util.function.BiConsumer;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcci0810 {
+    // #region snippet
     public int[][] floodFill(int[][] image, int sr, int sc, int newColor) {
         // 初始颜色
         int oldColor = image[sr][sc];
@@ -55,4 +56,5 @@ public class Lcci0810 {
 
         return image;
     }
+    // #endregion snippet
 }

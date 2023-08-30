@@ -25,6 +25,7 @@ import java.util.Stack;
 public class Lcci0304 {
 }
 
+// #region snippet
 class MyQueue {
     /**
      * 用于存储push元素
@@ -86,3 +87,4 @@ class MyQueue {
         return this.write.isEmpty() && this.read.isEmpty();
     }
 }
+// #endregion snippet

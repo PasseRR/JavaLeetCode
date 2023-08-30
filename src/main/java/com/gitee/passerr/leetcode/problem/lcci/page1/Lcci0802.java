@@ -27,6 +27,7 @@ import java.util.function.BiFunction;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcci0802 {
+    // #region snippet
     public List<List<Integer>> pathWithObstacles(int[][] obstacleGrid) {
         int rows = obstacleGrid.length, columns = obstacleGrid[0].length;
 
@@ -84,4 +85,5 @@ public class Lcci0802 {
 
         return result;
     }
+    // #endregion snippet
 }

@@ -23,6 +23,7 @@ import java.util.Set;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcci0101 {
+    // #region snippet
     public boolean isUnique(String astr) {
         Set<Character> set = new HashSet<>();
         for (char c : astr.toCharArray()) {
@@ -33,4 +34,5 @@ public class Lcci0101 {
 
         return true;
     }
+    // #endregion snippet
 }

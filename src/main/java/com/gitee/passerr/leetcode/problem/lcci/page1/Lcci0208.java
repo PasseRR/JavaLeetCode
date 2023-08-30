@@ -29,6 +29,7 @@ import com.gitee.passerr.leetcode.ListNode;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcci0208 {
+    // #region snippet
     public ListNode detectCycle(ListNode head) {
         // 少于2个节点 直接返回
         if (head == null || head.next == null) {
@@ -59,4 +60,5 @@ public class Lcci0208 {
 
         return fast;
     }
+    // #endregion snippet
 }

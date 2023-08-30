@@ -1,6 +1,7 @@
 import shell from "./shell";
 import database from "./database";
 import algorithm from "./algorithm";
+import lcci from "./lcci";
 
 const site = {
     logo: '/icon.svg',
@@ -32,6 +33,10 @@ function sidebars() {
             base: "/database",
             items: database.bars()
         },
+        "/lcci": {
+            base: "/lcci",
+            items: lcci.bars()
+        },
         "/algorithm": {
             base: "/algorithm",
             items: algorithm.bars()
@@ -40,7 +45,7 @@ function sidebars() {
 }
 
 function navs() {
-    return [shell.nav(), database.nav(), algorithm.nav()];
+    return [shell.nav(), database.nav(), lcci.nav(), algorithm.nav()];
 }
 
 export {site, sidebars, navs};

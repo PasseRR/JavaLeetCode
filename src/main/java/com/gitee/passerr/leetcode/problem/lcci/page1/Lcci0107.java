@@ -39,6 +39,7 @@ package com.gitee.passerr.leetcode.problem.lcci.page1;
  * @see com.gitee.passerr.leetcode.problem.algorithm.page1.Solution48
  */
 public class Lcci0107 {
+    // #region snippet
     public void rotate(int[][] matrix) {
         int length = matrix.length, temp;
         // [                   [
@@ -69,4 +70,5 @@ public class Lcci0107 {
             }
         }
     }
+    // #endregion snippet
 }

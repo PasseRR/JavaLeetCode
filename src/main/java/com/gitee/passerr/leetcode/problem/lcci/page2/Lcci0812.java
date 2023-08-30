@@ -31,6 +31,7 @@ import java.util.stream.Collectors;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcci0812 {
+    // #region snippet
     public List<List<String>> solveNQueens(int n) {
         List<List<String>> result = new ArrayList<>();
         // 初始化空棋盘
@@ -90,4 +91,5 @@ public class Lcci0812 {
 
         return result;
     }
+    // #endregion snippet
 }

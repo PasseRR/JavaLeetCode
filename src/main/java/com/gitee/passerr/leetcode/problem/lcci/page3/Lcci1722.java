@@ -34,6 +34,7 @@ import java.util.function.Function;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcci1722 {
+    // #region snippet
     public List<String> findLadders(String beginWord, String endWord, List<String> wordList) {
         Set<String> words = new HashSet<>(wordList);
         // 开始单词或结束单词不存在与字典中
@@ -92,4 +93,5 @@ public class Lcci1722 {
 
         return Collections.emptyList();
     }
+    // #endregion snippet
 }

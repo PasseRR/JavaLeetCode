@@ -27,8 +27,10 @@ import java.util.List;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcci0806 {
+    // #region snippet
     public void hanota(List<Integer> A, List<Integer> B, List<Integer> C) {
         C.addAll(A);
         A.clear();
     }
+    // #endregion snippet
 }

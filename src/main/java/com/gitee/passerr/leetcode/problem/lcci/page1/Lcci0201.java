@@ -21,6 +21,7 @@ import com.gitee.passerr.leetcode.ListNode;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcci0201 {
+    // #region snippet
     public ListNode removeDuplicateNodes(ListNode head) {
         // 打表法
         boolean[] table = new boolean[20001];
@@ -40,4 +41,5 @@ public class Lcci0201 {
 
         return newHead.next;
     }
+    // #endregion snippet
 }

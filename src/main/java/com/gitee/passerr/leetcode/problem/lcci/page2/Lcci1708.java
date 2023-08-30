@@ -19,6 +19,7 @@ import java.util.stream.IntStream;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcci1708 {
+    // #region snippet
     public int bestSeqAtIndex(int[] height, int[] weight) {
         int len = height.length;
         int[][] merge =
@@ -49,4 +50,5 @@ public class Lcci1708 {
 
         return result;
     }
+    // #endregion snippet
 }

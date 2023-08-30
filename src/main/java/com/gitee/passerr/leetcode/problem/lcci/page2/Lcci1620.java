@@ -28,6 +28,7 @@ import java.util.stream.IntStream;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcci1620 {
+    // #region snippet
     public List<String> getValidT9Words(String num, String[] words) {
         // 字典对应关系
         char[] dict = new char[]{
@@ -49,4 +50,5 @@ public class Lcci1620 {
                 )
                 .collect(Collectors.toList());
     }
+    // #endregion snippet
 }

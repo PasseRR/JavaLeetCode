@@ -27,6 +27,7 @@ public class Lcci1602 {
 
 }
 
+// #region snippet
 class WordsFrequency {
     /**
      * 考虑使用字典树实现 只有小写字母固定数组大小
@@ -72,3 +73,4 @@ class WordsFrequency {
         return it.cnt;
     }
 }
+// #endregion snippet

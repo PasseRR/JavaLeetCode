@@ -27,6 +27,7 @@ import java.util.stream.IntStream;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcci1619 {
+    // #region snippet
     public int[] pondSizes(int[][] land) {
         int rows = land.length, columns = land[0].length;
 
@@ -71,4 +72,5 @@ public class Lcci1619 {
                 .mapToInt(Integer::intValue)
                 .toArray();
     }
+    // #endregion snippet
 }

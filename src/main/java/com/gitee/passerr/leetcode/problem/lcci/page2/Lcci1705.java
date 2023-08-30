@@ -21,6 +21,7 @@ import java.util.Arrays;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcci1705 {
+    // #region snippet
     public String[] findLongestSubarray(String[] array) {
         int len = array.length, dv = 0, max = 0, from = 0;
         // 字母数字相差个数 负数为前半 正数为后半
@@ -51,4 +52,5 @@ public class Lcci1705 {
 
         return Arrays.copyOfRange(array, from, from + max);
     }
+    // #endregion snippet
 }

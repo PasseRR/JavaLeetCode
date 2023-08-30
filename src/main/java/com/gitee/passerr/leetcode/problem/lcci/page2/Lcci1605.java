@@ -18,6 +18,7 @@ package com.gitee.passerr.leetcode.problem.lcci.page2;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcci1605 {
+    // #region snippet
     public int trailingZeroes(int n) {
         int count = 0;
         // 阶乘中5的数量小于偶数的数量
@@ -28,4 +29,5 @@ public class Lcci1605 {
         }
         return count;
     }
+    // #endregion snippet
 }

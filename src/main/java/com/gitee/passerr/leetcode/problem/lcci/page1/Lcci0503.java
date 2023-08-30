@@ -15,6 +15,7 @@ package com.gitee.passerr.leetcode.problem.lcci.page1;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcci0503 {
+    // #region snippet
     public int reverseBits(int num) {
         // 分别记录最大连续数量(包括从0变为1一次)、前一次连续1的数量、当前连续1的数量
         int max = 0, previous = 0, count = 0;
@@ -37,4 +38,5 @@ public class Lcci0503 {
         // 比较当前最大值和最后一次连续1的数量
         return Math.max(max, count + previous + 1);
     }
+    // #endregion snippet
 }

@@ -13,6 +13,7 @@ package com.gitee.passerr.leetcode.problem.lcci.page2;
  * @see com.gitee.passerr.leetcode.problem.lcof1.page1.Lcof49
  */
 public class Lcci1709 {
+    // #region snippet
     public int getKthMagicNumber(int k) {
         int[] dp = new int[k];
         dp[0] = 1;
@@ -37,4 +38,5 @@ public class Lcci1709 {
 
         return dp[k - 1];
     }
+    // #endregion snippet
 }

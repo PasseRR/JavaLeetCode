@@ -18,6 +18,7 @@ import java.util.Arrays;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcci1606 {
+    // #region snippet
     public int smallestDifference(int[] a, int[] b) {
         Arrays.sort(a);
         Arrays.sort(b);
@@ -39,4 +40,5 @@ public class Lcci1606 {
 
         return (int) result;
     }
+    // #endregion snippet
 }

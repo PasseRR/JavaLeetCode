@@ -27,6 +27,7 @@ public class Lcci1609 {
     // 此题修改为不使用+ - * / 做加减乘除
 }
 
+// #region snippet
 class Operations {
     public Operations() {
 
@@ -102,3 +103,4 @@ class Operations {
         return isPositive ? result : this.plus(~result, 1);
     }
 }
+// #endregion snippet

@@ -34,6 +34,7 @@ public class Lcci1625 {
 
 }
 
+// #region snippet
 class LRUCache {
     /**
      * 容量
@@ -99,3 +100,4 @@ class LRUCache {
         }
     }
 }
+// #endregion snippet

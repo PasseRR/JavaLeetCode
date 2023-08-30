@@ -22,6 +22,7 @@ package com.gitee.passerr.leetcode.problem.lcci.page3;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcci1724 {
+    // #region snippet
     public int[] getMaxMatrix(int[][] matrix) {
         int rows = matrix.length, columns = matrix[0].length;
         // 最大矩阵和
@@ -70,4 +71,5 @@ public class Lcci1724 {
 
         return result;
     }
+    // #endregion snippet
 }

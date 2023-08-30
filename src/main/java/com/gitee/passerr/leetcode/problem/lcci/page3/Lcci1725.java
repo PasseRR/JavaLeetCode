@@ -36,6 +36,7 @@ import java.util.function.BiFunction;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcci1725 {
+    // #region snippet
     static class Trie {
         // 字典树
         Trie[] children = new Trie[26];
@@ -151,4 +152,5 @@ public class Lcci1725 {
 
         return result.toArray(new String[0]);
     }
+    // #endregion snippet
 }

@@ -27,6 +27,7 @@ import java.util.List;
 public class Lcci0303 {
 }
 
+// #region snippet
 class StackOfPlates {
     /**
      * 栈数据存储
@@ -88,3 +89,4 @@ class StackOfPlates {
     }
 }
 
+// #endregion snippet
