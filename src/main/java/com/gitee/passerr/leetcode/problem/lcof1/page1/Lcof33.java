@@ -27,6 +27,7 @@ import java.util.function.BiFunction;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcof33 {
+    // #region snippet
     public boolean verifyPostorder(int[] postorder) {
         int len = postorder.length;
         if (len <= 2) {
@@ -60,4 +61,5 @@ public class Lcof33 {
 
         return recursion.apply(0, len - 1);
     }
+    // #endregion snippet
 }

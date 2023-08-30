@@ -29,6 +29,7 @@ import com.gitee.passerr.leetcode.TreeNode;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Solution114 {
+    // #region snippet
     public void flatten(TreeNode root) {
         if (root == null) {
             return;
@@ -54,4 +55,5 @@ public class Solution114 {
             cursor.right = right;
         }
     }
+    // #endregion snippet
 }

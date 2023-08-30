@@ -23,6 +23,7 @@ import java.util.Arrays;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcci0102 {
+    // #region snippet
     public boolean CheckPermutation(String s1, String s2) {
         if (s1.length() != s2.length()) {
             return false;
@@ -34,4 +35,5 @@ public class Lcci0102 {
 
         return Arrays.equals(chars1, chars2);
     }
+    // #endregion snippet
 }

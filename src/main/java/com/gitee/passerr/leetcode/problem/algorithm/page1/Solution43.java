@@ -26,6 +26,7 @@ import java.util.function.Function;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Solution43 {
+    // #region snippet
     public String multiply(String num1, String num2) {
         if ("0".equals(num1) || "0".equals(num2)) {
             return "0";
@@ -92,4 +93,5 @@ public class Solution43 {
 
         return result;
     }
+    // #endregion snippet
 }

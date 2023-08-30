@@ -31,6 +31,7 @@ import java.util.List;
 public class Lcci0306 {
 }
 
+// #region snippet
 class AnimalShelf {
     /**
      * 猫
@@ -83,3 +84,4 @@ class AnimalShelf {
         return new int[]{this.cats.remove(0), 0};
     }
 }
+// #endregion snippet

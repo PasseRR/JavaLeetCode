@@ -22,6 +22,7 @@ package com.gitee.passerr.leetcode.problem.lcci.page2;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcci1611 {
+    // #region snippet
     public int[] divingBoard(int shorter, int longer, int k) {
         // 0块木板
         if (k == 0) {
@@ -42,4 +43,5 @@ public class Lcci1611 {
 
         return result;
     }
+    // #endregion snippet
 }

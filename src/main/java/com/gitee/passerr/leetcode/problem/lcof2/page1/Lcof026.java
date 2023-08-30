@@ -26,6 +26,7 @@ import com.gitee.passerr.leetcode.ListNode;
  * @date 2022/01/07 10:15
  */
 public class Lcof026 {
+    // #region snippet
     public void reorderList(ListNode head) {
         // 使用快慢指针找链表中点
         ListNode slow = new ListNode(0, head), fast = new ListNode(0, head);
@@ -58,4 +59,5 @@ public class Lcof026 {
             head = t;
         }
     }
+    // #endregion snippet
 }

@@ -19,6 +19,7 @@ package com.gitee.passerr.leetcode.problem.lcof1.page1;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcof29 {
+    // #region snippet
     public int[] spiralOrder(int[][] matrix) {
         int rows = matrix.length;
         // 空数组处理
@@ -56,4 +57,5 @@ public class Lcof29 {
 
         return result;
     }
+    // #endregion snippet
 }

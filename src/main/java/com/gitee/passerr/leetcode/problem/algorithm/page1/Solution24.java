@@ -14,6 +14,7 @@ import com.gitee.passerr.leetcode.ListNode;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Solution24 {
+    // #region snippet
     public ListNode swapPairs(ListNode head) {
         // 新链表
         ListNode result = new ListNode(0);
@@ -45,4 +46,5 @@ public class Solution24 {
 
         return result.next;
     }
+    // #endregion snippet
 }

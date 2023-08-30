@@ -39,6 +39,7 @@ import java.util.function.BiPredicate;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Solution127 {
+    // #region snippet
     public int ladderLength(String beginWord, String endWord, List<String> wordList) {
         Queue<String> queue = new ArrayDeque<>(Collections.singleton(beginWord));
         // 从开始单词开始 已经有一个序列了
@@ -85,4 +86,5 @@ public class Solution127 {
 
         return 0;
     }
+    // #endregion snippet
 }

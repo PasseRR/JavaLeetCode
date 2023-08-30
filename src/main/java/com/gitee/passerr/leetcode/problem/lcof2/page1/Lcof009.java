@@ -23,6 +23,7 @@ package com.gitee.passerr.leetcode.problem.lcof2.page1;
  * @date 2021/12/13 16:07
  */
 public class Lcof009 {
+    // #region snippet
     public int numSubarrayProductLessThanK(int[] nums, int k) {
         int result = 0, product = 1;
         int left = 0, right = 0;
@@ -41,4 +42,5 @@ public class Lcof009 {
 
         return result;
     }
+    // #endregion snippet
 }

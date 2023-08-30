@@ -16,6 +16,7 @@ import com.gitee.passerr.leetcode.ListNode;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcof25 {
+    // #region snippet
     public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
         ListNode node = new ListNode(0), l1c = l1, l2c = l2, cursor = node;
 
@@ -37,4 +38,5 @@ public class Lcof25 {
 
         return node.next;
     }
+    // #endregion snippet
 }

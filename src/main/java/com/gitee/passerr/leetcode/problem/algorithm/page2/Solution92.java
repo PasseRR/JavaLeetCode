@@ -15,6 +15,7 @@ import com.gitee.passerr.leetcode.ListNode;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Solution92 {
+    // #region snippet
     public ListNode reverseBetween(ListNode head, int m, int n) {
         if (m == n) {
             return head;
@@ -60,4 +61,5 @@ public class Solution92 {
 
         return newHead.next;
     }
+    // #endregion snippet
 }

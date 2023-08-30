@@ -28,6 +28,7 @@ import java.util.List;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Solution113 {
+    // #region snippet
     public List<List<Integer>> pathSum(TreeNode root, int sum) {
         List<List<Integer>> result = new ArrayList<>();
         // 递归求解
@@ -62,4 +63,5 @@ public class Solution113 {
     private interface TrConsumer<T, U, P> {
         void accept(T t, U u, P p);
     }
+    // #endregion snippet
 }

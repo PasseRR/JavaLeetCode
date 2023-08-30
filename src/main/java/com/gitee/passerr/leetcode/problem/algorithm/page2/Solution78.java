@@ -28,6 +28,7 @@ import java.util.stream.Collectors;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Solution78 {
+    // #region snippet
     public List<List<Integer>> subsets(int[] nums) {
         List<List<Integer>> result = new ArrayList<>();
         int length = nums.length;
@@ -65,4 +66,5 @@ public class Solution78 {
 
         return result;
     }
+    // #endregion snippet
 }

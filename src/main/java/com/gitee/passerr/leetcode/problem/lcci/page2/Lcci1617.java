@@ -15,6 +15,7 @@ package com.gitee.passerr.leetcode.problem.lcci.page2;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcci1617 {
+    // #region snippet
     public int maxSubArray(int[] nums) {
         int max = Integer.MIN_VALUE, append = 0;
         for (int num : nums) {
@@ -32,4 +33,5 @@ public class Lcci1617 {
 
         return max;
     }
+    // #endregion snippet
 }

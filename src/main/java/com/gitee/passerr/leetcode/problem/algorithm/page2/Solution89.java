@@ -36,6 +36,7 @@ import java.util.stream.IntStream;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Solution89 {
+    // #region snippet
     public List<Integer> grayCode(int n) {
         if (n == 0) {
             return Collections.singletonList(0);
@@ -57,4 +58,5 @@ public class Solution89 {
             return result;
         }
     }
+    // #endregion snippet
 }

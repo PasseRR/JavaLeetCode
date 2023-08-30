@@ -50,6 +50,7 @@ public class Lcof031 {
 /**
  * 借助LinkedHashMap实现
  */
+// #region snippet
 class LRUCache extends LinkedHashMap<Integer, Integer> {
     private final int capacity;
 
@@ -73,3 +74,4 @@ class LRUCache extends LinkedHashMap<Integer, Integer> {
         return super.size() > this.capacity;
     }
 }
+// #endregion snippet

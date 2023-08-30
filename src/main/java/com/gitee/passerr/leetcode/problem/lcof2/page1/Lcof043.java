@@ -36,6 +36,7 @@ import java.util.Queue;
 public class Lcof043 {
 }
 
+// #region snippet
 class CBTInserter {
     TreeNode root;
     Queue<TreeNode> queue = new ArrayDeque<>();
@@ -72,3 +73,4 @@ class CBTInserter {
         return this.root;
     }
 }
+// #endregion snippet

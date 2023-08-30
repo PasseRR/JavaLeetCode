@@ -35,6 +35,7 @@ import java.util.function.BiFunction;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcof28 {
+    // #region snippet
     public boolean isSymmetric(TreeNode root) {
         BiFunction<TreeNode, TreeNode, Boolean> recursion = new BiFunction<TreeNode, TreeNode, Boolean>() {
             @Override
@@ -53,4 +54,5 @@ public class Lcof28 {
 
         return root == null || recursion.apply(root.left, root.right);
     }
+    // #endregion snippet
 }

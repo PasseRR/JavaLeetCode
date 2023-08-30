@@ -19,6 +19,7 @@ package com.gitee.passerr.leetcode.problem.lcof1.page2;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcof57 {
+    // #region snippet
     public int[] twoSum(int[] nums, int target) {
         int left = 0, right = nums.length - 1;
         // 双指针
@@ -39,4 +40,5 @@ public class Lcof57 {
 
         return new int[]{nums[left], nums[right]};
     }
+    // #endregion snippet
 }

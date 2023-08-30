@@ -32,6 +32,7 @@ import java.util.List;
  * @date 2021/12/17 10:14
  */
 public class Lcof015 {
+    // #region snippet
     public List<Integer> findAnagrams(String s, String p) {
         // 跟上一题一样 多记录个索引
         List<Integer> result = new ArrayList<>();
@@ -63,4 +64,5 @@ public class Lcof015 {
         return result;
     }
 }
+    // #endregion snippet
 

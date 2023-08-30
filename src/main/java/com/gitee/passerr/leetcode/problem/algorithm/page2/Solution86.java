@@ -14,6 +14,7 @@ import com.gitee.passerr.leetcode.ListNode;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Solution86 {
+    // #region snippet
     public ListNode partition(ListNode head, int x) {
         // 小于x的头结点
         ListNode lessThanX = new ListNode(0);
@@ -41,4 +42,5 @@ public class Solution86 {
 
         return lessThanX.next;
     }
+    // #endregion snippet
 }

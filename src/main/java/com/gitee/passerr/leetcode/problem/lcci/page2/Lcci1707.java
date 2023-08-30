@@ -23,6 +23,7 @@ import java.util.Objects;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcci1707 {
+    // #region snippet
     /**
      * 并查集
      */
@@ -109,4 +110,5 @@ public class Lcci1707 {
         // 过滤并查集中根节点 并格式化结果
         return set.result();
     }
+    // #endregion snippet
 }

@@ -21,8 +21,10 @@ import java.util.Arrays;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcof40 {
+    // #region snippet
     public int[] getLeastNumbers(int[] arr, int k) {
         Arrays.sort(arr);
         return Arrays.copyOf(arr, Integer.min(arr.length, k));
     }
+    // #endregion snippet
 }

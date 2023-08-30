@@ -31,6 +31,7 @@ import com.gitee.passerr.leetcode.TreeNode;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcci0406 {
+    // #region snippet
     public TreeNode inorderSuccessor(TreeNode root, TreeNode p) {
         if (root == null) {
             return null;
@@ -51,4 +52,5 @@ public class Lcci0406 {
         // 否则遍历右树是否存在比p节点值大的节点
         return this.inorderSuccessor(root.right, p);
     }
+    // #endregion snippet
 }

@@ -17,6 +17,7 @@ package com.gitee.passerr.leetcode.problem.algorithm.page2;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Solution88 {
+    // #region snippet
     public void merge(int[] nums1, int m, int[] nums2, int n) {
         // 复制nums1前m个元素
         int[] nums1Source = new int[m];
@@ -42,4 +43,5 @@ public class Solution88 {
             nums1[i++] = nums2[k++];
         }
     }
+    // #endregion snippet
 }

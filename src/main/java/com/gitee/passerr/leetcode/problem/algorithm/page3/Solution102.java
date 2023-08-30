@@ -31,6 +31,7 @@ import java.util.stream.Collectors;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Solution102 {
+    // #region snippet
     public List<List<Integer>> levelOrder(TreeNode root) {
         // 按照层级缓存数字
         Map<Integer, List<Integer>> cache = new HashMap<>(8);
@@ -57,4 +58,5 @@ public class Solution102 {
 
         return cache.keySet().stream().sorted().map(cache::get).collect(Collectors.toList());
     }
+    // #endregion snippet
 }

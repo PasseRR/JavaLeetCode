@@ -82,6 +82,7 @@ public class Solution1114 {
     }
 }
 
+// #region snippet
 class Foo {
     private volatile int flag = 1;
 
@@ -110,3 +111,4 @@ class Foo {
         flag = 1;
     }
 }
+// #endregion snippet

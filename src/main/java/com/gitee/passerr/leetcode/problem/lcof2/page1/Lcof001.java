@@ -32,6 +32,7 @@ package com.gitee.passerr.leetcode.problem.lcof2.page1;
  * @date 2021/12/10 13:48
  */
 public class Lcof001 {
+    // #region snippet
     public int divide(int a, int b) {
         // 结果是否是正数
         boolean isPositive = a >= 0 == b >= 0;
@@ -78,4 +79,5 @@ public class Lcof001 {
 
         return ~result + 1;
     }
+    // #endregion snippet
 }

@@ -33,6 +33,7 @@ package com.gitee.passerr.leetcode.problem.algorithm.page2;
  * @see Solution62
  */
 public class Solution63 {
+    // #region snippet
     public int uniquePathsWithObstacles(int[][] obstacleGrid) {
         int rows = obstacleGrid.length, columns = obstacleGrid[0].length;
         // 动态规划
@@ -59,4 +60,5 @@ public class Solution63 {
 
         return dp[rows - 1][columns - 1];
     }
+    // #endregion snippet
 }

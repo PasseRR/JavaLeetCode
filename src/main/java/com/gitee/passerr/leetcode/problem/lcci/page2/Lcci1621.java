@@ -22,6 +22,7 @@ import java.util.Arrays;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcci1621 {
+    // #region snippet
     public int[] findSwapValues(int[] array1, int[] array2) {
         int sum1 = Arrays.stream(array1).sum();
         int sum2 = Arrays.stream(array2).sum();
@@ -60,4 +61,5 @@ public class Lcci1621 {
 
         return new int[0];
     }
+    // #endregion snippet
 }

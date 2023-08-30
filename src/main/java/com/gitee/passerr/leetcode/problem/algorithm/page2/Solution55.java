@@ -19,6 +19,7 @@ package com.gitee.passerr.leetcode.problem.algorithm.page2;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Solution55 {
+    // #region snippet
     public boolean canJump(int[] nums) {
         // 第一步能到的最大位置
         int max = nums[0];
@@ -41,4 +42,5 @@ public class Solution55 {
 
         return true;
     }
+    // #endregion snippet
 }

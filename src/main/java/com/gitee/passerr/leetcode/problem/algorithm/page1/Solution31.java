@@ -16,6 +16,7 @@ import java.util.Arrays;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Solution31 {
+    // #region snippet
     public void nextPermutation(int[] nums) {
         // 从倒数第二个数字开始和之后的数字依次比较
         for (int length = nums.length, i = length - 2; i >= 0; i--) {
@@ -36,4 +37,5 @@ public class Solution31 {
         // 未找到 或数量小于2 升序排序返回
         Arrays.sort(nums);
     }
+    // #endregion snippet
 }

@@ -19,6 +19,7 @@ package com.gitee.passerr.leetcode.problem.lcci.page1;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcci0805 {
+    // #region snippet
     public int multiply(int A, int B) {
         // 递归出点
         if (A == 0 || B == 0) {
@@ -37,4 +38,5 @@ public class Lcci0805 {
         // 递归拆分
         return (B << i) + this.multiply(A - (1 << i), B);
     }
+    // #endregion snippet
 }

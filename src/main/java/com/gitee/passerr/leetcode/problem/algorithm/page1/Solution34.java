@@ -17,6 +17,7 @@ package com.gitee.passerr.leetcode.problem.algorithm.page1;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Solution34 {
+    // #region snippet
     public int[] searchRange(int[] nums, int target) {
         int[] result = new int[]{-1, -1};
         int left = 0, right = nums.length - 1;
@@ -54,4 +55,5 @@ public class Solution34 {
 
         return result;
     }
+    // #endregion snippet
 }

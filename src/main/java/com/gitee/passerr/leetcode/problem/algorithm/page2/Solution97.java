@@ -17,6 +17,7 @@ import java.util.function.BiFunction;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Solution97 {
+    // #region snippet
     /**
      * 在两个字符串 s1 和 s2 中依次取字母，问是否可以组成 S3。什么意思呢？比如 s1 = abc , s2 = de，s3 = abdce。
      * s1 取 1 个 字母得到 a，s1 再取个字母得到 ab，s2 取个字母得到 abd，
@@ -76,4 +77,5 @@ public class Solution97 {
 
         return recursion.apply(0, 0);
     }
+    // #endregion snippet
 }

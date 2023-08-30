@@ -27,6 +27,7 @@ import java.util.stream.IntStream;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcof07 {
+    // #region snippet
     public TreeNode buildTree(int[] preorder, int[] inorder) {
         // 缓存索引
         Map<Integer, Integer> cacheIndex =
@@ -60,4 +61,5 @@ public class Lcof07 {
 
         return recursion.apply(0, new int[]{0, inorder.length - 1});
     }
+    // #endregion snippet
 }

@@ -20,8 +20,10 @@ package com.gitee.passerr.leetcode.problem.lcci.page1;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcci0109 {
+    // #region snippet
     public boolean isFlipedString(String s1, String s2) {
         // 若是旋转字符串 s1+s1包含s2 同理 s2+s2包含s1 首尾相连
         return s1.length() == s2.length() && (s1 + s1).contains(s2);
     }
+    // #endregion snippet
 }

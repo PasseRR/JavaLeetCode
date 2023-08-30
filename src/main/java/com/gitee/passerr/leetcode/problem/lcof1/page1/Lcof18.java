@@ -25,6 +25,7 @@ import com.gitee.passerr.leetcode.ListNode;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcof18 {
+    // #region snippet
     public ListNode deleteNode(ListNode head, int val) {
         ListNode cursor = head, previous = null;
         while (cursor.val != val) {
@@ -40,4 +41,5 @@ public class Lcof18 {
         // 若存在前驱节点 则返回头结点 否则说明头结点值为val 返回头结点后一节点
         return previous == null ? head.next : head;
     }
+    // #endregion snippet
 }

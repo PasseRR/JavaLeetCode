@@ -24,6 +24,7 @@ import com.gitee.passerr.leetcode.Node;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Solution116 {
+    // #region snippet
     public Node connect(Node root) {
         if (root == null || root.left == null) {
             return root;
@@ -42,4 +43,5 @@ public class Solution116 {
 
         return root;
     }
+    // #endregion snippet
 }

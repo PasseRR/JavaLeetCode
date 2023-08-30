@@ -20,6 +20,7 @@ package com.gitee.passerr.leetcode.problem.lcof1.page1;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcof43 {
+    // #region snippet
     public int countDigitOne(int n) {
         int count = 0;
         // 从个位开始遍历到最高位
@@ -48,4 +49,5 @@ public class Lcof43 {
 
         return count;
     }
+    // #endregion snippet
 }

@@ -29,6 +29,7 @@ import com.gitee.passerr.leetcode.TreeNode;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcof27 {
+    // #region snippet
     public TreeNode mirrorTree(TreeNode root) {
         if (root == null) {
             return null;
@@ -40,4 +41,5 @@ public class Lcof27 {
 
         return mirror;
     }
+    // #endregion snippet
 }

@@ -21,6 +21,7 @@ package com.gitee.passerr.leetcode.problem.lcci.page1;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcci0803 {
+    // #region snippet
     public int findMagicIndex(int[] nums) {
         int len = nums.length;
         for (int i = 0; i < len; i++) {
@@ -31,4 +32,5 @@ public class Lcci0803 {
 
         return -1;
     }
+    // #endregion snippet
 }

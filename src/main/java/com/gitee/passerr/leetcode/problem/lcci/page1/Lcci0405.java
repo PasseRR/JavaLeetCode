@@ -32,6 +32,7 @@ import java.util.function.Consumer;
  * @see com.gitee.passerr.leetcode.problem.algorithm.page2.Solution98
  */
 public class Lcci0405 {
+    // #region snippet
     /**
      * 若它的左子树不空，则左子树上所有结点的值均小于它的根结点的值；
      * 若它的右子树不空，则右子树上所有结点的值均大于它的根结点的值；
@@ -64,4 +65,5 @@ public class Lcci0405 {
 
         return true;
     }
+    // #endregion snippet
 }

@@ -16,6 +16,7 @@ package com.gitee.passerr.leetcode.problem.algorithm.page2;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Solution67 {
+    // #region snippet
     public String addBinary(String a, String b) {
         int al = a.length(), bl = b.length(), ai = al - 1, bi = bl - 1, carry = 0;
         StringBuilder sb = new StringBuilder();
@@ -34,4 +35,5 @@ public class Solution67 {
 
         return sb.reverse().toString();
     }
+    // #endregion snippet
 }

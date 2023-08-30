@@ -46,6 +46,7 @@ import java.util.stream.Collectors;
 public class Lcof048 {
 }
 
+// #region snippet
 class Codec {
     private static final String COMMA = ",";
     private static final String NULL = "null";
@@ -128,3 +129,4 @@ class Codec {
         return root;
     }
 }
+// #endregion snippet

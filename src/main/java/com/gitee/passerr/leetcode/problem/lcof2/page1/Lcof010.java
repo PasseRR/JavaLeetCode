@@ -25,6 +25,7 @@ import java.util.Map;
  * @date 2021/12/15 18:01
  */
 public class Lcof010 {
+    // #region snippet
     public int subarraySum(int[] nums, int k) {
         int result = 0, sum = 0;
         Map<Integer, Integer> prefix = new HashMap<>();
@@ -42,4 +43,5 @@ public class Lcof010 {
 
         return result;
     }
+    // #endregion snippet
 }

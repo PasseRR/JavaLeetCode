@@ -30,6 +30,7 @@ import java.util.Arrays;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcci0811 {
+    // #region snippet
     public int waysToChange(int n) {
         final int mod = 1000000007;
         // 空间压缩
@@ -49,4 +50,5 @@ public class Lcci0811 {
 
         return dp[n];
     }
+    // #endregion snippet
 }

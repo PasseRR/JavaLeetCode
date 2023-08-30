@@ -44,6 +44,7 @@ public class Solution1226 {
     }
 }
 
+// #region snippet
 class DiningPhilosophers {
     /**
      * 假设哲学家按照题目描述编号，p0、p1、p2、p3、p4
@@ -84,3 +85,4 @@ class DiningPhilosophers {
         this.philosophers.release();
     }
 }
+// #endregion snippet

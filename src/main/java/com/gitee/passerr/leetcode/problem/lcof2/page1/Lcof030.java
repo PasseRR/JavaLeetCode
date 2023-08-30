@@ -39,6 +39,7 @@ import java.util.Random;
 public class Lcof030 {
 }
 
+// #region snippet
 class RandomizedSet {
     /**
      * 缓存数组及对应数组下标
@@ -105,3 +106,4 @@ class RandomizedSet {
         return this.values.get(this.random.nextInt(this.values.size()));
     }
 }
+// #endregion snippet

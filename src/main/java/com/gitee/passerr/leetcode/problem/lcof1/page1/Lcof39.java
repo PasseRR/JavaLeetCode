@@ -16,6 +16,7 @@ package com.gitee.passerr.leetcode.problem.lcof1.page1;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcof39 {
+    // #region snippet
     public int majorityElement(int[] nums) {
         int result = nums[0], count = 1;
         // 摩尔投票
@@ -36,4 +37,5 @@ public class Lcof39 {
 
         return result;
     }
+    // #endregion snippet
 }

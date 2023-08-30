@@ -45,6 +45,7 @@ public class Solution1195 {
     }
 }
 
+// #region snippet
 class FizzBuzz {
     private final int n;
     private boolean isEnable = true;
@@ -127,3 +128,4 @@ class FizzBuzz {
         this.fizzbuzz.release();
     }
 }
+// #endregion snippet

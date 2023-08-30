@@ -17,6 +17,7 @@ import com.gitee.passerr.leetcode.ListNode;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Solution83 {
+    // #region snippet
     public ListNode deleteDuplicates(ListNode head) {
         if (head == null) {
             return null;
@@ -37,4 +38,5 @@ public class Solution83 {
 
         return node.next;
     }
+    // #endregion snippet
 }

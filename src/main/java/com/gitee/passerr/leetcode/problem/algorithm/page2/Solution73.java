@@ -46,6 +46,7 @@ import java.util.Set;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Solution73 {
+    // #region snippet
     public void setZeroes(int[][] matrix) {
         int rows = matrix.length, columns = matrix[0].length;
         Map<Integer, Set<Integer>> cache = new HashMap<>();
@@ -76,4 +77,5 @@ public class Solution73 {
             }
         }
     }
+    // #endregion snippet
 }

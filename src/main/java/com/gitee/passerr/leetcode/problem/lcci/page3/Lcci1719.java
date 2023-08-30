@@ -19,6 +19,7 @@ package com.gitee.passerr.leetcode.problem.lcci.page3;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcci1719 {
+    // #region snippet
     public int[] missingTwo(int[] nums) {
         // 计算所有数字和及平方和
         int sum = 0, squaredSum = 0;
@@ -43,4 +44,5 @@ public class Lcci1719 {
 
         return new int[]{a, sum - a};
     }
+    // #endregion snippet
 }

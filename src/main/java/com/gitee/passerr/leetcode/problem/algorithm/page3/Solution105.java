@@ -27,6 +27,7 @@ import java.util.stream.IntStream;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Solution105 {
+    // #region snippet
     public TreeNode buildTree(int[] preorder, int[] inorder) {
         int length = inorder.length;
         // 缓存中序元素值及索引
@@ -77,4 +78,5 @@ public class Solution105 {
     private interface TrFunction<T1, T2, T3, R> {
         R apply(T1 t1, T2 t2, T3 t3);
     }
+    // #endregion snippet
 }

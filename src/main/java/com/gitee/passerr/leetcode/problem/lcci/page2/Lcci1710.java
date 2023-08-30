@@ -22,6 +22,7 @@ package com.gitee.passerr.leetcode.problem.lcci.page2;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcci1710 {
+    // #region snippet
     public int majorityElement(int[] nums) {
         // result为结果数字 count为比其他数字加起来多的数量
         int result = -1, count = 0;
@@ -54,4 +55,5 @@ public class Lcci1710 {
 
         return -1;
     }
+    // #endregion snippet
 }

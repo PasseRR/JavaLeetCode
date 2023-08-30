@@ -30,6 +30,7 @@ public class Solution146 {
 }
 
 class LRUCache extends LinkedHashMap<Integer, Integer> {
+    // #region snippet
     private int capacity;
 
     public LRUCache(int capacity) {
@@ -50,4 +51,5 @@ class LRUCache extends LinkedHashMap<Integer, Integer> {
     protected boolean removeEldestEntry(Map.Entry<Integer, Integer> eldest) {
         return this.capacity < super.size();
     }
+    // #endregion snippet
 }

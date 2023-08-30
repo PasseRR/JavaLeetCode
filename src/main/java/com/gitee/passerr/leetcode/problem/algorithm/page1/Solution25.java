@@ -20,6 +20,7 @@ import com.gitee.passerr.leetcode.ListNode;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Solution25 {
+    // #region snippet
     public ListNode reverseKGroup(ListNode head, int k) {
         if (k <= 1) {
             return head;
@@ -82,4 +83,5 @@ public class Solution25 {
 
         return result.next;
     }
+    // #endregion snippet
 }

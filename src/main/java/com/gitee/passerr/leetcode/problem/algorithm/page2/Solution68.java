@@ -61,6 +61,7 @@ import java.util.stream.IntStream;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Solution68 {
+    // #region snippet
     public List<String> fullJustify(String[] words, int maxWidth) {
         // 结果集
         List<String> result = new ArrayList<>();
@@ -133,4 +134,5 @@ public class Solution68 {
 
         return result;
     }
+    // #endregion snippet
 }

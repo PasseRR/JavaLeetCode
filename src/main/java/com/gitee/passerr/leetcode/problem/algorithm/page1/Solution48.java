@@ -41,6 +41,7 @@ package com.gitee.passerr.leetcode.problem.algorithm.page1;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Solution48 {
+    // #region snippet
     public void rotate(int[][] matrix) {
         int length = matrix.length, temp;
         // [                   [
@@ -71,4 +72,5 @@ public class Solution48 {
             }
         }
     }
+    // #endregion snippet
 }

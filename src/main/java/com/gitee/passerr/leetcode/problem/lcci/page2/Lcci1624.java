@@ -22,6 +22,7 @@ import java.util.List;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcci1624 {
+    // #region snippet
     public List<List<Integer>> pairSums(int[] nums, int target) {
         Arrays.sort(nums);
 
@@ -44,4 +45,5 @@ public class Lcci1624 {
 
         return result;
     }
+    // #endregion snippet
 }

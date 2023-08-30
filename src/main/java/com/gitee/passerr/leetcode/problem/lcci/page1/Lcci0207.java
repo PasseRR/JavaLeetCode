@@ -36,6 +36,7 @@ import com.gitee.passerr.leetcode.ListNode;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcci0207 {
+    // #region snippet
     public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
         // 根据题意 不会出现环
         // 若两个链表相交 则后部分链表肯定一致
@@ -78,4 +79,5 @@ public class Lcci0207 {
         // 返回任意节点
         return nodeA;
     }
+    // #endregion snippet
 }

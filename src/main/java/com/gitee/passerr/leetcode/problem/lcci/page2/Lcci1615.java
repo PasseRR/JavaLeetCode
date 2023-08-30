@@ -22,6 +22,7 @@ package com.gitee.passerr.leetcode.problem.lcci.page2;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcci1615 {
+    // #region snippet
     public int[] masterMind(String solution, String guess) {
         // 按照字符计数、猜中及伪猜中
         int[] counter = new int[26], result = new int[2];
@@ -51,4 +52,5 @@ public class Lcci1615 {
 
         return result;
     }
+    // #endregion snippet
 }

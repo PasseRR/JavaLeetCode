@@ -17,6 +17,7 @@ import com.gitee.passerr.leetcode.ListNode;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Solution143 {
+    // #region snippet
     public void reorderList(ListNode head) {
         // 少于2个节点 不需要重写排列
         if (head == null || head.next == null) {
@@ -64,4 +65,5 @@ public class Solution143 {
             reverse = rn;
         }
     }
+    // #endregion snippet
 }

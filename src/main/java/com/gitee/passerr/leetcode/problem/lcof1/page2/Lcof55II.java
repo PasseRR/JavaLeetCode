@@ -35,6 +35,7 @@ import java.util.function.Function;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcof55II {
+    // #region snippet
     public boolean isBalanced(TreeNode root) {
         // 递归获取树的最大深度
         Function<TreeNode, Integer> recursion = new Function<TreeNode, Integer>() {
@@ -51,4 +52,5 @@ public class Lcof55II {
                 && this.isBalanced(root.left) && this.isBalanced(root.right)
         );
     }
+    // #endregion snippet
 }

@@ -33,6 +33,7 @@ package com.gitee.passerr.leetcode.problem.lcof2.page1;
  * @date 2021/12/13 10:29
  */
 public class Lcof006 {
+    // #region snippet
     public int[] twoSum(int[] numbers, int target) {
         // 使用双指针遍历
         int i = 0, j = numbers.length - 1;
@@ -50,4 +51,5 @@ public class Lcof006 {
         // 根据题意肯定有解
         return null;
     }
+    // #endregion snippet
 }

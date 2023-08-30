@@ -24,6 +24,7 @@ package com.gitee.passerr.leetcode.problem.algorithm.page2;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Solution70 {
+    // #region snippet
     public int climbStairs(int n) {
         // 递归tle 考虑使用dp
         int[] dp = new int[n];
@@ -46,4 +47,5 @@ public class Solution70 {
         // 递归tle了
         return n < 3 ? n : climbStairs(n - 1) + climbStairs(n - 2);
     }
+    // #endregion snippet
 }

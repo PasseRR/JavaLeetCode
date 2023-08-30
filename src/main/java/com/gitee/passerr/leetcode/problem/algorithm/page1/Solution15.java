@@ -24,6 +24,7 @@ import java.util.stream.Stream;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Solution15 {
+    // #region snippet
     public List<List<Integer>> threeSum(int[] nums) {
         // 去重
         Set<List<Integer>> result = new HashSet<>();
@@ -62,4 +63,5 @@ public class Solution15 {
 
         return new ArrayList<>(result);
     }
+    // #endregion snippet
 }

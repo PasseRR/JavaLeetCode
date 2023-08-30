@@ -23,6 +23,7 @@ package com.gitee.passerr.leetcode.problem.lcof1.page1;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcof15 {
+    // #region snippet
     public int hammingWeight(int n) {
         int count = 0;
         // 汉明距离
@@ -33,4 +34,5 @@ public class Lcof15 {
 
         return count;
     }
+    // #endregion snippet
 }

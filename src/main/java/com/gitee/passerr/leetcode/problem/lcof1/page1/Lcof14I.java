@@ -22,6 +22,7 @@ package com.gitee.passerr.leetcode.problem.lcof1.page1;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcof14I {
+    // #region snippet
     public int cuttingRope(int n) {
         if (n < 4) {
             return n - 1;
@@ -42,4 +43,5 @@ public class Lcof14I {
 
         return product;
     }
+    // #endregion snippet
 }

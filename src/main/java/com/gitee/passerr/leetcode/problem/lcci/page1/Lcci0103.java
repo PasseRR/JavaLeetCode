@@ -19,6 +19,7 @@ package com.gitee.passerr.leetcode.problem.lcci.page1;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcci0103 {
+    // #region snippet
     public String replaceSpaces(String S, int length) {
         int len = Integer.min(S.length(), length);
         // 最长为所有字符串均为空格即字符串长度的3倍
@@ -40,4 +41,5 @@ public class Lcci0103 {
 
         return new String(result, 0, cnt);
     }
+    // #endregion snippet
 }

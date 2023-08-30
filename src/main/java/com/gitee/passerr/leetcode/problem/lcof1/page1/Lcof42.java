@@ -18,6 +18,7 @@ package com.gitee.passerr.leetcode.problem.lcof1.page1;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcof42 {
+    // #region snippet
     public int maxSubArray(int[] nums) {
         int result = nums[0], length = nums.length, sum = nums[0];
         for (int i = 1; i < length; i++) {
@@ -30,4 +31,5 @@ public class Lcof42 {
 
         return result;
     }
+    // #endregion snippet
 }

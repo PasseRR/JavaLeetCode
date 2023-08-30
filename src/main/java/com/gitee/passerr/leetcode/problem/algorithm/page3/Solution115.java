@@ -44,6 +44,7 @@ import java.util.Arrays;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Solution115 {
+    // #region snippet
     public int numDistinct(String s, String t) {
         int sl = s.length(), tl = t.length();
         int[][] dp = new int[tl + 1][sl + 1];
@@ -64,4 +65,5 @@ public class Solution115 {
 
         return dp[tl][sl];
     }
+    // #endregion snippet
 }

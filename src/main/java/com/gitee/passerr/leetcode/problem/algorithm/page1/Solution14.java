@@ -20,6 +20,7 @@ package com.gitee.passerr.leetcode.problem.algorithm.page1;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Solution14 {
+    // #region snippet
     public String longestCommonPrefix(String[] strs) {
         int length = strs.length;
         // 空数组 空前缀
@@ -41,4 +42,5 @@ public class Solution14 {
 
         return result;
     }
+    // #endregion snippet
 }

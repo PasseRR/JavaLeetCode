@@ -32,6 +32,7 @@ package com.gitee.passerr.leetcode.problem.lcof2.page1;
  * @date 2021/12/17 10:29
  */
 public class Lcof016 {
+    // #region snippet
     public int lengthOfLongestSubstring(String s) {
         int result = 0, len = s.length();
         // 按题意 ASCII码表
@@ -52,4 +53,5 @@ public class Lcof016 {
 
         return result;
     }
+    // #endregion snippet
 }

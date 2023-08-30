@@ -14,6 +14,7 @@ package com.gitee.passerr.leetcode.problem.lcci.page2;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcci1601 {
+    // #region snippet
     public int[] swapNumbers(int[] numbers) {
         // 三次异或交换数字
         numbers[0] ^= numbers[1];
@@ -22,4 +23,5 @@ public class Lcci1601 {
 
         return numbers;
     }
+    // #endregion snippet
 }

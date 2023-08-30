@@ -34,6 +34,7 @@ import java.util.stream.Collectors;
  * @see Solution102
  */
 public class Solution107 {
+    // #region snippet
     public List<List<Integer>> levelOrderBottom(TreeNode root) {
         // 按照层级缓存数字
         Map<Integer, List<Integer>> cache = new HashMap<>(8);
@@ -60,4 +61,5 @@ public class Solution107 {
 
         return cache.keySet().stream().sorted(Comparator.reverseOrder()).map(cache::get).collect(Collectors.toList());
     }
+    // #endregion snippet
 }

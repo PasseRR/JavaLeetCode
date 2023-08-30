@@ -23,6 +23,7 @@ package com.gitee.passerr.leetcode.problem.lcci.page2;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcci1613 {
+    // #region snippet
     public double[] cutSquares(int[] square1, int[] square2) {
         //计算两个正方形的中心点
         double[] circle1 = {square1[0] + square1[2] / 2.0D, square1[1] + square1[2] / 2.0D};
@@ -64,4 +65,5 @@ public class Lcci1613 {
                     : new double[]{topX, topY, bottomX, bottomY};
         }
     }
+    // #endregion snippet
 }

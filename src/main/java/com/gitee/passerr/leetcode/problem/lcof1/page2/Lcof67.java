@@ -44,6 +44,7 @@ package com.gitee.passerr.leetcode.problem.lcof1.page2;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcof67 {
+    // #region snippet
     public int strToInt(String str) {
         // 第一个非空字符串
         String source = str.trim().split(" ")[0];
@@ -81,4 +82,5 @@ public class Lcof67 {
 
         return (int) result * (isNegative ? -1 : 1);
     }
+    // #endregion snippet
 }

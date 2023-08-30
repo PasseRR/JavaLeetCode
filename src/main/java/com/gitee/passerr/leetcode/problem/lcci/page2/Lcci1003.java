@@ -23,6 +23,7 @@ import java.util.Queue;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcci1003 {
+    // #region snippet
     public int search(int[] arr, int target) {
         // 记录旋转点
         Queue<Integer> queue = new ArrayDeque<>();
@@ -53,4 +54,5 @@ public class Lcci1003 {
 
         return -1;
     }
+    // #endregion snippet
 }

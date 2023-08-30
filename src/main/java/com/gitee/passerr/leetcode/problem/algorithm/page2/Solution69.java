@@ -21,6 +21,7 @@ import java.util.function.BiFunction;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Solution69 {
+    // #region snippet
     public int mySqrt(int x) {
         // 二分法
         BiFunction<Integer, Integer, Integer> division = new BiFunction<Integer, Integer, Integer>() {
@@ -48,4 +49,5 @@ public class Solution69 {
     public int mySqrt1(int x) {
         return (int) Math.sqrt(x);
     }
+    // #endregion snippet
 }

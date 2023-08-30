@@ -22,6 +22,7 @@ package com.gitee.passerr.leetcode.problem.lcof1.page1;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcof10I {
+    // #region snippet
     public int fib(int n) {
         int[] dp = new int[2];
         dp[1] = 1;
@@ -36,4 +37,5 @@ public class Lcof10I {
 
         return dp[Integer.min(n, 1)];
     }
+    // #endregion snippet
 }

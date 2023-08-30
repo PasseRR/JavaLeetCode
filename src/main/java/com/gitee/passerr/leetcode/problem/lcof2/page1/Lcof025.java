@@ -33,6 +33,7 @@ import java.util.function.Consumer;
  * @date 2022/01/06 17:25
  */
 public class Lcof025 {
+    // #region snippet
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         int len1 = 0, len2 = 0;
         ListNode c1 = l1, c2 = l2;
@@ -95,4 +96,5 @@ public class Lcof025 {
 
         return r.next;
     }
+    // #endregion snippet
 }

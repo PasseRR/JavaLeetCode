@@ -20,6 +20,7 @@ package com.gitee.passerr.leetcode.problem.lcof2.page1;
  * @date 2021/12/10 14:37
  */
 public class Lcof002 {
+    // #region snippet
     public String addBinary(String a, String b) {
         // a、b的长度 a、b和的最大长度
         int len1 = a.length(), len2 = b.length(), max = Integer.max(len1, len2) + 1;
@@ -49,4 +50,5 @@ public class Lcof002 {
 
         return new String(result, max - cnt, cnt);
     }
+    // #endregion snippet
 }

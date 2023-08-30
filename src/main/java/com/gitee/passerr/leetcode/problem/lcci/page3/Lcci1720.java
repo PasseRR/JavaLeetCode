@@ -29,6 +29,7 @@ public class Lcci1720 {
 
 }
 
+// #region snippet
 class MedianFinder {
     Queue<Integer> min, max;
 
@@ -54,3 +55,4 @@ class MedianFinder {
     }
 }
 
+// #endregion snippet

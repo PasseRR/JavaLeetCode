@@ -35,6 +35,7 @@ import com.gitee.passerr.leetcode.Node;
  * @date 2022/01/07 15:31
  */
 public class Lcof029 {
+    // #region snippet
     public Node insert(Node head, int insertVal) {
         Node append = new Node(insertVal);
         // 空的话初始节点自循环
@@ -71,4 +72,5 @@ public class Lcof029 {
 
         return head;
     }
+    // #endregion snippet
 }

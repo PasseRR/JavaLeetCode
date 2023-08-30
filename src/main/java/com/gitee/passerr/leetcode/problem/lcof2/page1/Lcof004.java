@@ -18,6 +18,7 @@ package com.gitee.passerr.leetcode.problem.lcof2.page1;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcof004 {
+    // #region snippet
     public int singleNumber(int[] nums) {
         int result = 0;
 
@@ -40,4 +41,5 @@ public class Lcof004 {
 
         return result;
     }
+    // #endregion snippet
 }

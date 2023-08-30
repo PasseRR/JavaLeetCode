@@ -17,6 +17,7 @@ package com.gitee.passerr.leetcode.problem.lcof1.page1;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcof49 {
+    // #region snippet
     public int nthUglyNumber(int n) {
         int[] dp = new int[n + 1];
         dp[1] = 1;
@@ -41,4 +42,5 @@ public class Lcof49 {
 
         return dp[n];
     }
+    // #endregion snippet
 }

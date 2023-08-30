@@ -11,6 +11,7 @@ package com.gitee.passerr.leetcode.problem.lcci.page2;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcci1607 {
+    // #region snippet
     public int maximum(int a, int b) {
         // a b的符号位
         int flagA = a >>> 31;
@@ -24,4 +25,5 @@ public class Lcci1607 {
         // 若b > a flag为1 flag^1 = 0 结果为b
         return (flag ^ 1) * a + flag * b;
     }
+    // #endregion snippet
 }

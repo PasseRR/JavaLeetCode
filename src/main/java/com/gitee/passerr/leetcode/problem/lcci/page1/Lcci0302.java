@@ -19,6 +19,7 @@ package com.gitee.passerr.leetcode.problem.lcci.page1;
 public class Lcci0302 {
 }
 
+// #region snippet
 class MinStack {
     int[] data = new int[65536];
     int[] dataMin = new int[65536];
@@ -60,3 +61,4 @@ class MinStack {
     }
 }
 
+// #endregion snippet

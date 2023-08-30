@@ -10,6 +10,7 @@ import java.util.function.Function;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcof20 {
+    // #region snippet
     private static final String EXPONENT = "e";
     private static final String PLUS = "+";
     private static final String MINUS = "-";
@@ -73,4 +74,5 @@ public class Lcof20 {
 
         return isScientific.apply(s.trim());
     }
+    // #endregion snippet
 }

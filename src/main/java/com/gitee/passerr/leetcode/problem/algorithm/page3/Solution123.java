@@ -31,6 +31,7 @@ package com.gitee.passerr.leetcode.problem.algorithm.page3;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Solution123 {
+    // #region snippet
     public int maxProfit(int[] prices) {
         int len = prices.length;
         // 0 存储从前段最大收益 1存储后段最大收益
@@ -78,4 +79,5 @@ public class Solution123 {
 
         return max;
     }
+    // #endregion snippet
 }

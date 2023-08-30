@@ -35,6 +35,7 @@ import java.util.Objects;
  * @date 2021/12/17 16:34
  */
 public class Lcof017 {
+    // #region snippet
     public String minWindow(String s, String t) {
         int len = s.length();
         // 待匹配的字符及数量
@@ -87,4 +88,5 @@ public class Lcof017 {
 
         return result;
     }
+    // #endregion snippet
 }

@@ -19,6 +19,7 @@ package com.gitee.passerr.leetcode.problem.lcci.page1;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcci0504 {
+    // #region snippet
     public int[] findClosedNumbers(int num) {
         int i = 0, left = num, right = num;
         while (i < 31) {
@@ -81,4 +82,5 @@ public class Lcci0504 {
         // 较大值可能会溢出 较小值可能不存在
         return new int[]{Integer.max(left, -1), right == num ? -1 : right};
     }
+    // #endregion snippet
 }

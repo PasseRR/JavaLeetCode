@@ -17,6 +17,7 @@ import com.gitee.passerr.leetcode.ListNode;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Solution148 {
+    // #region snippet
     public ListNode sortList(ListNode head) {
         // 当链表只有一个节点时 就是有序的
         if (head == null || head.next == null) {
@@ -54,4 +55,5 @@ public class Solution148 {
 
         return node.next;
     }
+    // #endregion snippet
 }

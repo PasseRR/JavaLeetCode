@@ -22,6 +22,7 @@ package com.gitee.passerr.leetcode.problem.algorithm.page1;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Solution7 {
+    // #region snippet
     public int reverse(int x) {
         StringBuilder sb = new StringBuilder(String.valueOf(x)).reverse();
         // 负数处理
@@ -38,4 +39,5 @@ public class Solution7 {
 
         return result.intValue();
     }
+    // #endregion snippet
 }

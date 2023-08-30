@@ -16,9 +16,11 @@ import java.util.Arrays;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcci1714 {
+    // #region snippet
     public int[] smallestK(int[] arr, int k) {
         Arrays.sort(arr);
 
         return Arrays.copyOfRange(arr, 0, k);
     }
+    // #endregion snippet
 }

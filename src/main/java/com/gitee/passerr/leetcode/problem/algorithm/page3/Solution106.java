@@ -27,6 +27,7 @@ import java.util.stream.IntStream;
  * @see Solution105
  */
 public class Solution106 {
+    // #region snippet
     public TreeNode buildTree(int[] inorder, int[] postorder) {
         // 类似前序中序转树
         // 后续最后一个数字为根节点 在中序中根据根节点分为两段 左边为左树 右边为右树
@@ -68,4 +69,5 @@ public class Solution106 {
     private interface TrFunction<T1, T2, T3, R> {
         R apply(T1 t1, T2 t2, T3 t3);
     }
+    // #endregion snippet
 }

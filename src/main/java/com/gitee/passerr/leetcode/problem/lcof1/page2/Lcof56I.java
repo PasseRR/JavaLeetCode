@@ -17,6 +17,7 @@ package com.gitee.passerr.leetcode.problem.lcof1.page2;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcof56I {
+    // #region snippet
     public int[] singleNumbers(int[] nums) {
         int xor = 0;
         // 根据题意xor结果为两个出线一次的数字异或结果
@@ -41,4 +42,5 @@ public class Lcof56I {
         // 另一个数字可以根据异或结果再次计算
         return new int[]{result, xor ^ result};
     }
+    // #endregion snippet
 }

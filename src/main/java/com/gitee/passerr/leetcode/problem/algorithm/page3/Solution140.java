@@ -44,6 +44,7 @@ import java.util.function.BiFunction;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Solution140 {
+    // #region snippet
     static class Trie {
         Trie[] children = new Trie[26];
         boolean isLeaf;
@@ -137,4 +138,5 @@ public class Solution140 {
 
         return result;
     }
+    // #endregion snippet
 }

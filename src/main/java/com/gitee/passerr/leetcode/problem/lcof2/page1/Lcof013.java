@@ -37,6 +37,7 @@ package com.gitee.passerr.leetcode.problem.lcof2.page1;
 public class Lcof013 {
 }
 
+// #region snippet
 class NumMatrix {
     /**
      * 存储矩阵的前缀和
@@ -71,3 +72,4 @@ class NumMatrix {
                 - this.prefixSum[row2 + 1][col1];
     }
 }
+// #endregion snippet

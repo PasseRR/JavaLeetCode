@@ -26,6 +26,7 @@ import java.util.LinkedList;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcci1626 {
+    // #region snippet
     public int calculate(String s) {
         // 使用双向链表
         // 操作数队
@@ -85,4 +86,5 @@ public class Lcci1626 {
 
         return operands.removeFirst();
     }
+    // #endregion snippet
 }

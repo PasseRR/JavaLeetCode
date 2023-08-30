@@ -31,6 +31,7 @@ package com.gitee.passerr.leetcode.problem.lcci.page2;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcci1618 {
+    // #region snippet
     public boolean patternMatching(String pattern, String value) {
         int pl = pattern.length(), vl = value.length();
         String[] dict = new String[2];
@@ -81,4 +82,5 @@ public class Lcci1618 {
 
         return false;
     }
+    // #endregion snippet
 }

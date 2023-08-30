@@ -18,6 +18,7 @@ package com.gitee.passerr.leetcode.problem.lcci.page1;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcci0506 {
+    // #region snippet
     public int convertInteger(int A, int B) {
         // A、B异或结果为1的位为不同部分
         int c = A ^ B, count = 0;
@@ -30,4 +31,5 @@ public class Lcci0506 {
 
         return count;
     }
+    // #endregion snippet
 }

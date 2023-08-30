@@ -25,6 +25,7 @@ import com.gitee.passerr.leetcode.Node;
  * @see Solution116
  */
 public class Solution117 {
+    // #region snippet
     public Node connect(Node root) {
         if (root == null || (root.left == null && root.right == null)) {
             return root;
@@ -60,4 +61,5 @@ public class Solution117 {
 
         return root;
     }
+    // #endregion snippet
 }

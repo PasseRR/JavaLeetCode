@@ -39,6 +39,7 @@ import java.util.Map;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcci1726 {
+    // #region snippet
     public List<String> computeSimilarities(int[][] docs) {
         int len = docs.length;
         List<String> result = new ArrayList<>();
@@ -81,4 +82,5 @@ public class Lcci1726 {
 
         return result;
     }
+    // #endregion snippet
 }

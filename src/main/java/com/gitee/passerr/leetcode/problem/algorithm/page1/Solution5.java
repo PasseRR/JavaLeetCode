@@ -18,6 +18,7 @@ import java.util.function.Function;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Solution5 {
+    // #region snippet
     public String longestPalindrome(String s) {
         // 是否是回文字符串
         Function<StringBuilder, Boolean> isPalindrome = str -> {
@@ -48,4 +49,5 @@ public class Solution5 {
         }
         return result;
     }
+    // #endregion snippet
 }

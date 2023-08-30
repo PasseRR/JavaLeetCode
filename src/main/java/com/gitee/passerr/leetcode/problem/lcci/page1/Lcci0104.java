@@ -13,6 +13,7 @@ package com.gitee.passerr.leetcode.problem.lcci.page1;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcci0104 {
+    // #region snippet
     public boolean canPermutePalindrome(String s) {
         // ascii码表 单词中不一定都是字母
         int[] cache = new int[128];
@@ -36,4 +37,5 @@ public class Lcci0104 {
 
         return true;
     }
+    // #endregion snippet
 }

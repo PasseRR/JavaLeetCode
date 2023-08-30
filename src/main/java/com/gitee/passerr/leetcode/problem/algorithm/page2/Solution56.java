@@ -22,6 +22,7 @@ import java.util.List;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Solution56 {
+    // #region snippet
     public int[][] merge(int[][] intervals) {
         int length = intervals.length;
         // 排序數組 先按照开区间升序排序 再按照闭区间升序排序
@@ -43,4 +44,5 @@ public class Solution56 {
 
         return result.toArray(new int[0][]);
     }
+    // #endregion snippet
 }

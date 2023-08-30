@@ -14,6 +14,7 @@ package com.gitee.passerr.leetcode.problem.lcof1.page1;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcof03 {
+    // #region snippet
     public int findRepeatNumber(int[] nums) {
         // 根据题意数字小于数组长度
         boolean[] dp = new boolean[nums.length];
@@ -27,4 +28,5 @@ public class Lcof03 {
 
         return -1;
     }
+    // #endregion snippet
 }

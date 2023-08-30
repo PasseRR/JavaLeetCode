@@ -42,6 +42,7 @@ import java.util.function.Consumer;
  * @date 2022/01/11 09:47
  */
 public class Lcof037 {
+    // #region snippet
     public int[] asteroidCollision(int[] asteroids) {
         Stack<Integer> stack = new Stack<>();
 
@@ -82,4 +83,5 @@ public class Lcof037 {
 
         return stack.stream().mapToInt(Integer::intValue).toArray();
     }
+    // #endregion snippet
 }

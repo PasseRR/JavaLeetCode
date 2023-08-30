@@ -35,6 +35,7 @@ package com.gitee.passerr.leetcode.problem.lcof2.page1;
 public class Lcof041 {
 }
 
+// #region snippet
 class MovingAverage {
     /**
      * 链表尾节点
@@ -94,3 +95,4 @@ class MovingAverage {
         }
     }
 }
+// #endregion snippet

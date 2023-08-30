@@ -21,6 +21,7 @@ import java.util.function.BiFunction;
  * @see com.gitee.passerr.leetcode.problem.algorithm.page3.Solution108
  */
 public class Lcci0402 {
+    // #region snippet
     public TreeNode sortedArrayToBST(int[] nums) {
         BiFunction<Integer, Integer, TreeNode> recursion = new BiFunction<Integer, Integer, TreeNode>() {
             @Override
@@ -41,4 +42,5 @@ public class Lcci0402 {
 
         return nums.length == 0 ? null : recursion.apply(0, nums.length - 1);
     }
+    // #endregion snippet
 }

@@ -18,6 +18,7 @@ package com.gitee.passerr.leetcode.problem.algorithm.page1;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Solution45 {
+    // #region snippet
     public int jump(int[] nums) {
         // 数组长度、总步数
         int length = nums.length, steps = 0;
@@ -40,4 +41,5 @@ public class Solution45 {
 
         return steps;
     }
+    // #endregion snippet
 }

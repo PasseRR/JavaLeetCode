@@ -60,6 +60,7 @@ public class Solution1116 {
     }
 }
 
+// #region snippet
 class ZeroEvenOdd {
     private int n;
     private Semaphore zero = new Semaphore(1);
@@ -105,3 +106,4 @@ class ZeroEvenOdd {
         }
     }
 }
+// #endregion snippet

@@ -18,6 +18,7 @@ import java.util.Map;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Solution76 {
+    // #region snippet
     public String minWindow(String s, String t) {
         // 缓存t中出现的字符及次数
         Map<Character, Integer> cache = new HashMap<>();
@@ -65,4 +66,5 @@ public class Solution76 {
 
         return min;
     }
+    // #endregion snippet
 }

@@ -36,6 +36,7 @@ import java.util.stream.IntStream;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcci1604 {
+    // #region snippet
     public String tictactoe(String[] board) {
         int n = board.length;
         char empty = ' ';
@@ -85,4 +86,5 @@ public class Lcci1604 {
         // 根据是否存在空格判断
         return Arrays.stream(board).anyMatch(it -> it.contains(String.valueOf(empty))) ? "Pending" : "Draw";
     }
+    // #endregion snippet
 }

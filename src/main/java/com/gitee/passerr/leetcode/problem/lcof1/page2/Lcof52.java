@@ -37,6 +37,7 @@ import com.gitee.passerr.leetcode.ListNode;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcof52 {
+    // #region snippet
     public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
         int len1 = 0;
         int len2 = 0;
@@ -73,4 +74,5 @@ public class Lcof52 {
 
         return c1;
     }
+    // #endregion snippet
 }

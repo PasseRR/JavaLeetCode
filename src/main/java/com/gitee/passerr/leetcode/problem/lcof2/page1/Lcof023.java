@@ -46,6 +46,7 @@ import com.gitee.passerr.leetcode.ListNode;
  * @date 2022/01/06 13:46
  */
 public class Lcof023 {
+    // #region snippet
     public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
         int len1 = 0, len2 = 0;
         ListNode cursor1 = headA, cursor2 = headB;
@@ -88,4 +89,5 @@ public class Lcof023 {
 
         return null;
     }
+    // #endregion snippet
 }

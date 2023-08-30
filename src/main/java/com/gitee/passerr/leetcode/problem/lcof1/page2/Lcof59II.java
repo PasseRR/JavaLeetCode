@@ -26,6 +26,7 @@ package com.gitee.passerr.leetcode.problem.lcof1.page2;
 public class Lcof59II {
 }
 
+// #region snippet
 class MaxQueue {
     // 队列数据
     int[] data;
@@ -81,3 +82,4 @@ class MaxQueue {
         return this.data[head++];
     }
 }
+// #endregion snippet

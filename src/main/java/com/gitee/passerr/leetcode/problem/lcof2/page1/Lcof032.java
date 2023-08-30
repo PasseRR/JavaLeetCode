@@ -28,6 +28,7 @@ package com.gitee.passerr.leetcode.problem.lcof2.page1;
  * @date 2022/01/10 10:06
  */
 public class Lcof032 {
+    // #region snippet
     public boolean isAnagram(String s, String t) {
         int len = s.length();
         // 长度不一样 肯定不是
@@ -63,4 +64,5 @@ public class Lcof032 {
 
         return true;
     }
+    // #endregion snippet
 }

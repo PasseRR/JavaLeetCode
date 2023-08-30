@@ -25,6 +25,7 @@ import java.util.stream.Collectors;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Solution18 {
+    // #region snippet
     public List<List<Integer>> fourSum(int[] nums, int target) {
         Set<List<Integer>> set = new HashSet<>(8);
         Arrays.sort(nums);
@@ -59,4 +60,5 @@ public class Solution18 {
 
         return new ArrayList<>(set);
     }
+    // #endregion snippet
 }

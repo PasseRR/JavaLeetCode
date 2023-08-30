@@ -56,6 +56,7 @@ import java.util.function.BiFunction;
  * @date 2022/01/07 13:54
  */
 public class Lcof028 {
+    // #region snippet
     public Node flatten(Node head) {
         // 空处理
         if (head == null) {
@@ -97,4 +98,5 @@ public class Lcof028 {
 
         return r.next;
     }
+    // #endregion snippet
 }

@@ -23,6 +23,7 @@ package com.gitee.passerr.leetcode.problem.algorithm.page1;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Solution3 {
+    // #region snippet
     public int lengthOfLongestSubstring(String s) {
         int result = 0;
         // 缓存子串
@@ -56,4 +57,5 @@ public class Solution3 {
 
         return result;
     }
+    // #endregion snippet
 }

@@ -33,6 +33,7 @@ import java.util.function.BiConsumer;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcci1713 {
+    // #region snippet
     public int respace(String[] dictionary, String sentence) {
         int len = sentence.length();
         // 按照字典第一个字符缓存 用于快速查找匹配前缀 使用set去重字典
@@ -85,4 +86,5 @@ public class Lcci1713 {
 
         return result.get();
     }
+    // #endregion snippet
 }

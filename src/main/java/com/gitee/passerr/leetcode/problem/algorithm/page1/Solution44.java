@@ -49,6 +49,7 @@ import java.util.function.BiFunction;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Solution44 {
+    // #region snippet
     public boolean isMatch(String s, String p) {
         int sl = s.length(), pl = p.length();
         // 双指针
@@ -125,4 +126,5 @@ public class Solution44 {
 
         return match.apply(0, 0);
     }
+    // #endregion snippet
 }

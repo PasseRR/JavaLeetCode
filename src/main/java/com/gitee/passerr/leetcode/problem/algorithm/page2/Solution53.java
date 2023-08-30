@@ -15,6 +15,7 @@ package com.gitee.passerr.leetcode.problem.algorithm.page2;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Solution53 {
+    // #region snippet
     public int maxSubArray(int[] nums) {
         int sum = 0, max = Integer.MIN_VALUE;
         for (int num : nums) {
@@ -29,4 +30,5 @@ public class Solution53 {
 
         return max;
     }
+    // #endregion snippet
 }

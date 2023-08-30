@@ -20,6 +20,7 @@ package com.gitee.passerr.leetcode.problem.algorithm.page1;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Solution28 {
+    // #region snippet
     public int strStr(String haystack, String needle) {
         // needle为空字符串直接返回
         if (needle.isEmpty()) {
@@ -36,4 +37,5 @@ public class Solution28 {
 
         return -1;
     }
+    // #endregion snippet
 }

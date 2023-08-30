@@ -19,6 +19,7 @@ import java.util.Arrays;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Solution81 {
+    // #region snippet
     public boolean search(int[] nums, int target) {
         int length = nums.length, turnPoint = -1;
         for (int i = 1; i < length; i++) {
@@ -35,4 +36,5 @@ public class Solution81 {
             // 未旋转的 直接二分搜索
             Arrays.binarySearch(nums, turnPoint, length, target) > -1;
     }
+    // #endregion snippet
 }

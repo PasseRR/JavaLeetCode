@@ -26,6 +26,7 @@ import java.util.function.BiFunction;
  * @see Solution108
  */
 public class Solution109 {
+    // #region snippet
     public TreeNode sortedListToBST(ListNode head) {
         List<Integer> list = new ArrayList<>();
         // 链表转数组
@@ -53,4 +54,5 @@ public class Solution109 {
 
         return list.size() == 0 ? null : recursion.apply(0, list.size() - 1);
     }
+    // #endregion snippet
 }

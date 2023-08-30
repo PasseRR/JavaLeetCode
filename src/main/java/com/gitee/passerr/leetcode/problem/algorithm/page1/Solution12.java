@@ -49,6 +49,7 @@ import java.util.Map;
  * @date 2019/07/02 14:28
  */
 public class Solution12 {
+    // #region snippet
     private static final Map<Integer, String> ROMAN = new LinkedHashMap<>(8);
 
     static {
@@ -78,4 +79,5 @@ public class Solution12 {
 
         return sb.toString();
     }
+    // #endregion snippet
 }

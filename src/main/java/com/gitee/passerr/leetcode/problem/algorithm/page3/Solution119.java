@@ -18,6 +18,7 @@ import java.util.List;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Solution119 {
+    // #region snippet
     public List<Integer> getRow(int rowIndex) {
         List<Integer> result = new ArrayList<>();
         result.add(1);
@@ -36,4 +37,5 @@ public class Solution119 {
 
         return result;
     }
+    // #endregion snippet
 }

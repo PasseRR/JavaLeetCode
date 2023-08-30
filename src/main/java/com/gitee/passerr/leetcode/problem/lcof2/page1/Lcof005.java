@@ -29,6 +29,7 @@ package com.gitee.passerr.leetcode.problem.lcof2.page1;
  * @date 2021/12/13 09:49
  */
 public class Lcof005 {
+    // #region snippet
     public int maxProduct(String[] words) {
         int len = words.length, result = 0;
         int[] bits = new int[len];
@@ -54,4 +55,5 @@ public class Lcof005 {
 
         return result;
     }
+    // #endregion snippet
 }

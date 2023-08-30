@@ -22,6 +22,7 @@ import java.util.stream.IntStream;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcof46 {
+    // #region snippet
     public int translateNum(int num) {
         // 数字码表
         Map<Integer, Character> cache =
@@ -54,4 +55,5 @@ public class Lcof46 {
 
         return result.get();
     }
+    // #endregion snippet
 }

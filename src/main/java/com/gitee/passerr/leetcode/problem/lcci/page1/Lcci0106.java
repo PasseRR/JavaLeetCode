@@ -19,6 +19,7 @@ package com.gitee.passerr.leetcode.problem.lcci.page1;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcci0106 {
+    // #region snippet
     public String compressString(String S) {
         int len = S.length();
         // 长度小于3 直接返回源字符串
@@ -51,4 +52,5 @@ public class Lcci0106 {
 
         return sb.length() > len ? S : sb.toString();
     }
+    // #endregion snippet
 }

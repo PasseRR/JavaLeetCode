@@ -20,6 +20,7 @@ package com.gitee.passerr.leetcode.problem.algorithm.page2;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Solution75 {
+    // #region snippet
     public void sortColors(int[] nums) {
         // 缓存颜色数量
         int[] colors = new int[3];
@@ -38,4 +39,5 @@ public class Solution75 {
             i++;
         }
     }
+    // #endregion snippet
 }

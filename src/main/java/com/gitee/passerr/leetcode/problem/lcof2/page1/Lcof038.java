@@ -27,6 +27,7 @@ import java.util.Stack;
  * @date 2022/01/11 16:39
  */
 public class Lcof038 {
+    // #region snippet
     public int[] dailyTemperatures(int[] temperatures) {
         // 栈维护温度索引单调栈
         Stack<Integer> stack = new Stack<>();
@@ -49,4 +50,5 @@ public class Lcof038 {
 
         return result;
     }
+    // #endregion snippet
 }

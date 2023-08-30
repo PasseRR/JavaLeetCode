@@ -19,6 +19,7 @@ package com.gitee.passerr.leetcode.problem.algorithm.page1;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Solution4 {
+    // #region snippet
     public double findMedianSortedArrays(int[] nums1, int[] nums2) {
         int length1 = nums1.length, length2 = nums2.length, length = length1 + length2;
         // 合并数组
@@ -52,4 +53,5 @@ public class Solution4 {
                 // 合并数组长度为奇数
                 : mergeArray[length / 2] / 1.0;
     }
+    // #endregion snippet
 }

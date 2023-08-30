@@ -23,6 +23,7 @@ import java.util.function.BiConsumer;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Solution77 {
+    // #region snippet
     public List<List<Integer>> combine(int n, int k) {
         List<List<Integer>> result = new ArrayList<>();
 
@@ -51,4 +52,5 @@ public class Solution77 {
 
         return result;
     }
+    // #endregion snippet
 }

@@ -32,6 +32,7 @@ import java.util.Set;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Solution142 {
+    // #region snippet
     public ListNode detectCycle(ListNode head) {
         // 缓存节点
         Set<ListNode> set = new HashSet<>();
@@ -45,4 +46,5 @@ public class Solution142 {
 
         return null;
     }
+    // #endregion snippet
 }

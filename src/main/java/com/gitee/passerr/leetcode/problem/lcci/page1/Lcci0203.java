@@ -13,10 +13,12 @@ import com.gitee.passerr.leetcode.ListNode;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcci0203 {
+    // #region snippet
     public void deleteNode(ListNode node) {
         // 将给定节点值改为下一个节点值
         node.val = node.next.val;
         // 节点移动
         node.next = node.next.next;
     }
+    // #endregion snippet
 }

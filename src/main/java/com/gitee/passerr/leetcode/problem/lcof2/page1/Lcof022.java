@@ -38,6 +38,7 @@ import com.gitee.passerr.leetcode.ListNode;
  * @date 2022/01/06 11:11
  */
 public class Lcof022 {
+    // #region snippet
     public ListNode detectCycle(ListNode head) {
         // 若节点数少于1 则不能构成环
         // 严格的说1个节点也能构成环，只要头结点后置节点非空即可
@@ -72,4 +73,5 @@ public class Lcof022 {
 
         return null;
     }
+    // #endregion snippet
 }

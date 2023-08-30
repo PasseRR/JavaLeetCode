@@ -19,6 +19,7 @@ package com.gitee.passerr.leetcode.problem.lcci.page1;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcci0502 {
+    // #region snippet
     public String printBin(double num) {
         double top = 1;
         StringBuilder sb = new StringBuilder("0.");
@@ -38,4 +39,5 @@ public class Lcci0502 {
 
         return "ERROR";
     }
+    // #endregion snippet
 }

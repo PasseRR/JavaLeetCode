@@ -23,6 +23,7 @@ import java.util.Comparator;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcci0813 {
+    // #region snippet
     public int pileBox(int[][] box) {
         // 将箱子按照高度升序排序
         Arrays.sort(box, Comparator.comparingInt(b -> b[2]));
@@ -49,4 +50,5 @@ public class Lcci0813 {
 
         return result;
     }
+    // #endregion snippet
 }

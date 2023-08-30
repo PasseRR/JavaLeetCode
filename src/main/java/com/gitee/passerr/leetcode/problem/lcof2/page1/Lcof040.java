@@ -38,6 +38,7 @@ import java.util.Stack;
  * @date 2022/01/14 15:20
  */
 public class Lcof040 {
+    // #region snippet
     public int maximalRectangle(String[] matrix) {
         int area = 0, rows = matrix.length;
         if (rows == 0) {
@@ -71,4 +72,5 @@ public class Lcof040 {
 
         return area;
     }
+    // #endregion snippet
 }

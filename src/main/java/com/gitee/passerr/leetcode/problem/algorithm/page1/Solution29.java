@@ -21,6 +21,7 @@ package com.gitee.passerr.leetcode.problem.algorithm.page1;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Solution29 {
+    // #region snippet
     public int divide(int dividend, int divisor) {
         // 由于使用正数会导致溢出
         // 所有数字均换为负数 正数最大值改为负数不会溢出
@@ -51,4 +52,5 @@ public class Solution29 {
         // 若符号为正 结果为负数 则正数溢出
         return isPositive ? (result < 0 ? Integer.MAX_VALUE : result) : -result;
     }
+    // #endregion snippet
 }

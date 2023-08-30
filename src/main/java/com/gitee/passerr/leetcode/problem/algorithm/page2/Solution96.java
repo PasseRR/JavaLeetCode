@@ -18,6 +18,7 @@ package com.gitee.passerr.leetcode.problem.algorithm.page2;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Solution96 {
+    // #region snippet
     public int numTrees(int n) {
         int[] dp = new int[n + 1];
         dp[0] = 1;
@@ -37,4 +38,5 @@ public class Solution96 {
 
         return dp[n];
     }
+    // #endregion snippet
 }

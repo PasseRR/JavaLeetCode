@@ -21,6 +21,7 @@ import java.util.function.BiFunction;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcci1005 {
+    // #region snippet
     public int findString(String[] words, String s) {
         BiFunction<Integer, Integer, Integer> binarySearch = new BiFunction<Integer, Integer, Integer>() {
             @Override
@@ -51,4 +52,5 @@ public class Lcci1005 {
 
         return binarySearch.apply(0, words.length - 1);
     }
+    // #endregion snippet
 }

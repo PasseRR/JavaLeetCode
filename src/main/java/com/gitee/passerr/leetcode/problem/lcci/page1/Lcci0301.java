@@ -26,6 +26,7 @@ package com.gitee.passerr.leetcode.problem.lcci.page1;
 public class Lcci0301 {
 }
 
+// #region snippet
 class TripleInOne {
     /**
      * 数组存储栈
@@ -109,3 +110,4 @@ class TripleInOne {
         }
     }
 }
+// #endregion snippet

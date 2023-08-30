@@ -25,6 +25,7 @@ import java.util.Stack;
  * @date 2022/01/11 18:22
  */
 public class Lcof039 {
+    // #region snippet
     public int largestRectangleArea(int[] heights) {
         int len = heights.length, area = 0;
         // 若末尾不是0 补一个0 保证所有柱子都能被弹出
@@ -47,4 +48,5 @@ public class Lcof039 {
 
         return area;
     }
+    // #endregion snippet
 }

@@ -20,6 +20,7 @@ import com.gitee.passerr.leetcode.ListNode;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcci0206 {
+    // #region snippet
     public boolean isPalindrome(ListNode head) {
         int count = 0;
         ListNode node = head;
@@ -53,4 +54,5 @@ public class Lcci0206 {
 
         return true;
     }
+    // #endregion snippet
 }

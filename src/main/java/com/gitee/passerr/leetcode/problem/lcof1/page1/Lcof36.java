@@ -19,6 +19,7 @@ import java.util.function.Consumer;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcof36 {
+    // #region snippet
     public Node treeToDoublyList(Node root) {
         // left表示头结点 right表示尾节点
         Node result = new Node(0);
@@ -54,4 +55,5 @@ public class Lcof36 {
 
         return result.left;
     }
+    // #endregion snippet
 }

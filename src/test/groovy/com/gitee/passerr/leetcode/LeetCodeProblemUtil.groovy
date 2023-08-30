@@ -13,7 +13,7 @@ import org.apache.groovy.json.internal.LazyMap
 class LeetCodeProblemUtil {
     def static http = new HTTPBuilder("https://leetcode.cn/graphql/")
 
-    static page(int pageNumber = 1, String categorySlug = "algorithms", int limit = 50) {
+    static page(int pageNumber = 1, String categorySlug = "algorithms", Map<String, ?> filter = [:], int limit = 50) {
         def query = """
             query problemsetQuestionList(\$categorySlug: String, \$limit: Int, \$skip: Int, \$filters: QuestionListFilterInput){
                 problemsetQuestionList(categorySlug: \$categorySlug, limit: \$limit, skip: \$skip, filters: \$filters) {
@@ -28,7 +28,7 @@ class LeetCodeProblemUtil {
         // frontendQuestionId titleSlug
         request([
             query        : query,
-            variables    : [categorySlug: categorySlug, limit: limit, skip: (pageNumber - 1) * limit, filters: [:]],
+            variables    : [categorySlug: categorySlug, limit: limit, skip: (pageNumber - 1) * limit, filters: filter],
             operationName: "problemsetQuestionList"
         ]).problemsetQuestionList?.questions ?: []
     }
@@ -38,6 +38,7 @@ class LeetCodeProblemUtil {
         query questionTranslations(\$titleSlug: String!) {
             question(titleSlug: \$titleSlug) {
                 translatedTitle
+                questionFrontendId
                 translatedContent
                 questionId
             }

@@ -28,6 +28,7 @@ import java.util.Stack;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcof31 {
+    // #region snippet
     public boolean validateStackSequences(int[] pushed, int[] popped) {
         // 辅助栈
         Stack<Integer> stack = new Stack<>();
@@ -47,4 +48,5 @@ public class Lcof31 {
 
         return stack.isEmpty();
     }
+    // #endregion snippet
 }

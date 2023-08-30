@@ -16,6 +16,7 @@ import com.gitee.passerr.leetcode.ListNode;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcci0202 {
+    // #region snippet
     public int kthToLast(ListNode head, int k) {
         int count = 0;
         ListNode node = head;
@@ -38,4 +39,5 @@ public class Lcci0202 {
 
         return 0;
     }
+    // #endregion snippet
 }

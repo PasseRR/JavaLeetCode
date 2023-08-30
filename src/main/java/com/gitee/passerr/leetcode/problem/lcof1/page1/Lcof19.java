@@ -45,6 +45,7 @@ package com.gitee.passerr.leetcode.problem.lcof1.page1;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcof19 {
+    // #region snippet
     private static final char POINT = '.';
     private static final char ASTER = '*';
 
@@ -92,4 +93,5 @@ public class Lcof19 {
         // p串为空 s串未匹配完成
         return false;
     }
+    // #endregion snippet
 }

@@ -32,6 +32,7 @@ package com.gitee.passerr.leetcode.problem.algorithm.page1;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Solution27 {
+    // #region snippet
     public int removeElement(int[] nums, int val) {
         int length = nums.length;
         // 去掉删除数字的数组元素个数
@@ -60,4 +61,5 @@ public class Solution27 {
 
         return result;
     }
+    // #endregion snippet
 }

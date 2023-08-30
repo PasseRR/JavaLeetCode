@@ -33,6 +33,7 @@ import java.util.function.BiPredicate;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcci1603 {
+    // #region snippet
     public double[] intersection(int[] start1, int[] end1, int[] start2, int[] end2) {
         // 以方程式ax + by + c = 0表示一条直线
         BiFunction<int[], int[], int[]> lineProducer = (p1, p2) -> {
@@ -105,4 +106,5 @@ public class Lcci1603 {
         // 平行线
         return new double[0];
     }
+    // #endregion snippet
 }

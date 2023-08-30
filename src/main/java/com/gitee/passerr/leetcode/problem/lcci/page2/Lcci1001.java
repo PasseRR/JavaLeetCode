@@ -17,6 +17,7 @@ package com.gitee.passerr.leetcode.problem.lcci.page2;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcci1001 {
+    // #region snippet
     public void merge(int[] A, int m, int[] B, int n) {
         // i为A最大元素索引 j为B最大元素索引 k为A末尾索引
         int i = m - 1, j = n - 1, k = A.length - 1;
@@ -40,4 +41,5 @@ public class Lcci1001 {
             A[k--] = B[j--];
         }
     }
+    // #endregion snippet
 }

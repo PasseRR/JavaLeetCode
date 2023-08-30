@@ -28,6 +28,7 @@ import java.util.List;
  * @date 2021/12/13 10:48
  */
 public class Lcof007 {
+    // #region snippet
     public List<List<Integer>> threeSum(int[] nums) {
         int len = nums.length;
         List<List<Integer>> result = new ArrayList<>();
@@ -62,4 +63,5 @@ public class Lcof007 {
         
         return result;
     }
+    // #endregion snippet
 }

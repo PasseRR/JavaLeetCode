@@ -20,6 +20,7 @@ import com.gitee.passerr.leetcode.TreeNode;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Solution111 {
+    // #region snippet
     public int minDepth(TreeNode root) {
         if (root == null) {
             return 0;
@@ -30,4 +31,5 @@ public class Solution111 {
         // 当左右树均不为空时 最小深度为左右树较小深度
         return left == 0 || right == 0 ? Math.max(left, right) + 1 : Math.min(left, right) + 1;
     }
+    // #endregion snippet
 }

@@ -27,6 +27,7 @@ import java.util.stream.Collectors;
  */
 public class Lcof37 {
 }
+// #region snippet
 class Codec {
     // Encodes a tree to a single string.
     public String serialize(TreeNode root) {
@@ -91,3 +92,4 @@ class Codec {
         return root;
     }
 }
+// #endregion snippet

@@ -16,6 +16,7 @@ import com.gitee.passerr.leetcode.ListNode;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcof06 {
+    // #region snippet
     public int[] reversePrint(ListNode head) {
         int count = 0;
         ListNode cursor = head;
@@ -36,4 +37,5 @@ public class Lcof06 {
 
         return result;
     }
+    // #endregion snippet
 }

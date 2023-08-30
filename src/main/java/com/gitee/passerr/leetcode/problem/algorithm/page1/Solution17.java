@@ -19,6 +19,7 @@ import java.util.function.BiConsumer;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Solution17 {
+    // #region snippet
     /**
      * 数字与字母对照表
      */
@@ -64,4 +65,5 @@ public class Solution17 {
 
         return result;
     }
+    // #endregion snippet
 }

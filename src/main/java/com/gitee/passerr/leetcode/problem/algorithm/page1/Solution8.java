@@ -41,6 +41,7 @@ package com.gitee.passerr.leetcode.problem.algorithm.page1;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Solution8 {
+    // #region snippet
     private static final java.util.regex.Pattern PATTERN = java.util.regex.Pattern.compile("^[\\s]*([+-]?[0-9]+)");
 
     public int myAtoi(String str) {
@@ -76,4 +77,5 @@ public class Solution8 {
                 Long.valueOf(String.valueOf(Integer.MIN_VALUE))
             );
     }
+    // #endregion snippet
 }

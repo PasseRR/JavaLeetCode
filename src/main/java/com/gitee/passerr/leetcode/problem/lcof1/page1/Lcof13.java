@@ -24,6 +24,7 @@ import java.util.function.BiFunction;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcof13 {
+    // #region snippet
     public int movingCount(int m, int n, int k) {
         boolean[][] visited = new boolean[m][n];
         BiFunction<Integer, Integer, Integer> backtrack = new BiFunction<Integer, Integer, Integer>() {
@@ -48,4 +49,5 @@ public class Lcof13 {
 
         return backtrack.apply(0, 0);
     }
+    // #endregion snippet
 }

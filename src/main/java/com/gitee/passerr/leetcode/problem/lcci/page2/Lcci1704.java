@@ -16,6 +16,7 @@ package com.gitee.passerr.leetcode.problem.lcci.page2;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcci1704 {
+    // #region snippet
     public int missingNumber(int[] nums) {
         // 使用异或计算
         int exor = 0;
@@ -32,4 +33,5 @@ public class Lcci1704 {
 
         return exor;
     }
+    // #endregion snippet
 }

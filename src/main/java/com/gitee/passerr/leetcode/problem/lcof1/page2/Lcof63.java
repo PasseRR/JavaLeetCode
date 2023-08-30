@@ -22,6 +22,7 @@ package com.gitee.passerr.leetcode.problem.lcof1.page2;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcof63 {
+    // #region snippet
     public int maxProfit(int[] prices) {
         // 最大收益、最低买入价格
         int max = 0, buy = Integer.MAX_VALUE;
@@ -34,4 +35,5 @@ public class Lcof63 {
 
         return max;
     }
+    // #endregion snippet
 }

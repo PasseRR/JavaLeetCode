@@ -19,6 +19,7 @@ package com.gitee.passerr.leetcode.problem.lcci.page1;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcci0105 {
+    // #region snippet
     public boolean oneEditAway(String first, String second) {
         int firstLen = first.length(), secondLen = second.length();
         // 长度都小于1
@@ -67,4 +68,5 @@ public class Lcci0105 {
 
         return true;
     }
+    // #endregion snippet
 }

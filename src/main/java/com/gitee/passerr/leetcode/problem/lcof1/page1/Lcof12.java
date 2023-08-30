@@ -26,6 +26,7 @@ package com.gitee.passerr.leetcode.problem.lcof1.page1;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcof12 {
+    // #region snippet
     public boolean exist(char[][] board, String word) {
         int rows = board.length, columns = board[0].length, len = word.length();
         // 访问过的路径
@@ -76,4 +77,5 @@ public class Lcof12 {
     interface TrFunction<P1, P2, P3, R> {
         R apply(P1 p1, P2 p2, P3 p3);
     }
+    // #endregion snippet
 }

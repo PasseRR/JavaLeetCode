@@ -11,6 +11,7 @@ package com.gitee.passerr.leetcode.problem.lcof1.page1;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcof05 {
+    // #region snippet
     public String replaceSpace(String s) {
         // 保证字符长度
         char[] chars = new char[s.length() * 3];
@@ -28,4 +29,5 @@ public class Lcof05 {
         // 根据字符长度生成字符串
         return new String(chars, 0, count);
     }
+    // #endregion snippet
 }

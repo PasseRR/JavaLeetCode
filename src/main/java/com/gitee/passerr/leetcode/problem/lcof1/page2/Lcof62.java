@@ -20,6 +20,7 @@ package com.gitee.passerr.leetcode.problem.lcof1.page2;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcof62 {
+    // #region snippet
     public int lastRemaining(int n, int m) {
         int ans = 0;
         // 如n=6 m=4
@@ -37,4 +38,5 @@ public class Lcof62 {
 
         return ans;
     }
+    // #endregion snippet
 }

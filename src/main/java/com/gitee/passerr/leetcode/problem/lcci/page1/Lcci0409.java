@@ -28,6 +28,7 @@ import java.util.function.BiConsumer;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcci0409 {
+    // #region snippet
     public List<List<Integer>> BSTSequences(TreeNode root) {
         if (root == null) {
             return new ArrayList<>(Collections.singleton(new ArrayList<>()));
@@ -62,4 +63,5 @@ public class Lcci0409 {
 
         return result;
     }
+    // #endregion snippet
 }

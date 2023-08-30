@@ -24,6 +24,7 @@ import java.util.function.BiFunction;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcci1614 {
+    // #region snippet
     public int[] bestLine(int[][] points) {
         // 第1、2位为索引 第3位为经过点的数量
         Map<String, int[]> lines = new HashMap<>(8);
@@ -66,4 +67,5 @@ public class Lcci1614 {
 
         return Arrays.copyOfRange(max.get(), 0, 2);
     }
+    // #endregion snippet
 }

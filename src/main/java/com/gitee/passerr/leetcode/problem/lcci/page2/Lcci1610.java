@@ -20,6 +20,7 @@ package com.gitee.passerr.leetcode.problem.lcci.page2;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcci1610 {
+    // #region snippet
     public int maxAliveYear(int[] birth, int[] death) {
         // 最多生存101年 死亡年份范围为1901-2001
         int[] dp = new int[102];
@@ -43,4 +44,5 @@ public class Lcci1610 {
 
         return maxIndex + 1900;
     }
+    // #endregion snippet
 }

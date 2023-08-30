@@ -30,6 +30,7 @@ import java.util.function.Function;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcci0412 {
+    // #region snippet
     public int pathSum(TreeNode root, int sum) {
         // 获取树的最大深度
         Function<TreeNode, Integer> levelRecursion = new Function<TreeNode, Integer>() {
@@ -72,4 +73,5 @@ public class Lcci0412 {
 
         return result.get();
     }
+    // #endregion snippet
 }

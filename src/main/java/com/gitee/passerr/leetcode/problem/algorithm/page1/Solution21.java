@@ -15,6 +15,7 @@ import java.util.Objects;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Solution21 {
+    // #region snippet
     public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
         // 头节点
         ListNode head = new ListNode(0);
@@ -47,4 +48,5 @@ public class Solution21 {
 
         return head.next;
     }
+    // #endregion snippet
 }

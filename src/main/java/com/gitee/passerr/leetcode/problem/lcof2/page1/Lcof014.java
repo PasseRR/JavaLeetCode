@@ -25,6 +25,7 @@ import java.util.Arrays;
  * @date 2021/12/16 15:58
  */
 public class Lcof014 {
+    // #region snippet
     public boolean checkInclusion(String s1, String s2) {
         // 只需满足s1中各个字母个数和s2中相同长度的子字符串各个字母个数一致即可
         int len1 = s1.length(), len2 = s2.length();
@@ -59,4 +60,5 @@ public class Lcof014 {
 
         return false;
     }
+    // #endregion snippet
 }

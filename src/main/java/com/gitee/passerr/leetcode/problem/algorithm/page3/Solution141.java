@@ -25,6 +25,7 @@ import com.gitee.passerr.leetcode.ListNode;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Solution141 {
+    // #region snippet
     public boolean hasCycle(ListNode head) {
         if (head == null || head.next == null) {
             return false;
@@ -42,4 +43,5 @@ public class Solution141 {
 
         return false;
     }
+    // #endregion snippet
 }

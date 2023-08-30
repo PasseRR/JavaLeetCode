@@ -36,6 +36,7 @@ import java.util.Arrays;
 public class Lcof41 {
 }
 
+// #region snippet
 class MedianFinder {
     int[] data;
     int size = 0;
@@ -58,3 +59,4 @@ class MedianFinder {
         return isOdd ? this.data[mid] : (this.data[mid] + this.data[mid - 1]) / 2.0D;
     }
 }
+// #endregion snippet

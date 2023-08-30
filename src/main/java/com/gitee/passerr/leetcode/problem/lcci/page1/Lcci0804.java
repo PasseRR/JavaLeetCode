@@ -25,6 +25,7 @@ import java.util.List;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcci0804 {
+    // #region snippet
     public List<List<Integer>> subsets(int[] nums) {
         // 把每个数组元素看做二进制某一位
         int length = nums.length, max = (int) Math.pow(2, length);
@@ -46,4 +47,5 @@ public class Lcci0804 {
 
         return result;
     }
+    // #endregion snippet
 }

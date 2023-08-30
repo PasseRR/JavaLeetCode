@@ -22,6 +22,7 @@ import java.util.function.Function;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcof16 {
+    // #region snippet
     public double myPow(double x, int n) {
         Function<Integer, Double> recursion = new Function<Integer, Double>() {
             @Override
@@ -42,4 +43,5 @@ public class Lcof16 {
 
         return n < 0 ? 1 / recursion.apply(-n) : recursion.apply(n);
     }
+    // #endregion snippet
 }

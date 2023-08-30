@@ -18,7 +18,9 @@ package com.gitee.passerr.leetcode.problem.lcof1.page2;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcof64 {
+    // #region snippet
     public int sumNums(int n) {
         return ((int) Math.pow(n, 2) + n) >> 1;
     }
+    // #endregion snippet
 }
