@@ -26,6 +26,7 @@ import java.util.stream.Collectors;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Solution23 {
+    // #region snippet
     public ListNode mergeKLists(ListNode[] lists) {
         List<ListNode> list = new ArrayList<>(Arrays.asList(lists));
         // 合并两个有序链表
@@ -96,4 +97,5 @@ public class Solution23 {
 
         return head.next;
     }
+    // #endregion snippet
 }

@@ -21,6 +21,7 @@ import java.util.function.BiFunction;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Solution79 {
+    // #region snippet
     public boolean exist(char[][] board, String word) {
         int rows, columns;
         if ((rows = board.length) == 0 || (columns = board[0].length) == 0) {
@@ -101,4 +102,5 @@ public class Solution79 {
 
         return false;
     }
+    // #endregion snippet
 }

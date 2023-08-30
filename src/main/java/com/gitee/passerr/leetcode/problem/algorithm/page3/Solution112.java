@@ -22,6 +22,7 @@ import com.gitee.passerr.leetcode.TreeNode;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Solution112 {
+    // #region snippet
     public boolean hasPathSum(TreeNode root, int sum) {
         // 兼容null树
         if (root == null) {
@@ -36,4 +37,5 @@ public class Solution112 {
         // 递归计算左右树的和
         return this.hasPathSum(root.left, sum - root.val) || this.hasPathSum(root.right, sum - root.val);
     }
+    // #endregion snippet
 }

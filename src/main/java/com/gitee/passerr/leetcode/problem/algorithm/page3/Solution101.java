@@ -25,6 +25,7 @@ import java.util.function.BiFunction;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Solution101 {
+    // #region snippet
     public boolean isSymmetric(TreeNode root) {
         BiFunction<TreeNode, TreeNode, Boolean> judgeSymmetric = new BiFunction<TreeNode, TreeNode, Boolean>() {
             @Override
@@ -41,4 +42,5 @@ public class Solution101 {
         // 根节点为null或左右树满足镜像对称
         return root == null || judgeSymmetric.apply(root.left, root.right);
     }
+    // #endregion snippet
 }

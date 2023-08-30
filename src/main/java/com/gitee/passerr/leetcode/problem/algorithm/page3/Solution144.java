@@ -23,6 +23,7 @@ import java.util.function.Consumer;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Solution144 {
+    // #region snippet
     public List<Integer> preorderTraversal(TreeNode root) {
         List<Integer> result = new ArrayList<>();
 
@@ -42,4 +43,5 @@ public class Solution144 {
 
         return result;
     }
+    // #endregion snippet
 }

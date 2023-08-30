@@ -20,6 +20,7 @@ import java.util.Set;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Solution22 {
+    // #region snippet
     public List<String> generateParenthesis(int n) {
         Set<String> result = new HashSet<>();
         TrConsumer<Integer, Integer, String> recall = new TrConsumer<Integer, Integer, String>() {
@@ -53,4 +54,5 @@ public class Solution22 {
     private interface TrConsumer<T, U, P> {
         void accept(T t, U u, P p);
     }
+    // #endregion snippet
 }

@@ -21,6 +21,7 @@ import java.util.function.BiFunction;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Solution108 {
+    // #region snippet
     public TreeNode sortedArrayToBST(int[] nums) {
         BiFunction<Integer, Integer, TreeNode> recursion = new BiFunction<Integer, Integer, TreeNode>() {
             @Override
@@ -41,4 +42,5 @@ public class Solution108 {
 
         return nums.length == 0 ? null : recursion.apply(0, nums.length - 1);
     }
+    // #endregion snippet
 }

@@ -21,6 +21,7 @@ import java.util.Objects;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Solution19 {
+    // #region snippet
     public ListNode removeNthFromEnd(ListNode head, int n) {
         int count = 0;
         // 节点缓存
@@ -45,4 +46,5 @@ public class Solution19 {
 
         return head;
     }
+    // #endregion snippet
 }

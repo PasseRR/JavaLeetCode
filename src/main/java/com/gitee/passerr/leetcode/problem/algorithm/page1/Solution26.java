@@ -32,6 +32,7 @@ package com.gitee.passerr.leetcode.problem.algorithm.page1;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Solution26 {
+    // #region snippet
     public int removeDuplicates(int[] nums) {
         int length = nums.length;
         if (length < 2) {
@@ -71,4 +72,5 @@ public class Solution26 {
 
         return result;
     }
+    // #endregion snippet
 }

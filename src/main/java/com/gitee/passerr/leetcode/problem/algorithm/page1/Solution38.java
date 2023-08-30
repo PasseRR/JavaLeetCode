@@ -28,6 +28,7 @@ import java.util.function.Function;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Solution38 {
+    // #region snippet
     public String countAndSay(int n) {
         Function<Integer, String> generator = new Function<Integer, String>() {
             @Override
@@ -62,4 +63,5 @@ public class Solution38 {
 
         return generator.apply(n);
     }
+    // #endregion snippet
 }

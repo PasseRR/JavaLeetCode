@@ -27,6 +27,7 @@ import java.util.function.Function;
  * @see Solution29
  */
 public class Solution50 {
+    // #region snippet
     public double myPow(double x, int n) {
         Function<Integer, Double> pow = new Function<Integer, Double>() {
             @Override
@@ -63,4 +64,5 @@ public class Solution50 {
             return p * p * (n > 0 ? x : 1 / x);
         }
     }
+    // #endregion snippet
 }

@@ -35,6 +35,7 @@ import java.util.Stack;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Solution20 {
+    // #region snippet
     /**
      * 括号对缓存
      */
@@ -80,4 +81,5 @@ public class Solution20 {
 
         return s.isEmpty();
     }
+    // #endregion snippet
 }

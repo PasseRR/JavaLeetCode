@@ -13,6 +13,7 @@ import java.util.Objects;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Solution2 {
+    // #region snippet
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         // 结果链表 初始化了个头 返回时去掉头
         ListNode result = new ListNode(0);
@@ -38,4 +39,5 @@ public class Solution2 {
 
         return result.next;
     }
+    // #endregion snippet
 }

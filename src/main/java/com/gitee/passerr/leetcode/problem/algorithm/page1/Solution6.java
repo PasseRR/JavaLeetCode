@@ -27,6 +27,7 @@ package com.gitee.passerr.leetcode.problem.algorithm.page1;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Solution6 {
+    // #region snippet
     public String convert(String s, int numRows) {
         // 一行特殊处理
         if (numRows == 1) {
@@ -66,4 +67,5 @@ public class Solution6 {
 
         return sb.toString();
     }
+    // #endregion snippet
 }

@@ -24,6 +24,7 @@ import java.util.List;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Solution118 {
+    // #region snippet
     public List<List<Integer>> generate(int numRows) {
         List<List<Integer>> result = new ArrayList<>();
         if (numRows > 0) {
@@ -46,4 +47,5 @@ public class Solution118 {
 
         return result;
     }
+    // #endregion snippet
 }

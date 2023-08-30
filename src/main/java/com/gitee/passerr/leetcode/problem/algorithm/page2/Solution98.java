@@ -35,6 +35,7 @@ import java.util.function.Consumer;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Solution98 {
+    // #region snippet
     /**
      * 若它的左子树不空，则左子树上所有结点的值均小于它的根结点的值；
      * 若它的右子树不空，则右子树上所有结点的值均大于它的根结点的值；
@@ -67,4 +68,5 @@ public class Solution98 {
 
         return true;
     }
+    // #endregion snippet
 }

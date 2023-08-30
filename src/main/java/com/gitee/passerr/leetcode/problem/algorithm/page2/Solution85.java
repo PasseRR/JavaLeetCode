@@ -21,6 +21,7 @@ import java.util.function.Function;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Solution85 {
+    // #region snippet
     public int maximalRectangle(char[][] matrix) {
         int rows, columns;
         if ((rows = matrix.length) == 0 || (columns = matrix[0].length) == 0) {
@@ -89,4 +90,5 @@ public class Solution85 {
 
         return result;
     }
+    // #endregion snippet
 }

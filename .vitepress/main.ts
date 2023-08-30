@@ -1,5 +1,6 @@
 import shell from "./shell";
 import database from "./database";
+import algorithm from "./algorithm";
 
 const site = {
     logo: '/icon.svg',
@@ -30,12 +31,16 @@ function sidebars() {
         "/database": {
             base: "/database",
             items: database.bars()
+        },
+        "/algorithm": {
+            base: "/algorithm",
+            items: algorithm.bars()
         }
     };
 }
 
 function navs() {
-    return [shell.nav(), database.nav()];
+    return [shell.nav(), database.nav(), algorithm.nav()];
 }
 
 export {site, sidebars, navs};

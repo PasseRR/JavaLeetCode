@@ -57,6 +57,7 @@ import java.util.stream.IntStream;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Solution36 {
+    // #region snippet
     public boolean isValidSudoku(char[][] board) {
         // 使用hash表记录出现的字符
         // key表示第n行、第n列、第n个3X3块中出现的数字
@@ -128,4 +129,5 @@ public class Solution36 {
 
         return true;
     }
+    // #endregion snippet
 }

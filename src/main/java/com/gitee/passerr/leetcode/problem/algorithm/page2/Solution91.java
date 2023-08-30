@@ -23,6 +23,7 @@ package com.gitee.passerr.leetcode.problem.algorithm.page2;
  * @see Solution70
  */
 public class Solution91 {
+    // #region snippet
     public int numDecodings(String s) {
         int length = s.length();
         int[] dp = new int[length];
@@ -71,4 +72,5 @@ public class Solution91 {
 
         return dp[length - 1];
     }
+    // #endregion snippet
 }

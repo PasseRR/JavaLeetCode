@@ -34,6 +34,7 @@ import java.util.function.Function;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Solution65 {
+    // #region snippet
     public boolean isNumber(String s) {
         String trim = s.trim();
         // 是否是合法整数
@@ -88,4 +89,5 @@ public class Solution65 {
 
         return isNumber.apply(trim);
     }
+    // #endregion snippet
 }

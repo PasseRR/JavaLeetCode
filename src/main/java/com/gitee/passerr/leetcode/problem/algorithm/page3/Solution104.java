@@ -21,8 +21,10 @@ import com.gitee.passerr.leetcode.TreeNode;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Solution104 {
+    // #region snippet
     public int maxDepth(TreeNode root) {
         // 递归
         return root == null ? 0 : 1 + Math.max(this.maxDepth(root.left), this.maxDepth(root.right));
     }
+    // #endregion snippet
 }

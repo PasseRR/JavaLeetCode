@@ -24,6 +24,7 @@ package com.gitee.passerr.leetcode.problem.algorithm.page1;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Solution35 {
+    // #region snippet
     public int searchInsert(int[] nums, int target) {
         int length = nums.length;
         for (int i = 0; i < length; i++) {
@@ -41,4 +42,5 @@ public class Solution35 {
         // 空数组
         return 0;
     }
+    // #endregion snippet
 }

@@ -20,6 +20,7 @@ package com.gitee.passerr.leetcode.problem.algorithm.page2;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Solution62 {
+    // #region snippet
     public int uniquePaths(int m, int n) {
         // 动态规划
         int[][] dp = new int[m][n];
@@ -40,4 +41,5 @@ public class Solution62 {
 
         return dp[m - 1][n - 1];
     }
+    // #endregion snippet
 }

@@ -29,6 +29,7 @@ import java.util.stream.Collectors;
  * @see Solution78
  */
 public class Solution90 {
+    // #region snippet
     public List<List<Integer>> subsetsWithDup(int[] nums) {
         Set<List<Integer>> result = new HashSet<>();
         int length = nums.length;
@@ -67,4 +68,5 @@ public class Solution90 {
 
         return new ArrayList<>(result);
     }
+    // #endregion snippet
 }

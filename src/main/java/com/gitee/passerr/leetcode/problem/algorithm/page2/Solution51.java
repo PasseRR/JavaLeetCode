@@ -32,6 +32,7 @@ import java.util.stream.Collectors;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Solution51 {
+    // #region snippet
     public List<List<String>> solveNQueens(int n) {
         List<List<String>> result = new ArrayList<>();
         // 放置皇后置为1
@@ -91,4 +92,5 @@ public class Solution51 {
 
         return result;
     }
+    // #endregion snippet
 }

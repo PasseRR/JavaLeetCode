@@ -31,6 +31,7 @@ import java.util.stream.Collectors;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Solution30 {
+    // #region snippet
     public List<Integer> findSubstring(String s, String[] words) {
         List<Integer> result = new ArrayList<>();
         // 若s长度小于words总长度 则没有解
@@ -70,4 +71,5 @@ public class Solution30 {
 
         return result;
     }
+    // #endregion snippet
 }

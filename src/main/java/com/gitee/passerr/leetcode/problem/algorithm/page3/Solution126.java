@@ -44,6 +44,7 @@ import java.util.stream.Collectors;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Solution126 {
+    // #region snippet
     static class Trie {
         Map<String, Trie> children = new HashMap<>();
         // 双向字典树
@@ -141,4 +142,5 @@ public class Solution126 {
 
         return result.stream().map(Trie::result).collect(Collectors.toList());
     }
+    // #endregion snippet
 }

@@ -11,6 +11,7 @@ import java.util.Map;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Solution1 {
+    // #region snippet
     public int[] twoSum(int[] nums, int target) {
         Map<Integer, Integer> cache = new HashMap<>();
         for (int i = 0; i < nums.length; i++) {
@@ -24,4 +25,5 @@ public class Solution1 {
         // 不会出现无解
         return null;
     }
+    // #endregion snippet
 }

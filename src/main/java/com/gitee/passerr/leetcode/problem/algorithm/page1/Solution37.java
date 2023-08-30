@@ -25,6 +25,7 @@ import java.util.function.BiFunction;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Solution37 {
+    // #region snippet
     private static final List<Character> CHARACTERS = Arrays.asList('1', '2', '3', '4', '5', '6', '7', '8', '9');
 
     public void solveSudoku(char[][] board) {
@@ -85,4 +86,5 @@ public class Solution37 {
 
         isValid.apply(0, 0);
     }
+    // #endregion snippet
 }

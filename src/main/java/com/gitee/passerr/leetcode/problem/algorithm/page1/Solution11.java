@@ -16,6 +16,7 @@ package com.gitee.passerr.leetcode.problem.algorithm.page1;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Solution11 {
+    // #region snippet
     public int maxArea(int[] height) {
         int max = 0;
         for (int i = 0, length = height.length; i < length - 1; i++) {
@@ -30,4 +31,5 @@ public class Solution11 {
 
         return max;
     }
+    // #endregion snippet
 }

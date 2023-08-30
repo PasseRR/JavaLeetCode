@@ -46,6 +46,7 @@ import java.util.Map;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Solution87 {
+    // #region snippet
     public boolean isScramble(String s1, String s2) {
         if (s1.equals(s2)) {
             return true;
@@ -81,4 +82,5 @@ public class Solution87 {
 
         return false;
     }
+    // #endregion snippet
 }

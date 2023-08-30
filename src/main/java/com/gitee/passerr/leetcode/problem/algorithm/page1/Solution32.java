@@ -19,6 +19,7 @@ import java.util.Arrays;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Solution32 {
+    // #region snippet
     public int longestValidParentheses(String s) {
         int length = s.length();
         // 表记录括号对是否匹配
@@ -60,4 +61,5 @@ public class Solution32 {
         // 找到最后依然是有效的括号对 和当前最大值比较 返回的较大一个
         return total > result ? total : result;
     }
+    // #endregion snippet
 }

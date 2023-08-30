@@ -1,5 +1,7 @@
 import {defineConfig} from 'vitepress'
 import {navs, sidebars, site} from './main';
+import sup_plugin from "markdown-it-sup";
+import sub_plugin from "markdown-it-sub";
 
 export default defineConfig({
     title: site.title,
@@ -92,6 +94,10 @@ export default defineConfig({
         theme: {
             light: 'github-light',
             dark: 'github-dark'
+        },
+        config: md => {
+            md.use(sup_plugin);
+            md.use(sub_plugin);
         }
     }
 });

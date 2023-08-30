@@ -14,6 +14,7 @@ package com.gitee.passerr.leetcode.problem.algorithm.page2;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Solution58 {
+    // #region snippet
     public int lengthOfLastWord(String s) {
         String[] strings = s.split(" ");
         for (int i = strings.length - 1; i >= 0; i--) {
@@ -24,4 +25,5 @@ public class Solution58 {
 
         return 0;
     }
+    // #endregion snippet
 }

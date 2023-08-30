@@ -23,6 +23,7 @@ import java.util.stream.Collectors;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Solution47 {
+    // #region snippet
     public List<List<Integer>> permuteUnique(int[] nums) {
         Set<List<Integer>> result = new HashSet<>();
         Consumer<List<Integer>> consumer = new Consumer<List<Integer>>() {
@@ -53,4 +54,5 @@ public class Solution47 {
 
         return new ArrayList<>(result);
     }
+    // #endregion snippet
 }

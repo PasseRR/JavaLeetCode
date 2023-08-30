@@ -17,6 +17,7 @@ import java.util.function.BiFunction;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Solution84 {
+    // #region snippet
     public int largestRectangleArea(int[] heights) {
         // 考虑使用二分法
         BiFunction<Integer, Integer, Integer> divide = new BiFunction<Integer, Integer, Integer>() {
@@ -51,4 +52,5 @@ public class Solution84 {
 
         return length == 0 ? 0 : divide.apply(0, length - 1);
     }
+    // #endregion snippet
 }

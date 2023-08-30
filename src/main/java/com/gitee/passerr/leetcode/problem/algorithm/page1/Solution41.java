@@ -22,6 +22,7 @@ package com.gitee.passerr.leetcode.problem.algorithm.page1;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Solution41 {
+    // #region snippet
     public int firstMissingPositive(int[] nums) {
         int length = nums.length;
         // 从位置0开始放置
@@ -47,4 +48,5 @@ public class Solution41 {
         // 可能数组为空
         return length == 0 ? 1 : length + 1;
     }
+    // #endregion snippet
 }

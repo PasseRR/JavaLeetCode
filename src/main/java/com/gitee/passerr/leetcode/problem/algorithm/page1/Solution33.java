@@ -21,6 +21,7 @@ import java.util.Arrays;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Solution33 {
+    // #region snippet
     public int search(int[] nums, int target) {
         int middle = -1, length = nums.length;
         // 找到中位数索引
@@ -50,4 +51,5 @@ public class Solution33 {
         // 最后位置大于旋转位置 则元素应该在排序前左边 否则在右边
         return index > -1 ? (index < offset ? index + middle + 1 : index - offset) : -1;
     }
+    // #endregion snippet
 }

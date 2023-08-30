@@ -17,6 +17,7 @@ package com.gitee.passerr.leetcode.problem.algorithm.page2;
  * @see Solution54
  */
 public class Solution59 {
+    // #region snippet
     public int[][] generateMatrix(int n) {
         int[][] result = new int[n][n];
 
@@ -46,4 +47,5 @@ public class Solution59 {
 
         return result;
     }
+    // #endregion snippet
 }

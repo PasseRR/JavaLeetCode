@@ -21,6 +21,7 @@ import java.util.List;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Solution57 {
+    // #region snippet
     public int[][] insert(int[][] intervals, int[] newInterval) {
         List<int[]> result = new ArrayList<>();
 
@@ -53,4 +54,5 @@ public class Solution57 {
 
         return result.toArray(new int[0][]);
     }
+    // #endregion snippet
 }

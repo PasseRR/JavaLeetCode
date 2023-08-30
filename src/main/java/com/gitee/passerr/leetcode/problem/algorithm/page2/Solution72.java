@@ -29,6 +29,7 @@ package com.gitee.passerr.leetcode.problem.algorithm.page2;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Solution72 {
+    // #region snippet
     /**
      * 莱文斯坦距离有几个简单的上下界，包括：
      * 1.至少总是两个字符串大小的差值；
@@ -83,4 +84,5 @@ public class Solution72 {
 
         return dp[l1][l2];
     }
+    // #endregion snippet
 }

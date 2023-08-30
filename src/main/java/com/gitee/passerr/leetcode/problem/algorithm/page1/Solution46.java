@@ -23,6 +23,7 @@ import java.util.function.Consumer;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Solution46 {
+    // #region snippet
     public List<List<Integer>> permute(int[] nums) {
         List<List<Integer>> result = new ArrayList<>();
         Consumer<List<Integer>> consumer = new Consumer<List<Integer>>() {
@@ -52,4 +53,5 @@ public class Solution46 {
 
         return result;
     }
+    // #endregion snippet
 }

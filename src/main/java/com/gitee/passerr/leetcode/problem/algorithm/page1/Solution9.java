@@ -24,6 +24,7 @@ package com.gitee.passerr.leetcode.problem.algorithm.page1;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Solution9 {
+    // #region snippet
     public boolean isPalindrome(int x) {
         // 负数都不是回文数
         if (x < 0) {
@@ -44,4 +45,5 @@ public class Solution9 {
 
         return reverse == hold;
     }
+    // #endregion snippet
 }

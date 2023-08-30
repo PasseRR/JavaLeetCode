@@ -20,6 +20,7 @@ package com.gitee.passerr.leetcode.problem.algorithm.page3;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Solution121 {
+    // #region snippet
     public int maxProfit(int[] prices) {
         int max = 0, length = prices.length;
         if(length > 0) {
@@ -41,4 +42,5 @@ public class Solution121 {
 
         return max;
     }
+    // #endregion snippet
 }

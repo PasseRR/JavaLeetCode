@@ -15,6 +15,7 @@ import java.util.function.BiConsumer;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Solution93 {
+    // #region snippet
     public List<String> restoreIpAddresses(String s) {
         List<String> result = new ArrayList<>();
         int length = s.length();
@@ -57,4 +58,5 @@ public class Solution93 {
 
         return result;
     }
+    // #endregion snippet
 }

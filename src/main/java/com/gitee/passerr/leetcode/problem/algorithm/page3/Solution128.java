@@ -17,6 +17,7 @@ import java.util.Map;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Solution128 {
+    // #region snippet
     static class UnionFindSet {
         /**
          * 父节点
@@ -84,4 +85,5 @@ public class Solution128 {
 
         return set.result();
     }
+    // #endregion snippet
 }

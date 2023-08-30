@@ -35,6 +35,7 @@ import java.util.function.Function;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Solution110 {
+    // #region snippet
     public boolean isBalanced(TreeNode root) {
         Function<TreeNode, Integer> recursion = new Function<TreeNode, Integer>() {
             @Override
@@ -50,4 +51,5 @@ public class Solution110 {
                 && this.isBalanced(root.left) && this.isBalanced(root.right)
         );
     }
+    // #endregion snippet
 }

@@ -31,6 +31,7 @@ import java.util.function.BiFunction;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Solution74 {
+    // #region snippet
     public boolean searchMatrix(int[][] matrix, int target) {
         int rows, columns;
         // 空数组兼容
@@ -111,4 +112,5 @@ public class Solution74 {
 
         return findColumn.apply(0, columns - 1);
     }
+    // #endregion snippet
 }

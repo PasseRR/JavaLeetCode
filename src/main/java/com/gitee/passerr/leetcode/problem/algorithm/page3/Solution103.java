@@ -30,6 +30,7 @@ import java.util.function.BiConsumer;
  * @see Solution102
  */
 public class Solution103 {
+    // #region snippet
     @SuppressWarnings("unchecked")
     public List<List<Integer>> zigzagLevelOrder(TreeNode root) {
         List<List<Integer>> result = new ArrayList<>();
@@ -60,4 +61,5 @@ public class Solution103 {
 
         return result;
     }
+    // #endregion snippet
 }

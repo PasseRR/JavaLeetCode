@@ -37,6 +37,7 @@ import java.util.Set;
  * @see Solution39
  */
 public class Solution40 {
+    // #region snippet
     public List<List<Integer>> combinationSum2(int[] candidates, int target) {
         Set<List<Integer>> result = new HashSet<>(6);
         Arrays.sort(candidates);
@@ -74,4 +75,5 @@ public class Solution40 {
     private interface TrConsumer<T, U, P> {
         void accept(T t, U u, P p);
     }
+    // #endregion snippet
 }

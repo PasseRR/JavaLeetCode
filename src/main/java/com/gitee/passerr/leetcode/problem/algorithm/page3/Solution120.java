@@ -20,6 +20,7 @@ import java.util.List;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Solution120 {
+    // #region snippet
     public int minimumTotal(List<List<Integer>> triangle) {
         int length = triangle.size();
         int[] dp = new int[length + 1];
@@ -34,4 +35,5 @@ public class Solution120 {
         // 计算到第一行的第一个元素为解
         return dp[0];
     }
+    // #endregion snippet
 }

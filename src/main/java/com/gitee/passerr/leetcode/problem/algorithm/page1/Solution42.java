@@ -13,6 +13,7 @@ package com.gitee.passerr.leetcode.problem.algorithm.page1;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Solution42 {
+    // #region snippet
     public int trap(int[] height) {
         int sum = 0, length = height.length;
         // 左右两边扫描大于1的值 取最小的值计算
@@ -46,4 +47,5 @@ public class Solution42 {
 
         return sum;
     }
+    // #endregion snippet
 }

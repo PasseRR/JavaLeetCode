@@ -50,6 +50,7 @@ import java.util.function.Consumer;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Solution99 {
+    // #region snippet
     public void recoverTree(TreeNode root) {
         List<TreeNode> list = new ArrayList<>();
         // 中序遍历树
@@ -86,4 +87,5 @@ public class Solution99 {
         second.val ^= first.val;
         first.val ^= second.val;
     }
+    // #endregion snippet
 }

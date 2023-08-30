@@ -26,6 +26,7 @@ import java.util.Map;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Solution49 {
+    // #region snippet
     public List<List<String>> groupAnagrams(String[] strs) {
         // key为字符串排序后 value为遍历字符串
         Map<String, List<String>> result = new HashMap<>(8);
@@ -42,4 +43,5 @@ public class Solution49 {
 
         return new ArrayList<>(result.values());
     }
+    // #endregion snippet
 }

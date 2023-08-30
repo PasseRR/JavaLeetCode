@@ -47,6 +47,7 @@ package com.gitee.passerr.leetcode.problem.algorithm.page1;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Solution10 {
+    // #region snippet
     public boolean isMatch(String s, String p) {
         int sLength = s.length(), pLength = p.length();
         int pi = 0;
@@ -93,4 +94,5 @@ public class Solution10 {
 
         return true;
     }
+    // #endregion snippet
 }

@@ -31,6 +31,7 @@ package com.gitee.passerr.leetcode.problem.algorithm.page2;
  * @see com.gitee.passerr.leetcode.problem.algorithm.page1.Solution26
  */
 public class Solution80 {
+    // #region snippet
     public int removeDuplicates(int[] nums) {
         int length = nums.length;
         if (length <= 2) {
@@ -80,4 +81,5 @@ public class Solution80 {
 
         return length;
     }
+    // #endregion snippet
 }

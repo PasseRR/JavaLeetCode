@@ -24,6 +24,7 @@ import com.gitee.passerr.leetcode.ListNode;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Solution147 {
+    // #region snippet
     public ListNode insertionSortList(ListNode head) {
         if (head == null || head.next == null) {
             return head;
@@ -56,4 +57,5 @@ public class Solution147 {
 
         return newHead.next;
     }
+    // #endregion snippet
 }

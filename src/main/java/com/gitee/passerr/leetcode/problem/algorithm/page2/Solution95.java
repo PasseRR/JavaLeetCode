@@ -33,6 +33,7 @@ import java.util.function.BiFunction;
  * @see Solution96
  */
 public class Solution95 {
+    // #region snippet
     public List<TreeNode> generateTrees(int n) {
         BiFunction<Integer, Integer, List<TreeNode>> generate = new BiFunction<Integer, Integer, List<TreeNode>>() {
             @Override
@@ -65,4 +66,5 @@ public class Solution95 {
 
         return n == 0 ? new ArrayList<>() : generate.apply(1, n);
     }
+    // #endregion snippet
 }

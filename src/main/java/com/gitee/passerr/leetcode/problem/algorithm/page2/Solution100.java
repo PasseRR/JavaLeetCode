@@ -34,6 +34,7 @@ import com.gitee.passerr.leetcode.TreeNode;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Solution100 {
+    // #region snippet
     public boolean isSameTree(TreeNode p, TreeNode q) {
         return
             // 其中一个节点为null
@@ -43,4 +44,5 @@ public class Solution100 {
                 // 比较当前节点值及递归比较左右节点是否一致
                 : p.val == q.val && this.isSameTree(p.left, q.left) && this.isSameTree(p.right, q.right);
     }
+    // #endregion snippet
 }

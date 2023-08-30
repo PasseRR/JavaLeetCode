@@ -38,6 +38,7 @@ import java.util.function.BiFunction;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Solution150 {
+    // #region snippet
     static Map<String, BiFunction<Integer, Integer, Integer>> cache = new HashMap<>(4);
 
     static {
@@ -64,4 +65,5 @@ public class Solution150 {
 
         return stack.pop();
     }
+    // #endregion snippet
 }

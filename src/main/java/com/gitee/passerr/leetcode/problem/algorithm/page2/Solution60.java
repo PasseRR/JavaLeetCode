@@ -29,6 +29,7 @@ import java.util.stream.IntStream;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Solution60 {
+    // #region snippet
     public String getPermutation(int n, int k) {
         StringBuilder sb = new StringBuilder();
         // 查询下一个排列的数字
@@ -74,4 +75,5 @@ public class Solution60 {
 
         return sb.toString();
     }
+    // #endregion snippet
 }

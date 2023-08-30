@@ -25,6 +25,7 @@ import com.gitee.passerr.leetcode.ListNode;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Solution61 {
+    // #region snippet
     public ListNode rotateRight(ListNode head, int k) {
         // 尾节点
         ListNode t = head;
@@ -61,4 +62,5 @@ public class Solution61 {
 
         return newHead;
     }
+    // #endregion snippet
 }

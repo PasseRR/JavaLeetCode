@@ -1,9 +1,5 @@
 function bars() {
-    return [{
-        text: 'Shell',
-        base: 'shell',
-        link: '/index'
-    }];
+    return [];
 }
 
 function nav() {

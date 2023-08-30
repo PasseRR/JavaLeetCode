@@ -31,6 +31,7 @@ import java.util.function.Consumer;
  * @see Solution51
  */
 public class Solution52 {
+    // #region snippet
     public int totalNQueens(int n) {
         List<Integer> result = new ArrayList<>();
         result.add(0);
@@ -89,4 +90,5 @@ public class Solution52 {
 
         return result.get(0);
     }
+    // #endregion snippet
 }

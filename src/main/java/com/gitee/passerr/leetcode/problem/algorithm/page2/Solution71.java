@@ -43,6 +43,7 @@ import java.util.Stack;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Solution71 {
+    // #region snippet
     public String simplifyPath(String path) {
         // 替换多余/
         while (path.contains("//")) {
@@ -92,4 +93,5 @@ public class Solution71 {
 
         return String.join("", stack);
     }
+    // #endregion snippet
 }

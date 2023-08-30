@@ -20,6 +20,7 @@ import java.util.Arrays;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Solution137 {
+    // #region snippet
     public int singleNumber(int[] nums) {
         Arrays.sort(nums);
         for (int i = 2; i < nums.length; i += 3) {
@@ -45,4 +46,5 @@ public class Solution137 {
         }
         return b;
     }
+    // #endregion snippet
 }

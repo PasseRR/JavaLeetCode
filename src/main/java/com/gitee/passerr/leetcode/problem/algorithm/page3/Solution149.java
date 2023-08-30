@@ -32,6 +32,7 @@ package com.gitee.passerr.leetcode.problem.algorithm.page3;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Solution149 {
+    // #region snippet
     public int maxPoints(int[][] points) {
         int length = points.length;
         // 小于3个点 肯定在一条直线
@@ -72,4 +73,5 @@ public class Solution149 {
 
         return result;
     }
+    // #endregion snippet
 }
