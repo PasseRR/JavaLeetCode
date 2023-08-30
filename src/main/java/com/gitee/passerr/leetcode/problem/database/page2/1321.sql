@@ -1,4 +1,6 @@
--- 解法1 按照正常思维
+-- 解法1 
+/*#region solution1*/
+-- 按照正常思维
 SELECT `t1`.`visited_on`,
        SUM(`t3`.`amount`)               AS `amount`,
        ROUND(SUM(`t3`.`amount`) / 7, 2) AS `average_amount`
@@ -13,9 +15,12 @@ FROM (SELECT DISTINCT `visited_on` FROM `Customer` ORDER BY `visited_on`) `t1`
 WHERE DATEDIFF(`t1`.`visited_on`, `t2`.`min`) >= 6
 GROUP BY `t1`.`visited_on`
 ORDER BY `t1`.`visited_on`
+/*#endregion solution1*/
 
 
--- 解法2 使用滑动窗口
+-- 解法2 
+/*#region solution2*/
+-- 使用滑动窗口
 SELECT `t`.`visited_on`, `t`.`amount`, ROUND(`t`.`amount` / 7, 2) AS `average_amount`
 FROM (SELECT `t`.`visited_on`,
              DATEDIFF(`t`.`visited_on`, `t2`.`min`)                                            AS `cnt`,
@@ -28,3 +33,4 @@ FROM (SELECT `t`.`visited_on`,
       ORDER BY `t`.`visited_on`) `t`
      -- 和最早销售日间隔不能低于6天
 WHERE `t`.`cnt` >= 6
+/*#endregion solution2*/

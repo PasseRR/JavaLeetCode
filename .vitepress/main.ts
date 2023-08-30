@@ -2,7 +2,7 @@ import shell from "./shell";
 import database from "./database";
 
 const site = {
-    logo: '',
+    logo: '/icon.svg',
     // 标题
     title: 'Java版LeetCode',
     // 描述
@@ -18,11 +18,24 @@ const site = {
     // 百度统计
     baidu: '1746b6c08f1b61947aa3939bd3b2365c',
     // 排除文件
-    excludes: []
+    excludes: ["src/**/*.md"]
 }
 
 function sidebars() {
-    return [...shell(), ...database()];
+    return {
+        "/shell": {
+            base: '/shell',
+            items: shell.bars()
+        },
+        "/database": {
+            base: "/database",
+            items: database.bars()
+        }
+    };
 }
 
-export {site, sidebars};
+function navs() {
+    return [shell.nav(), database.nav()];
+}
+
+export {site, sidebars, navs};

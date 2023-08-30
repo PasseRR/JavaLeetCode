@@ -5,7 +5,8 @@ import com.gitee.passerr.leetcode.Navbar
 import spock.lang.Specification
 
 import java.nio.file.Files
-import java.nio.file.Paths 
+import java.nio.file.Paths
+
 /**
  * vite页面生成
  * @date 2023/08/29 17:58
@@ -29,6 +30,11 @@ class ViteSpec extends Specification {
             .forEach { it ->
                 def lines = Files.readAllLines(it)
                 def first = lines.get(0)
+                def handled = false
+                if (first.startsWith("# ")) {
+                    first = lines.get(1)
+                    handled = true
+                }
                 def end = first.lastIndexOf("/)"), start = first.indexOf("problems/") + 9
                 def code
                 if (end > 0) {
@@ -37,10 +43,12 @@ class ViteSpec extends Specification {
                     code = first.substring(start, first.lastIndexOf(")"))
                 }
                 def detail = LeetCodeProblemUtil.detail(code)
-                (lines[0] = first.substring(1))
-                lines.add(0, "# ${detail.questionFrontendId}. ${detail.translatedTitle}")
-                it.toFile().withWriter { writer ->
-                    lines.each { line -> writer.write(line + "\n") }
+                if (!handled) {
+                    (lines[0] = first.substring(1))
+                    lines.add(0, "# ${detail.questionFrontendId}. ${detail.translatedTitle}")
+                    it.toFile().withWriter { writer ->
+                        lines.each { line -> writer.write(line + "\n") }
+                    }
                 }
 
                 def resolve = base.resolve("${category}/page${page}")
@@ -49,12 +57,14 @@ class ViteSpec extends Specification {
                 }
 
                 resolve.resolve(it.getFileName()).toFile().withWriter { writer ->
-                    writer.write("<!-- @include: @/src/main/java/com/gitee/passerr/leetcode/problem/${category}/page${page}/${detail.questionFrontendId}.md -->\n")
+                    lines.each { line -> writer.write(line + "\n") }
+                    writer.write("\n")
                     writer.write("## [题解](https://github.com/PasseRR/JavaLeetCode/blob/master/src/main/java/com/gitee/passerr/leetcode/problem/${category}/page${page}/${detail.questionFrontendId}.sql)\n")
+                    writer.write("\n")
                     writer.write("<<< @/src/main/java/com/gitee/passerr/leetcode/problem/${category}/page${page}/${detail.questionFrontendId}.sql#snippet\n")
                     writer.write("")
                 }
-                
+
                 navbar.addItem("${detail.questionFrontendId}. ${detail.translatedTitle}", detail.questionFrontendId)
             }
 
@@ -62,6 +72,6 @@ class ViteSpec extends Specification {
     }
 
     static void main(String[] args) {
-        generate("database", 1)
+        generate("database", 5)
     }
 }

@@ -19,7 +19,7 @@ class Navbar {
     Navbar(int page, String category) {
         this.text = "第${this.number[page - 1]}页"
         this.collapsed = false
-        this.base = "${category}/page${page}"
+        this.base = "/${category}/page${page}"
         this.link = "/index"
     }
 
@@ -45,7 +45,7 @@ class Navbar {
                 sb.append(",\n")
             }
         }
-        sb.append("]\n").append("}")
+        sb.append("\n]\n").append("}")
 
         return sb.toString()
     }

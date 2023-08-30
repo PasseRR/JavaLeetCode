@@ -1,4 +1,6 @@
--- 解法1 使用变量
+-- 解法1 
+/*#region solution1*/
+-- 使用变量
 SELECT `t`.`person_name`
 FROM (SELECT `q`.*,
              (@`total` := @`total` + `q`.`weight`) AS `total`
@@ -11,11 +13,15 @@ FROM (SELECT `q`.*,
 WHERE `t`.`total` <= 1000
 ORDER BY `t`.`total` DESC
 LIMIT 1
+/*#endregion solution1*/
 
--- 解法2 使用窗口函数
+-- 解法2 
+/*#region solution2*/
+-- 使用窗口函数
 SELECT `t`.`person_name`
        -- 按照轮次累加计重
 FROM (SELECT `person_name`, SUM(`weight`) OVER (ORDER BY `turn`) AS `total` FROM `Queue`) `t`
 WHERE `t`.`total` <= 1000
 ORDER BY `t`.`total` DESC
 LIMIT 1
+/*#endregion solution2*/
