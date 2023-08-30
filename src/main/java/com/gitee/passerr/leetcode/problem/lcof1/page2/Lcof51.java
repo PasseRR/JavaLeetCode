@@ -16,6 +16,7 @@ import java.util.function.BiFunction;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcof51 {
+    // #region snippet
     public int reversePairs(int[] nums) {
         // 归并排序
         BiFunction<Integer, Integer, Integer> merge = new BiFunction<Integer, Integer, Integer>() {
@@ -62,4 +63,5 @@ public class Lcof51 {
 
         return merge.apply(0, nums.length - 1);
     }
+    // #endregion snippet
 }

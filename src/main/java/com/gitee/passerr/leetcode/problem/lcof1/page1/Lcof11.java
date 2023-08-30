@@ -16,6 +16,7 @@ package com.gitee.passerr.leetcode.problem.lcof1.page1;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcof11 {
+    // #region snippet
     public int minArray(int[] numbers) {
         int left = 0, right = numbers.length-1;
         while(left < right) {
@@ -33,4 +34,5 @@ public class Lcof11 {
 
         return numbers[left];
     }
+    // #endregion snippet
 }

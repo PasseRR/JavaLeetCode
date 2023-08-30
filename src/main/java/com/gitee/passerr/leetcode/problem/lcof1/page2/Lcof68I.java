@@ -27,6 +27,7 @@ import com.gitee.passerr.leetcode.TreeNode;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcof68I {
+    // #region snippet
     public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
         // p、q的值均大于根节点 说明在二叉搜索树右树
         if (p.val > root.val && q.val > root.val) {
@@ -42,4 +43,5 @@ public class Lcof68I {
         // 若根节点的值与p、q其中一个相同 则根节点最近祖先
         return root;
     }
+    // #endregion snippet
 }

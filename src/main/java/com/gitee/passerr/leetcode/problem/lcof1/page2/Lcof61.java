@@ -18,6 +18,7 @@ import java.util.Arrays;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcof61 {
+    // #region snippet
     public boolean isStraight(int[] nums) {
         Arrays.sort(nums);
 
@@ -45,4 +46,5 @@ public class Lcof61 {
 
         return true;
     }
+    // #endregion snippet
 }

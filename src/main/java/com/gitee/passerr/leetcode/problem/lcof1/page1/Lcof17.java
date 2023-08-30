@@ -15,6 +15,7 @@ package com.gitee.passerr.leetcode.problem.lcof1.page1;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcof17 {
+    // #region snippet
     public int[] printNumbers(int n) {
         int len = (int) Math.pow(10, n);
         int[] result = new int[len - 1];
@@ -24,4 +25,5 @@ public class Lcof17 {
 
         return result;
     }
+    // #endregion snippet
 }

@@ -23,6 +23,7 @@ package com.gitee.passerr.leetcode.problem.lcof1.page1;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcof47 {
+    // #region snippet
     public int maxValue(int[][] grid) {
         int rows = grid.length, columns = grid[0].length;
         int[][] dp = new int[rows][columns];
@@ -44,4 +45,5 @@ public class Lcof47 {
 
         return dp[rows - 1][columns - 1];
     }
+    // #endregion snippet
 }

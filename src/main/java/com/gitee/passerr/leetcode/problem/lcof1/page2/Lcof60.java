@@ -21,6 +21,7 @@ import java.util.stream.IntStream;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcof60 {
+    // #region snippet
     public double[] twoSum(int n) {
         int[][] dp = new int[n][6 * n];
         // 当只有一个骰子的时候 每个点数都只有一种方法
@@ -47,4 +48,5 @@ public class Lcof60 {
                 .mapToDouble(it -> dp[n - 1][it] / (total * 1.0D))
                 .toArray();
     }
+    // #endregion snippet
 }

@@ -18,6 +18,7 @@ import java.util.Arrays;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcof21 {
+    // #region snippet
     public int[] exchange(int[] nums) {
         // 根据题意 最大值为10000
         int[] dp = new int[10001];
@@ -45,4 +46,5 @@ public class Lcof21 {
 
         return result;
     }
+    // #endregion snippet
 }

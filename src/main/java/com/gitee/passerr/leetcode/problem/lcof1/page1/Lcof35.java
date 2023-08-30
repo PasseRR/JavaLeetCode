@@ -35,6 +35,7 @@ import java.util.Map;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcof35 {
+    // #region snippet
     public Node copyRandomList(Node head) {
         Node cursor = head;
         Map<Node, Node> nodes = new HashMap<>(1024);
@@ -53,4 +54,5 @@ public class Lcof35 {
         // 新的头结点
         return nodes.get(head);
     }
+    // #endregion snippet
 }

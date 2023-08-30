@@ -13,6 +13,7 @@ import com.gitee.passerr.leetcode.ListNode;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcof24 {
+    // #region snippet
     public ListNode reverseList(ListNode head) {
         // 头结点
         ListNode node = new ListNode(0);
@@ -28,4 +29,5 @@ public class Lcof24 {
 
         return node.next;
     }
+    // #endregion snippet
 }

@@ -25,6 +25,7 @@ import java.util.stream.Collectors;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcof45 {
+    // #region snippet
     public String minNumber(int[] nums) {
         return
             Arrays.stream(nums)
@@ -34,4 +35,5 @@ public class Lcof45 {
                 .sorted((s1, s2) -> s1.length() == s2.length() ? s1.compareTo(s2) : (s1 + s2).compareTo(s2 + s1))
                 .collect(Collectors.joining());
     }
+    // #endregion snippet
 }

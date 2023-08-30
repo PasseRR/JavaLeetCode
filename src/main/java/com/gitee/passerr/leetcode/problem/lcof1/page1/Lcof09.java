@@ -27,6 +27,7 @@ public class Lcof09 {
 
 }
 
+// #region snippet
 class CQueue {
     /**
      * 读栈
@@ -79,3 +80,4 @@ class CQueue {
  * obj.appendTail(value);
  * int param_2 = obj.deleteHead();
  */
+// #endregion snippet

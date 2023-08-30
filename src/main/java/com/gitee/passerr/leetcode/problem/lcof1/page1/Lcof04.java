@@ -24,6 +24,7 @@ package com.gitee.passerr.leetcode.problem.lcof1.page1;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcof04 {
+    // #region snippet
     public boolean findNumberIn2DArray(int[][] matrix, int target) {
         int rows = matrix.length;
         if (rows == 0) {
@@ -46,4 +47,5 @@ public class Lcof04 {
 
         return false;
     }
+    // #endregion snippet
 }

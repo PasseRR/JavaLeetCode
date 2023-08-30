@@ -21,6 +21,7 @@ import java.util.function.BiFunction;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcof53I {
+    // #region snippet
     public int search(int[] nums, int target) {
         // 二分查找
         BiFunction<Integer, Integer, Integer> binarySearch = new BiFunction<Integer, Integer, Integer>() {
@@ -46,4 +47,5 @@ public class Lcof53I {
 
         return binarySearch.apply(0, nums.length - 1);
     }
+    // #endregion snippet
 }

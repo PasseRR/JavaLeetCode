@@ -30,6 +30,7 @@ import java.util.Map;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcof48 {
+    // #region snippet
     public int lengthOfLongestSubstring(String s) {
         int len = s.length(), max = 0;
         Map<Character, Integer> visited = new HashMap<>(8);
@@ -49,4 +50,5 @@ public class Lcof48 {
 
         return max;
     }
+    // #endregion snippet
 }

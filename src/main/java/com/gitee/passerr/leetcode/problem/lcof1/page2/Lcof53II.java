@@ -21,6 +21,7 @@ import java.util.function.BiFunction;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcof53II {
+    // #region snippet
     public int missingNumber(int[] nums) {
         BiFunction<Integer, Integer, Integer> binarySearch = new BiFunction<Integer, Integer, Integer>() {
             @Override
@@ -43,4 +44,5 @@ public class Lcof53II {
 
         return binarySearch.apply(0, nums.length - 1);
     }
+    // #endregion snippet
 }

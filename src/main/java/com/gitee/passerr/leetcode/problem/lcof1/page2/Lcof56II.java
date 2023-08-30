@@ -19,6 +19,7 @@ package com.gitee.passerr.leetcode.problem.lcof1.page2;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcof56II {
+    // #region snippet
     public int singleNumber(int[] nums) {
         // 记录每一个位元出现的次数
         int[] bit = new int[32];
@@ -42,4 +43,5 @@ public class Lcof56II {
 
         return result;
     }
+    // #endregion snippet
 }

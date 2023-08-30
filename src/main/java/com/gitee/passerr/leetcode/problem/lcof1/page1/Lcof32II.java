@@ -34,6 +34,7 @@ import java.util.Queue;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcof32II {
+    // #region snippet
     public List<List<Integer>> levelOrder(TreeNode root) {
         List<List<Integer>> result = new ArrayList<>();
         Queue<TreeNode> queue = new ArrayDeque<>();
@@ -59,4 +60,5 @@ public class Lcof32II {
 
         return result;
     }
+    // #endregion snippet
 }

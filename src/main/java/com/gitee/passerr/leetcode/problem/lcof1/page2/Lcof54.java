@@ -36,6 +36,7 @@ import java.util.function.Consumer;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcof54 {
+    // #region snippet
     public int kthLargest(TreeNode root, int k) {
         List<Integer> nums = new ArrayList<>();
         // 中序遍历树
@@ -55,4 +56,5 @@ public class Lcof54 {
         // 获取倒数位置数字
         return nums.get(nums.size() - k);
     }
+    // #endregion snippet
 }

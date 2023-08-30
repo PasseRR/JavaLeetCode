@@ -33,6 +33,7 @@ import java.util.function.BiConsumer;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcof34 {
+    // #region snippet
     public List<List<Integer>> pathSum(TreeNode root, int sum) {
         List<List<Integer>> result = new ArrayList<>();
         // 缓存累加值
@@ -63,4 +64,5 @@ public class Lcof34 {
 
         return result;
     }
+    // #endregion snippet
 }

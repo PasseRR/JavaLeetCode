@@ -19,7 +19,9 @@ package com.gitee.passerr.leetcode.problem.lcof1.page2;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcof58II {
+    // #region snippet
     public String reverseLeftWords(String s, int n) {
         return s.substring(n) + s.substring(0, n);
     }
+    // #endregion snippet
 }

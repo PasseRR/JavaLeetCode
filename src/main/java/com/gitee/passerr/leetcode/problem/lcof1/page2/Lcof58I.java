@@ -29,6 +29,7 @@ package com.gitee.passerr.leetcode.problem.lcof1.page2;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcof58I {
+    // #region snippet
     public String reverseWords(String s) {
         String[] words = s.trim().split(" ");
         StringBuilder sb = new StringBuilder();
@@ -45,4 +46,5 @@ public class Lcof58I {
 
         return sb.toString();
     }
+    // #endregion snippet
 }

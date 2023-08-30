@@ -17,6 +17,7 @@ package com.gitee.passerr.leetcode.problem.lcof1.page1;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcof50 {
+    // #region snippet
     public char firstUniqChar(String s) {
         // 缓存字符数量
         int[] cache = new int[26];
@@ -35,4 +36,5 @@ public class Lcof50 {
         // 空格字符
         return ' ';
     }
+    // #endregion snippet
 }

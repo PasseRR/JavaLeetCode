@@ -24,6 +24,7 @@ import java.util.stream.IntStream;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcof57II {
+    // #region snippet
     public int[][] findContinuousSequence(int target) {
         // 若果两数之和为target 根据题意 假如连续的两个数字为x 那么 x + (x+1) = 2x+1 = target
         // 若三数之和为target 那么 x + (x+1) + (x+2) = 3x + 3 = target
@@ -48,4 +49,5 @@ public class Lcof57II {
 
         return result.toArray(new int[0][0]);
     }
+    // #endregion snippet
 }

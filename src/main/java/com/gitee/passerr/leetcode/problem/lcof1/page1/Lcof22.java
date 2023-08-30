@@ -14,6 +14,7 @@ import com.gitee.passerr.leetcode.ListNode;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcof22 {
+    // #region snippet
     public ListNode getKthFromEnd(ListNode head, int k) {
         ListNode cursor = head;
         // 计算节点数量
@@ -33,4 +34,5 @@ public class Lcof22 {
 
         return cursor;
     }
+    // #endregion snippet
 }

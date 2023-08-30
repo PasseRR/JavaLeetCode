@@ -28,6 +28,7 @@ import com.gitee.passerr.leetcode.TreeNode;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcof68II {
+    // #region snippet
     public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
         if (root == p || root == q || root == null) {
             return root;
@@ -42,4 +43,5 @@ public class Lcof68II {
 
         return left != null ? left : right;
     }
+    // #endregion snippet
 }

@@ -36,6 +36,7 @@ import java.util.function.BiFunction;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcof26 {
+    // #region snippet
     public boolean isSubStructure(TreeNode A, TreeNode B) {
         // 空树不是任何树的子树
         if (A == null || B == null) {
@@ -62,4 +63,5 @@ public class Lcof26 {
         // 若值不一致 在A左树或右树上查找
         return recursion.apply(A, B) || this.isSubStructure(A.left, B) || this.isSubStructure(A.right, B);
     }
+    // #endregion snippet
 }

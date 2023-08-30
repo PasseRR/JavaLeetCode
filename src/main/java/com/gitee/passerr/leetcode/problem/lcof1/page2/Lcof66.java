@@ -15,6 +15,7 @@ package com.gitee.passerr.leetcode.problem.lcof1.page2;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcof66 {
+    // #region snippet
     public int[] constructArr(int[] a) {
         int len = a.length;
         int[] b = new int[len];
@@ -32,4 +33,5 @@ public class Lcof66 {
 
         return b;
     }
+    // #endregion snippet
 }

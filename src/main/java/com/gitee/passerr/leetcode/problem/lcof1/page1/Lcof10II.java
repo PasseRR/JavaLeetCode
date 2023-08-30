@@ -19,6 +19,7 @@ package com.gitee.passerr.leetcode.problem.lcof1.page1;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcof10II {
+    // #region snippet
     public int numWays(int n) {
         int[] dp = new int[3];
         dp[0] = 1;
@@ -35,4 +36,5 @@ public class Lcof10II {
 
         return dp[Integer.min(n, 2)];
     }
+    // #endregion snippet
 }

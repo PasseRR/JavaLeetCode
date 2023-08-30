@@ -20,6 +20,7 @@ package com.gitee.passerr.leetcode.problem.lcof1.page1;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcof44 {
+    // #region snippet
     public int findNthDigit(int n) {
         // n所在数字的位数
         int digit = 1;
@@ -37,4 +38,5 @@ public class Lcof44 {
 
         return String.valueOf(num).charAt((n - 1) % digit) - '0';
     }
+    // #endregion snippet
 }

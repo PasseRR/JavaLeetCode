@@ -22,6 +22,7 @@ import com.gitee.passerr.leetcode.TreeNode;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcof55I {
+    // #region snippet
     public int maxDepth(TreeNode root) {
         if (root == null) {
             return 0;
@@ -29,4 +30,5 @@ public class Lcof55I {
 
         return Integer.max(this.maxDepth(root.left), this.maxDepth(root.right)) + 1;
     }
+    // #endregion snippet
 }

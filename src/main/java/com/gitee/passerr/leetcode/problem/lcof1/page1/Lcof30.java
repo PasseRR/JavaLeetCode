@@ -24,6 +24,7 @@ import java.util.Stack;
 public class Lcof30 {
 }
 
+// #region snippet
 class MinStack {
 
     private final Stack<Integer> stack;
@@ -59,3 +60,4 @@ class MinStack {
         return this.stack.peek();
     }
 }
+// #endregion snippet

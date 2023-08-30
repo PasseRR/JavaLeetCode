@@ -15,6 +15,7 @@ package com.gitee.passerr.leetcode.problem.lcof1.page2;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcof65 {
+    // #region snippet
     public int add(int a, int b) {
         int sum = a, carry;
         while (b != 0) {
@@ -29,4 +30,5 @@ public class Lcof65 {
 
         return sum;
     }
+    // #endregion snippet
 }

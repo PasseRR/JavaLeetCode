@@ -28,6 +28,7 @@ import java.util.Queue;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcof32I {
+    // #region snippet
     public int[] levelOrder(TreeNode root) {
         if (root == null) {
             return new int[0];
@@ -52,4 +53,5 @@ public class Lcof32I {
 
         return result.stream().mapToInt(Integer::intValue).toArray();
     }
+    // #endregion snippet
 }

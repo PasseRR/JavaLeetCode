@@ -18,7 +18,7 @@ class CategorySpec extends Specification {
     def static converter = FlexmarkHtmlConverter.builder().build()
     def static categories = [
         "lcci" : new Category(prefix: "Lcci", filter: [listId: "xb9lfcwi"], handler: { it -> it.replaceAll("面试题 ", "").replaceAll("\\.", "") }),
-        "lcof1": new Category(prefix: "Lcof", filter: [listId: "xb9nqhhg"]),
+        "lcof1": new Category(prefix: "Lcof", filter: [listId: "xb9nqhhg"], handler: { it -> it.replaceAll("剑指 Offer", "").replaceAll("-", "").replaceAll(" ", "") }),
         "lcof2": new Category(prefix: "Lcof", filter: ["orderBy": "FRONTEND_ID", "searchKeywords": "LCR ", "sortOrder": "ASCENDING"])
     ]
 
@@ -82,6 +82,6 @@ class CategorySpec extends Specification {
     }
 
     static void main(String[] args) {
-        generate("lcci", 3)
+        generate("lcof1", 2)
     }
 }

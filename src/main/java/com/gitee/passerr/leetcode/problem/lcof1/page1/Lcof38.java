@@ -16,6 +16,7 @@ import java.util.function.Consumer;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcof38 {
+    // #region snippet
     public String[] permutation(String s) {
         int len = s.length();
         char[] chars = s.toCharArray();
@@ -49,4 +50,5 @@ public class Lcof38 {
 
         return result.toArray(new String[0]);
     }
+    // #endregion snippet
 }

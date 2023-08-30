@@ -28,6 +28,7 @@ package com.gitee.passerr.leetcode.problem.lcof1.page2;
  * @Copyright(c) tellyes tech. inc. co.,ltd
  */
 public class Lcof59I {
+    // #region snippet
     public int[] maxSlidingWindow(int[] nums, int k) {
         int len = nums.length;
         if (len == 0) {
@@ -59,4 +60,5 @@ public class Lcof59I {
 
         return result;
     }
+    // #endregion snippet
 }
