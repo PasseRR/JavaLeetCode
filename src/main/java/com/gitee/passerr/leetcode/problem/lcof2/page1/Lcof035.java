@@ -23,6 +23,7 @@ import java.util.List;
  * @date 2022/01/10 18:22
  */
 public class Lcof035 {
+    // #region snippet
     public int findMinDifference(List<String> timePoints) {
         // 一天的分钟数
         final int minutesOfDay = 24 * 60;
@@ -54,4 +55,5 @@ public class Lcof035 {
 
         return min;
     }
+    // #endregion snippet
 }

@@ -32,6 +32,7 @@ package com.gitee.passerr.leetcode.problem.lcof2.page1;
  * @date 2021/12/13 14:09
  */
 public class Lcof008 {
+    // #region snippet
     public int minSubArrayLen(int target, int[] nums) {
         int len = nums.length, result = len + 1, sum = 0;
         int left = 0, right = 0;
@@ -50,4 +51,5 @@ public class Lcof008 {
 
         return result > len ? 0 : result;
     }
+    // #endregion snippet
 }

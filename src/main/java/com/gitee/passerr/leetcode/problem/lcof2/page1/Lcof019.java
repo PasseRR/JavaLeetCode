@@ -27,6 +27,7 @@ import java.util.function.BiFunction;
  * @date 2021/12/20 16:01
  */
 public class Lcof019 {
+    // #region snippet
     public boolean validPalindrome(String s) {
         BiFunction<String, Boolean, Boolean> isPalindrome = new BiFunction<String, Boolean, Boolean>() {
             @Override
@@ -54,4 +55,5 @@ public class Lcof019 {
 
         return isPalindrome.apply(s, true);
     }
+    // #endregion snippet
 }

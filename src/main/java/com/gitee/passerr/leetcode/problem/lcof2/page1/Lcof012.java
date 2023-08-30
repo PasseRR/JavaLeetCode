@@ -37,6 +37,7 @@ package com.gitee.passerr.leetcode.problem.lcof2.page1;
  * @date 2021/12/16 11:49
  */
 public class Lcof012 {
+    // #region snippet
     public int pivotIndex(int[] nums) {
         int len = nums.length;
         // 需要有前导0用于整个数组和为0的情况 长度比nums大1
@@ -56,4 +57,5 @@ public class Lcof012 {
 
         return -1;
     }
+    // #endregion snippet
 }

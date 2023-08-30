@@ -25,6 +25,7 @@ import java.util.Map;
  * @date 2021/12/16 10:13
  */
 public class Lcof011 {
+    // #region snippet
     public int findMaxLength(int[] nums) {
         int result = 0;
         // 0、1的个数
@@ -53,4 +54,5 @@ public class Lcof011 {
 
         return result;
     }
+    // #endregion snippet
 }

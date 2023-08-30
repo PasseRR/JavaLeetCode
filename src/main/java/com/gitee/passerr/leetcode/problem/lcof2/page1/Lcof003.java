@@ -33,6 +33,7 @@ package com.gitee.passerr.leetcode.problem.lcof2.page1;
  * @date 2021/12/10 15:21
  */
 public class Lcof003 {
+    // #region snippet
     public int[] countBits(int n) {
         int[] result = new int[n + 1];
         for (int i = 1; i <= n; i++) {
@@ -42,4 +43,5 @@ public class Lcof003 {
 
         return result;
     }
+    // #endregion snippet
 }

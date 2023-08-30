@@ -34,6 +34,7 @@ import java.util.Objects;
  * @date 2022/01/17 11:47
  */
 public class Lcof047 {
+    // #region snippet
     public TreeNode pruneTree(TreeNode root) {
         // 根节点为空
         if (root == null) {
@@ -50,4 +51,5 @@ public class Lcof047 {
 
         return root;
     }
+    // #endregion snippet
 }

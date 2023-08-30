@@ -29,6 +29,7 @@ import com.gitee.passerr.leetcode.ListNode;
  * @date 2022/01/06 10:07
  */
 public class Lcof021 {
+    // #region snippet
     public ListNode removeNthFromEnd(ListNode head, int n) {
         // 缓存位置及节点
         ListNode[] nodes = new ListNode[30];
@@ -59,4 +60,5 @@ public class Lcof021 {
 
         return head;
     }
+    // #endregion snippet
 }

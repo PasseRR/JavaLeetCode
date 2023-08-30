@@ -19,7 +19,7 @@ class CategorySpec extends Specification {
     def static categories = [
         "lcci" : new Category(prefix: "Lcci", filter: [listId: "xb9lfcwi"], handler: { it -> it.replaceAll("面试题 ", "").replaceAll("\\.", "") }),
         "lcof1": new Category(prefix: "Lcof", filter: [listId: "xb9nqhhg"], handler: { it -> it.replaceAll("剑指 Offer", "").replaceAll("-", "").replaceAll(" ", "") }),
-        "lcof2": new Category(prefix: "Lcof", filter: ["orderBy": "FRONTEND_ID", "searchKeywords": "LCR ", "sortOrder": "ASCENDING"])
+        "lcof2": new Category(prefix: "Lcof", filter: ["orderBy": "FRONTEND_ID", "searchKeywords": "LCR ", "sortOrder": "ASCENDING"], handler: { it -> it.replaceAll("LCR ", "") })
     ]
 
     static class Category {
@@ -38,7 +38,7 @@ class CategorySpec extends Specification {
         LeetCodeProblemUtil.page(page, "", type.filter).each { it ->
             def detail = LeetCodeProblemUtil.detail(it.titleSlug)
             def filename = type.convert(detail.questionFrontendId)
-            def path = base.resolve("src/main/java/com/gitee/passerr/leetcode/problem/${category}/page${page}/${type.prefix}${filename}.java")
+            def path = base.resolve("src/main/java/com/gitee/passerr/leetcode/problem/${category}/page${page}/${type.prefix}${filename}.java") 
             if (!Files.exists(path)) {
                 return
             }
@@ -82,6 +82,6 @@ class CategorySpec extends Specification {
     }
 
     static void main(String[] args) {
-        generate("lcof1", 2)
+        generate("lcof2", 1)
     }
 }

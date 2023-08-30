@@ -30,6 +30,7 @@ import java.util.function.BiFunction;
  * @date 2022/01/06 14:03
  */
 public class Lcof024 {
+    // #region snippet
     public ListNode reverseList(ListNode head) {
         // 递归法
         BiFunction<ListNode, ListNode, ListNode> recursion = new BiFunction<ListNode, ListNode, ListNode>() {
@@ -74,4 +75,5 @@ public class Lcof024 {
 
         return h.next;
     }
+    // #endregion snippet
 }

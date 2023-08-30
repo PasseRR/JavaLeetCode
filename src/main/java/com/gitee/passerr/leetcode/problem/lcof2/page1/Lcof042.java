@@ -7,6 +7,7 @@ package com.gitee.passerr.leetcode.problem.lcof2.page1;
 public class Lcof042 {
 }
 
+// #region snippet
 class RecentCounter {
     /**
      * 链表尾节点
@@ -53,3 +54,4 @@ class RecentCounter {
         }
     }
 }
+// #endregion snippet

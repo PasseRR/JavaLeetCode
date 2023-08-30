@@ -24,6 +24,7 @@ package com.gitee.passerr.leetcode.problem.lcof2.page1;
  * @date 2021/12/20 17:59
  */
 public class Lcof020 {
+    // #region snippet
     public int countSubstrings(String s) {
         int len = s.length(), result = 0;
         // 保存子字符串是否是回文字符串
@@ -45,4 +46,5 @@ public class Lcof020 {
 
         return result;
     }
+    // #endregion snippet
 }

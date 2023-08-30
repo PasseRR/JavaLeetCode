@@ -34,6 +34,7 @@ import java.util.function.BiFunction;
  * @date 2022/01/10 14:29
  */
 public class Lcof034 {
+    // #region snippet
     public boolean isAlienSorted(String[] words, String order) {
         int lenOrder = order.length();
         // 字典顺序
@@ -69,4 +70,5 @@ public class Lcof034 {
 
         return true;
     }
+    // #endregion snippet
 }

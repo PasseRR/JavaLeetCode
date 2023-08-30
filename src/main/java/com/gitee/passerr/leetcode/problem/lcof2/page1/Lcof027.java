@@ -25,6 +25,7 @@ import com.gitee.passerr.leetcode.ListNode;
  * @date 2022/01/07 13:35
  */
 public class Lcof027 {
+    // #region snippet
     public boolean isPalindrome(ListNode head) {
         // 快慢指针找中间节点
         ListNode slow = new ListNode(0, head), fast = slow;
@@ -58,4 +59,5 @@ public class Lcof027 {
 
         return true;
     }
+    // #endregion snippet
 }

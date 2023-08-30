@@ -39,6 +39,7 @@ import java.util.function.BiConsumer;
  * @date 2022/01/17 15:36
  */
 public class Lcof049 {
+    // #region snippet
     public int sumNumbers(TreeNode root) {
         int[] result = new int[1];
 
@@ -71,4 +72,5 @@ public class Lcof049 {
 
         return result[0];
     }
+    // #endregion snippet
 }

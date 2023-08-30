@@ -54,6 +54,7 @@ import java.util.function.Consumer;
  * @date 2022/01/11 09:32
  */
 public class Lcof036 {
+    // #region snippet
     public int evalRPN(String[] tokens) {
         Stack<Integer> stack = new Stack<>();
         // 遇到符号 弹出栈顶两个数字计算
@@ -92,4 +93,5 @@ public class Lcof036 {
 
         return stack.peek();
     }
+    // #endregion snippet
 }

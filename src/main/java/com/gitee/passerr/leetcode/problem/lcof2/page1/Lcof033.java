@@ -32,6 +32,7 @@ import java.util.stream.Collectors;
  * @date 2022/01/10 10:49
  */
 public class Lcof033 {
+    // #region snippet
     public List<List<String>> groupAnagrams(String[] strs) {
         return
             new ArrayList<>(
@@ -48,4 +49,5 @@ public class Lcof033 {
                     .values()
             );
     }
+    // #endregion snippet
 }

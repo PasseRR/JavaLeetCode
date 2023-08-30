@@ -32,6 +32,7 @@ import java.util.Queue;
  * @date 2022/01/17 11:32
  */
 public class Lcof046 {
+    // #region snippet
     public List<Integer> rightSideView(TreeNode root) {
         List<Integer> result = new ArrayList<>();
 
@@ -66,4 +67,5 @@ public class Lcof046 {
 
         return result;
     }
+    // #endregion snippet
 }

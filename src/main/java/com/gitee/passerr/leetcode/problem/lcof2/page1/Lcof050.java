@@ -30,6 +30,7 @@ import java.util.function.BiFunction;
  * @date 2022/01/17 16:14
  */
 public class Lcof050 {
+    // #region snippet
     public int pathSum(TreeNode root, int targetSum) {
         // 1000个10^9已经int溢出了 前缀用long
         Map<Long, Integer> prefix = new HashMap<>(16);
@@ -60,4 +61,5 @@ public class Lcof050 {
 
         return backtrack.apply(0L, root);
     }
+    // #endregion snippet
 }

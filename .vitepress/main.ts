@@ -3,6 +3,7 @@ import database from "./database";
 import algorithm from "./algorithm";
 import lcci from "./lcci";
 import lcof1 from "./lcof1";
+import lcof2 from "./lcof2";
 
 const site = {
     logo: '/icon.svg',
@@ -42,6 +43,10 @@ function sidebars() {
             base: "/lcof1",
             items: lcof1.bars()
         },
+        "lcof2": {
+            base: "/lcof2",
+            items: lcof2.bars()
+        },
         "/algorithm": {
             base: "/algorithm",
             items: algorithm.bars()
@@ -50,7 +55,7 @@ function sidebars() {
 }
 
 function navs() {
-    return [shell.nav(), database.nav(), lcci.nav(), lcof1.nav(), algorithm.nav()];
+    return [shell.nav(), database.nav(), lcci.nav(), lcof1.nav(), lcof2.nav(), algorithm.nav()];
 }
 
 export {site, sidebars, navs};

@@ -23,6 +23,7 @@ package com.gitee.passerr.leetcode.problem.lcof2.page1;
  * @date 2021/12/20 15:19
  */
 public class Lcof018 {
+    // #region snippet
     public boolean isPalindrome(String s) {
         int i = 0, j = s.length() - 1;
         while (i < j) {
@@ -50,4 +51,5 @@ public class Lcof018 {
 
         return true;
     }
+    // #endregion snippet
 }
