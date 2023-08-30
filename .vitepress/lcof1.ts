@@ -91,7 +91,7 @@ function bars() {
 
 function nav() {
     return {
-        text: '剑指offer(第2版)',
+        text: '剑指Offer(第2版)',
         link: '/lcof1/index',
         activeMatch: '/lcof1/'
     };

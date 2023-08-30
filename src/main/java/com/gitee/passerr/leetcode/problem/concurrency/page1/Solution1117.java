@@ -57,6 +57,7 @@ public class Solution1117 {
     }
 }
 
+// #region snippet
 class H2O {
     private Semaphore hs = new Semaphore(2);
     private Semaphore os = new Semaphore(1);
@@ -94,3 +95,4 @@ class H2O {
     }
 }
 
+// #endregion snippet

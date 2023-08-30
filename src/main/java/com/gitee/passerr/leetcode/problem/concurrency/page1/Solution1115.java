@@ -56,6 +56,7 @@ public class Solution1115 {
     }
 }
 
+// #region snippet
 class FooBar {
     private int n;
     private volatile boolean flag = true;
@@ -84,3 +85,4 @@ class FooBar {
         }
     }
 }
+// #endregion snippet

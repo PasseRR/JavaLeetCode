@@ -4,6 +4,7 @@ import algorithm from "./algorithm";
 import lcci from "./lcci";
 import lcof1 from "./lcof1";
 import lcof2 from "./lcof2";
+import concurrency from "./concurrency";
 
 const site = {
     logo: '/icon.svg',
@@ -47,6 +48,10 @@ function sidebars() {
             base: "/lcof2",
             items: lcof2.bars()
         },
+        "/concurrency": {
+            base: "/concurrency",
+            items: concurrency.bars()
+        },
         "/algorithm": {
             base: "/algorithm",
             items: algorithm.bars()
@@ -55,7 +60,7 @@ function sidebars() {
 }
 
 function navs() {
-    return [shell.nav(), database.nav(), lcci.nav(), lcof1.nav(), lcof2.nav(), algorithm.nav()];
+    return [database.nav(), lcof1.nav(), lcof2.nav(), lcci.nav(), concurrency.nav(), algorithm.nav()];
 }
 
 export {site, sidebars, navs};

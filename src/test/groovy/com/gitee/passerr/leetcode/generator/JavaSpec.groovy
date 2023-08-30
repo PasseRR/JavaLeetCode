@@ -63,10 +63,12 @@ class JavaSpec extends Specification {
                     def begin = ls.findIndexOf { l -> l.startsWith("public class ") }
                     def begin2 = ls.findLastIndexOf { l -> l.startsWith("class ") }
                     if (begin2 >= 0) {
-                        begin = begin2
+                        ls.add(begin2, "// #region snippet")
+                        ls.add(ls.size(), "// #endregion snippet")
+                    } else {
+                        ls.add(begin + 1, "    // #region snippet")
+                        ls.add(ls.size() - 1, "    // #endregion snippet")
                     }
-                    ls.add(begin + 1, "    // #region snippet")
-                    ls.add(ls.size() - 1, "    // #endregion snippet")
                     javaPath.toFile().withWriter { writer ->
                         ls.each { l -> writer.write(l + "\n") }
                     }
@@ -96,6 +98,6 @@ class JavaSpec extends Specification {
     }
 
     static void main(String[] args) {
-        generate("algorithm", 3)
+        generate("concurrency", 1)
     }
 }
