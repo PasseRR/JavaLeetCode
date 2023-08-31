@@ -7,6 +7,7 @@ import lcof2 from "./lcof2";
 import concurrency from "./concurrency";
 
 const site = {
+    main: 'https://www.xiehai.zone',
     logo: '/icon.svg',
     // 标题
     title: 'Java版LeetCode',
