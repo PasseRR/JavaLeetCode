@@ -69,7 +69,7 @@ export default defineConfig({
             level: "deep",
             label: '目录'
         },
-        langMenuLabel: '菜单',
+        sidebarMenuLabel: '菜单',
         returnToTopLabel: '回到顶部',
         externalLinkIcon: true,
         socialLinks: [{
