@@ -1,7 +1,7 @@
 function bars() {
     return [{
         text: '第一页',
-        base: '/lcof2/page1',
+        base: '/lcof2',
         collapsed: false,
         items: [
             {text: 'LCR 001. 两数相除', link: '/001'},

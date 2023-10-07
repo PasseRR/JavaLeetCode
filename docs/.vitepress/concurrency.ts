@@ -1,7 +1,7 @@
 function bars() {
     return [{
         text: '第一页',
-        base: '/concurrency/page1',
+        base: '/concurrency',
         collapsed: false,
         items: [
             {text: '1114. 按序打印', link: '/1114'},

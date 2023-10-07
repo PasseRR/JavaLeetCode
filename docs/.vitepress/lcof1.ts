@@ -1,7 +1,7 @@
 function bars() {
     return [{
         text: '第一页',
-        base: '/lcof1/page1',
+        base: '/lcof1',
         collapsed: false,
         items: [
             {text: '剑指 Offer 03. 数组中重复的数字', link: '/03'},
@@ -57,7 +57,7 @@ function bars() {
         ]
     }, {
         text: '第二页',
-        base: '/lcof1/page2',
+        base: '/lcof1',
         collapsed: true,
         items: [
             {text: '剑指 Offer 51. 数组中的逆序对', link: '/51'},

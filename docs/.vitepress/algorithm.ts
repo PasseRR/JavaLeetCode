@@ -1,7 +1,7 @@
 function bars() {
     return [{
         text: '第一页',
-        base: '/algorithm/page1',
+        base: '/algorithm',
         collapsed: false,
         items: [
             {text: '1. 两数之和', link: '/1'},
@@ -57,7 +57,7 @@ function bars() {
         ]
     }, {
         text: '第二页',
-        base: '/algorithm/page2',
+        base: '/algorithm',
         collapsed: true,
         items: [
             {text: '51. N 皇后', link: '/51'},
@@ -113,7 +113,7 @@ function bars() {
         ]
     }, {
         text: '第三页',
-        base: '/algorithm/page3',
+        base: '/algorithm',
         collapsed: true,
         items: [
             {text: '101. 对称二叉树', link: '/101'},

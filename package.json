@@ -14,6 +14,7 @@
   "devDependencies": {
     "markdown-it-sup": "^1.0.0",
     "markdown-it-sub": "^1.0.0",
+    "globby": "^13.2.2",
     "vitepress": "^1.0.0-rc.4"
   }
 }

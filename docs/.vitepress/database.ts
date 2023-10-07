@@ -1,7 +1,7 @@
 function bars() {
     return [{
         text: '第一页',
-        base: '/database/page1',
+        base: '/database',
         collapsed: false,
         items: [
             {text: '175. 组合两个表', link: '/175'},
@@ -41,7 +41,7 @@ function bars() {
         ]
     }, {
         text: '第二页',
-        base: '/database/page2',
+        base: '/database',
         collapsed: true,
         items: [
             {text: '1070. 产品销售分析 III', link: '/1070'},
@@ -65,7 +65,7 @@ function bars() {
         ]
     }, {
         text: '第三页',
-        base: '/database/page3',
+        base: '/database',
         collapsed: true,
         items: [
             {text: '1378. 使用唯一标识码替换员工ID', link: '/1378'},
@@ -88,7 +88,7 @@ function bars() {
         ]
     }, {
         text: '第四页',
-        base: '/database/page4',
+        base: '/database',
         collapsed: true,
         items: [
             {text: '1789. 员工的直属部门', link: '/1789'},
@@ -103,7 +103,7 @@ function bars() {
         ]
     }, {
         text: '第五页',
-        base: '/database/page5',
+        base: '/database',
         collapsed: true,
         items: [
             {text: '2356. 每位教师所教授的科目种类的数量', link: '/2356'}

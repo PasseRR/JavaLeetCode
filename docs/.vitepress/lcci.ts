@@ -1,7 +1,7 @@
 function bars() {
     return [{
         text: '第一页',
-        base: '/lcci/page1',
+        base: '/lcci',
         collapsed: false,
         items: [
             {text: '面试题 01.01. 判定字符是否唯一', link: '/0101'},
@@ -57,7 +57,7 @@ function bars() {
         ]
     }, {
         text: '第二页',
-        base: '/lcci/page2',
+        base: '/lcci',
         collapsed: true,
         items: [
             {text: '面试题 08.11. 硬币', link: '/0811'},
@@ -113,7 +113,7 @@ function bars() {
         ]
     }, {
         text: '第三页',
-        base: '/lcci/page3',
+        base: '/lcci',
         collapsed: true,
         items: [
             {text: '面试题 17.18. 最短超串', link: '/1718'},

@@ -1,7 +1,17 @@
 import {defineConfig} from 'vitepress'
+import {globby} from 'globby'
 import {navs, sidebars, site} from './main';
 import sup_plugin from "markdown-it-sup";
 import sub_plugin from "markdown-it-sub";
+
+// @ts-ignore
+const paths = await globby(['docs/**/*.md'])
+const rewrites = {}
+paths.forEach((it) => {
+    if (it.indexOf('page') >= 0 && it.indexOf('docs') >= 0) {
+        rewrites[it.substring(5)] = it.split("/").filter(p => p !== 'docs' && p.indexOf("page") < 0).join("/")
+    }
+})
 
 export default defineConfig({
     title: site.title,
@@ -9,6 +19,7 @@ export default defineConfig({
     lastUpdated: true,
     base: site.base,
     srcExclude: ['**/README.md', ...site.excludes],
+    rewrites: rewrites,
     head: [
         // google分析脚本
         [
