@@ -20,6 +20,9 @@ export default defineConfig({
     base: site.base,
     srcExclude: ['**/README.md', ...site.excludes],
     rewrites: rewrites,
+    vite: {
+        publicDir: '.vitepress/public'
+    },
     head: [
         // google分析脚本
         [
