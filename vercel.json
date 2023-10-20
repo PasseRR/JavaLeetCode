@@ -7,6 +7,86 @@
   ],
   "redirects": [
     {
+      "source": "/lcof1/10i.html",
+      "destination": "/JavaLeetCode/lcof1/10I.html"
+    },
+    {
+      "source": "/lcof1/10ii.html",
+      "destination": "/JavaLeetCode/lcof1/10II.html"
+    },
+    {
+      "source": "/lcof1/14i.html",
+      "destination": "/JavaLeetCode/lcof1/14I.html"
+    },
+    {
+      "source": "/lcof1/14ii.html",
+      "destination": "/JavaLeetCode/lcof1/14II.html"
+    },
+    {
+      "source": "/lcof1/32i.html",
+      "destination": "/JavaLeetCode/lcof1/32I.html"
+    },
+    {
+      "source": "/lcof1/32ii.html",
+      "destination": "/JavaLeetCode/lcof1/32II.html"
+    },
+    {
+      "source": "/lcof1/32iii.html",
+      "destination": "/JavaLeetCode/lcof1/32III.html"
+    },
+    {
+      "source": "/lcof1/53i.html",
+      "destination": "/JavaLeetCode/lcof1/53I.html"
+    },
+    {
+      "source": "/lcof1/53ii.html",
+      "destination": "/JavaLeetCode/lcof1/53II.html"
+    },
+    {
+      "source": "/lcof1/55i.html",
+      "destination": "/JavaLeetCode/lcof1/55I.html"
+    },
+    {
+      "source": "/lcof1/55ii.html",
+      "destination": "/JavaLeetCode/lcof1/55II.html"
+    },
+    {
+      "source": "/lcof1/56i.html",
+      "destination": "/JavaLeetCode/lcof1/56I.html"
+    },
+    {
+      "source": "/lcof1/56ii.html",
+      "destination": "/JavaLeetCode/lcof1/56II.html"
+    },
+    {
+      "source": "/lcof1/57ii.html",
+      "destination": "/JavaLeetCode/lcof1/57II.html"
+    },
+    {
+      "source": "/lcof1/58i.html",
+      "destination": "/JavaLeetCode/lcof1/58I.html"
+    },
+    {
+      "source": "/lcof1/58ii.html",
+      "destination": "/JavaLeetCode/lcof1/58II.html"
+    },
+    {
+      "source": "/lcof1/59i.html",
+      "destination": "/JavaLeetCode/lcof1/59I.html"
+    },
+    {
+      "source": "/lcof1/59ii.html",
+      "destination": "/JavaLeetCode/lcof1/59II.html"
+    },
+    {
+      "source": "/lcof1/68i.html",
+      "destination": "/JavaLeetCode/lcof1/68I.html"
+    },
+    {
+      "source": "/lcof1/68ii.html",
+      "destination": "/JavaLeetCode/lcof1/68II.html"
+    },
+    {
       "source": "/:category/:number(page\\d{1,})/:page",
       "destination": "/JavaLeetCode/:category/:page",
       "statusCode": 301
