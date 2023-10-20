@@ -7,7 +7,7 @@
   ],
   "redirects": [
     {
-      "source": "/JavaLeetCode/:category/:pageNumber(^page\\d$)/:page",
+      "source": "/:category/:pageNumber(^page\\d{1,}$)/:page",
       "destination": "/JavaLeetCode/:category/:page",
       "statusCode": 301
     }
