@@ -5,6 +5,13 @@
       "destination": "/:match*"
     }
   ],
+  "redirects": [
+    {
+      "source": "/JavaLeetCode/:category/:pageNumber(^page\\d$)/:page",
+      "destination": "/JavaLeetCode/:category/:page",
+      "statusCode": 301
+    }
+  ],
   "github": {
     "silent": true
   }
