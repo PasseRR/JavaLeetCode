@@ -3,6 +3,10 @@ import {globby} from 'globby'
 import {navs, sidebars, site} from './main';
 import sup_plugin from "markdown-it-sup";
 import sub_plugin from "markdown-it-sub";
+import MiniSearch from 'minisearch'
+import Segment from 'segment'
+
+const segment = new Segment().useDefault()
 
 // @ts-ignore
 const paths = await globby(['docs/**/*.md'])
@@ -73,7 +77,28 @@ export default defineConfig({
         nav: navs(),
         sidebar: sidebars(),
         search: {
-            provider: 'local'
+            provider: 'local',
+            options: {
+                miniSearch: {
+                    options: {
+                        tokenize: (text, fieldName) => {
+                            // 默认的简单分词
+                            let origin = MiniSearch.getDefault('tokenize')(text, fieldName);
+
+                            // 仅对标题中文分词
+                            if (fieldName.indexOf('title') >= 0) {
+                                return segment.doSegment(text, {simple: true, stripPunctuation: true}).concat(origin);
+                            }
+
+                            return origin
+                        }
+                    },
+                    searchOptions: {
+                        // 仅以空白字符
+                        tokenize: (string) => string.split(/\s+/)
+                    }
+                }
+            }
         },
         lastUpdated: {
             text: '最后更新'

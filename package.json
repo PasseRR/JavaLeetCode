@@ -12,9 +12,10 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "markdown-it-sup": "^1.0.0",
-    "markdown-it-sub": "^1.0.0",
     "globby": "^13.2.2",
-    "vitepress": "^1.0.0-rc.4"
+    "markdown-it-sub": "^1.0.0",
+    "markdown-it-sup": "^1.0.0",
+    "segment": "^0.1.3",
+    "vitepress": "^1.0.0-rc.31"
   }
 }
