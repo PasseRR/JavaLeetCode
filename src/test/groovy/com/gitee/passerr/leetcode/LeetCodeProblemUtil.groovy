@@ -4,7 +4,6 @@ import groovyx.net.http.ContentType
 import groovyx.net.http.HTTPBuilder
 import groovyx.net.http.Method
 import org.apache.groovy.json.internal.LazyMap
-
 /**
  * leetcode md文档自动生成
  * @date 2023/08/15 13:32
@@ -33,6 +32,24 @@ class LeetCodeProblemUtil {
         ]).problemsetQuestionList?.questions ?: []
     }
 
+    static tag(String slug) {
+        def query = """
+        query singleQuestionTopicTags(\$titleSlug: String!) {
+            question(titleSlug: \$titleSlug) {
+                topicTags {
+                    translatedName
+                }
+            }
+        }
+        """
+
+        request([query: query, variables: [titleSlug: slug], operationName: "singleQuestionTopicTags"])
+            ?.question
+            ?.topicTags
+            ?.collect{ it -> it.translatedName}
+            ?: [:]
+    }
+
     static detail(String slug) {
         def query = """
         query questionTranslations(\$titleSlug: String!) {
@@ -40,6 +57,9 @@ class LeetCodeProblemUtil {
                 translatedTitle
                 questionFrontendId
                 translatedContent
+                topicTags {
+                    translatedName
+                }
                 questionId
             }
         }
@@ -62,5 +82,9 @@ class LeetCodeProblemUtil {
                 return [:]
             }
         } as LazyMap
+    }
+
+    static main(agrs) {
+        println tag("two-sum")
     }
 }
