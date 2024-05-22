@@ -1,5 +1,7 @@
 :root {
     --vp-layout-max-width: 90%;
+    /* pure theme color */
+    --li-dot-color: var(--vp-c-brand);
 }
 
 .content-container {

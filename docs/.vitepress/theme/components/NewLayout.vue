@@ -7,8 +7,7 @@
           <a class="header-anchor" :href="'#'+frontmatter.title">​</a>
         </h1>
         <div class='post-info'>
-          <!-- :href="withBase(`/tags.html?tag=${item}`)" -->
-          <a v-if="frontmatter.tags" v-for="item in frontmatter.tags"
+          <a v-if="frontmatter.tags" v-for="item in frontmatter.tags" :href="withBase(`/tags.html?tag=${item}`)"
              target="_blank">
             <Badge type="tip"><span class="fa fa-tag"></span> {{ item }}</Badge>
           </a>

@@ -1,22 +1,16 @@
 import {defineConfig} from 'vitepress'
-import {globby} from 'globby'
 import {navs, sidebars, site} from './main';
 import sup_plugin from "markdown-it-sup";
 import sub_plugin from "markdown-it-sub";
 import MiniSearch from 'minisearch'
 import Segment from 'segment'
+import {getPosts} from './theme/serverUtils'
 
 const segment = new Segment().useDefault()
 
-// @ts-ignore
-const paths = await globby(['docs/**/*.md'])
-const rewrites = {}
-paths.forEach((it) => {
-    if (it.indexOf('page') >= 0 && it.indexOf('docs') >= 0) {
-        rewrites[it.substring(5)] = it.split("/").filter(p => p !== 'docs' && p.indexOf("page") < 0).join("/")
-    }
-})
+const {posts, rewrites} = getPosts()
 
+// @ts-ignore
 export default defineConfig({
     title: site.title,
     description: site.description,
@@ -74,6 +68,8 @@ export default defineConfig({
         }
     },
     themeConfig: {
+        // @ts-ignore
+        posts: posts,
         nav: navs(),
         sidebar: sidebars(),
         search: {

@@ -61,7 +61,11 @@ function sidebars() {
 }
 
 function navs() {
-    return [database.nav(), lcof1.nav(), lcof2.nav(), lcci.nav(), concurrency.nav(), algorithm.nav()];
+    return [database.nav(), lcof1.nav(), lcof2.nav(), lcci.nav(), concurrency.nav(), algorithm.nav(), {
+        text: '<span class="fa fa-tag"></span>标签',
+        link: '/tags',
+        activeMatch: '/tags'
+    }];
 }
 
 export {site, sidebars, navs};
