@@ -27,6 +27,11 @@ export default defineConfig({
             'script',
             {async: '', src: `https://www.googletagmanager.com/gtag/js?id=${site.google}`}
         ],
+        // vercel分析脚本
+        [
+            'script',
+            {defer: '', src: 'https://vercel.com/_vercel/insights/script.js'}
+        ],
         // google、百度统计分析
         [
             'script',
@@ -51,6 +56,8 @@ export default defineConfig({
                 _hmt.push(['_setAccount', '${site.baidu}']);
                 _hmt.push(['_trackPageview', window.location]);
                 _hmt.push(['_setAutoPageview', true]);
+                
+                window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
              }`
         ]
     ],
