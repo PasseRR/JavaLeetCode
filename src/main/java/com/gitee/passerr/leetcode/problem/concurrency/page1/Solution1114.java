@@ -2,6 +2,7 @@ package com.gitee.passerr.leetcode.problem.concurrency.page1;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
+import java.util.concurrent.Semaphore;
 
 /**
  * 我们提供了一个类：
@@ -79,36 +80,36 @@ public class Solution1114 {
                 }
             }
         }
+        executorService.shutdown();
     }
 }
 
 // #region snippet
 class Foo {
-    private volatile int flag = 1;
+    // 使用信号量实现 考虑只需限制两个数字即可
+    Semaphore c2 = new Semaphore(0);
+    Semaphore c3 = new Semaphore(0);
 
     public Foo() {
-
     }
 
     public void first(Runnable printFirst) throws InterruptedException {
-        while (flag != 1) { ; }
         // printFirst.run() outputs "first". Do not change or remove this line.
         printFirst.run();
-        flag = 2;
+        this.c2.release();
     }
 
     public void second(Runnable printSecond) throws InterruptedException {
-        while (flag != 2) { ; }
+        this.c2.acquire();
         // printSecond.run() outputs "second". Do not change or remove this line.
         printSecond.run();
-        flag = 3;
+        this.c3.release();
     }
 
     public void third(Runnable printThird) throws InterruptedException {
-        while (flag != 3) { ; }
+        this.c3.acquire();
         // printThird.run() outputs "third". Do not change or remove this line.
         printThird.run();
-        flag = 1;
     }
 }
 // #endregion snippet

@@ -98,9 +98,17 @@ export default defineConfig({
                     },
                     searchOptions: {
                         // 仅以空白字符
-                        tokenize: (string) => string.split(/\s+/)
+                        tokenize: (string) => string.split(/\s+/),
+                        fuzzy: 0.4
                     }
-                }
+                },
+                _render(src, env, md) {
+                    const html = md.render(src, env)
+
+                    if (env.frontmatter?.title)
+                        return md.render(`# ${env.frontmatter.title}`) + html
+                    return html
+                },
             }
         },
         lastUpdated: {
