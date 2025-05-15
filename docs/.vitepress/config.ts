@@ -6,11 +6,11 @@ import MiniSearch from 'minisearch'
 import Segment from 'segment'
 import {getPosts} from './theme/serverUtils'
 
+// @ts-ignore
 const segment = new Segment().useDefault()
 
 const {posts, rewrites} = getPosts()
 
-// @ts-ignore
 export default defineConfig({
     title: site.title,
     description: site.description,
